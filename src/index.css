@@ -4,3 +4,8 @@ body {
   margin: 0;
   font-family: system-ui, 'Segoe UI', Roboto, sans-serif;
 }
+
+.leaflet-interactive:focus-visible {
+  outline: 3px solid #1f2937;
+  outline-offset: 2px;
+}
