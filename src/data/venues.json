@@ -1,0 +1,600 @@
+[
+  {
+    "id": "caseys-corner",
+    "name": "Casey's Corner",
+    "land": "main_street",
+    "service_type": "quick_service",
+    "disney_url": "https://disneyworld.disney.go.com/dining/magic-kingdom/caseys-corner/",
+    "map_coords": { "x": 552, "y": 693 },
+    "last_verified": "2026-06-11",
+    "estimated": true,
+    "alcohol_available": false,
+    "scores": {
+      "purine_score": 6,
+      "alcohol_score": 0,
+      "fructose_score": 7,
+      "dehydration_score": 8
+    },
+    "score_notes": {
+      "purine": "Hot dogs and corn dog nuggets are pork/beef-based (red meat, moderate purine per Kaneko); chili and cheese toppings add to the load.",
+      "alcohol": "No alcohol served.",
+      "fructose": "Fountain sodas, lemonade, and a brownie sundae push fructose load to moderate-high.",
+      "dehydration": "Hot dogs, fries, and chili are high in sodium."
+    }
+  },
+  {
+    "id": "crystal-palace",
+    "name": "The Crystal Palace",
+    "land": "main_street",
+    "service_type": "table_service",
+    "disney_url": "https://disneyworld.disney.go.com/dining/magic-kingdom/crystal-palace/",
+    "map_coords": { "x": 417, "y": 809 },
+    "last_verified": "2026-06-11",
+    "estimated": true,
+    "alcohol_available": true,
+    "scores": {
+      "purine_score": 5,
+      "alcohol_score": 3,
+      "fructose_score": 6,
+      "dehydration_score": 5
+    },
+    "score_notes": {
+      "purine": "Buffet includes carved meats and fried chicken (moderate purine) alongside salads and vegetables (low purine), so the venue average lands in the middle.",
+      "alcohol": "Beer and wine are available at lunch/dinner but not a focal point of the meal.",
+      "fructose": "Buffet dessert table (cakes, cobblers) and soda fountain contribute meaningfully.",
+      "dehydration": "Varied buffet sodium; carved meats and gravies push it to moderate."
+    }
+  },
+  {
+    "id": "main-street-bakery",
+    "name": "Main Street Bakery (Starbucks)",
+    "land": "main_street",
+    "service_type": "quick_service",
+    "disney_url": "https://disneyworld.disney.go.com/dining/magic-kingdom/main-street-bakery/",
+    "map_coords": { "x": 500, "y": 680 },
+    "last_verified": "2026-06-11",
+    "estimated": true,
+    "alcohol_available": false,
+    "scores": {
+      "purine_score": 3,
+      "alcohol_score": 0,
+      "fructose_score": 7,
+      "dehydration_score": 5
+    },
+    "score_notes": {
+      "purine": "Mostly pastries and grab-and-go sandwiches (turkey/ham); low-to-moderate purine load.",
+      "alcohol": "No alcohol served.",
+      "fructose": "Frappuccinos, sweetened espresso drinks, and pastries carry a high sugar load.",
+      "dehydration": "Cured-meat sandwiches and salty pastries add moderate sodium."
+    }
+  },
+  {
+    "id": "plaza-restaurant",
+    "name": "Plaza Restaurant",
+    "land": "main_street",
+    "service_type": "table_service",
+    "disney_url": "https://disneyworld.disney.go.com/dining/magic-kingdom/plaza-restaurant/",
+    "map_coords": { "x": 618, "y": 754 },
+    "last_verified": "2026-06-11",
+    "estimated": true,
+    "alcohol_available": false,
+    "scores": {
+      "purine_score": 6,
+      "alcohol_score": 0,
+      "fructose_score": 8,
+      "dehydration_score": 7
+    },
+    "score_notes": {
+      "purine": "Menu centers on beef burgers and patty melts (red meat, moderate purine).",
+      "alcohol": "No alcohol served.",
+      "fructose": "Famous for ice cream sundaes, milkshakes, and floats — high sugar load.",
+      "dehydration": "Burgers and fries are high in sodium."
+    }
+  },
+  {
+    "id": "tonys-town-square",
+    "name": "Tony's Town Square Restaurant",
+    "land": "main_street",
+    "service_type": "table_service",
+    "disney_url": "https://disneyworld.disney.go.com/dining/magic-kingdom/tonys-town-square-restaurant/",
+    "map_coords": { "x": 390, "y": 736 },
+    "last_verified": "2026-06-11",
+    "estimated": true,
+    "alcohol_available": true,
+    "scores": {
+      "purine_score": 6,
+      "alcohol_score": 5,
+      "fructose_score": 5,
+      "dehydration_score": 5
+    },
+    "score_notes": {
+      "purine": "Italian-American menu with meatballs and chicken parmesan (red meat/poultry, moderate purine); pasta and salad options are lower-purine alternatives.",
+      "alcohol": "Beer and wine are offered as part of the Italian dining experience.",
+      "fructose": "Tiramisu and soda are available, but not the centerpiece of the menu.",
+      "dehydration": "Tomato sauces and parmesan add moderate sodium."
+    }
+  },
+  {
+    "id": "cosmic-rays-starlight-cafe",
+    "name": "Cosmic Ray's Starlight Café",
+    "land": "tomorrowland",
+    "service_type": "quick_service",
+    "disney_url": "https://disneyworld.disney.go.com/dining/magic-kingdom/cosmic-rays-starlight-cafe/",
+    "map_coords": { "x": 288, "y": 712 },
+    "last_verified": "2026-06-11",
+    "estimated": true,
+    "alcohol_available": false,
+    "scores": {
+      "purine_score": 6,
+      "alcohol_score": 0,
+      "fructose_score": 6,
+      "dehydration_score": 7
+    },
+    "score_notes": {
+      "purine": "Rotisserie chicken (poultry) and bacon cheeseburgers (red meat) are both moderate-purine; ribs at the higher end of poultry/red-meat range.",
+      "alcohol": "No alcohol served.",
+      "fructose": "Soft drinks and milkshakes available.",
+      "dehydration": "Rotisserie chicken and ribs are heavily seasoned/salted."
+    }
+  },
+  {
+    "id": "the-lunching-pad",
+    "name": "The Lunching Pad",
+    "land": "tomorrowland",
+    "service_type": "snack_cart",
+    "disney_url": "https://disneyworld.disney.go.com/dining/magic-kingdom/the-lunching-pad/",
+    "map_coords": { "x": 309, "y": 610 },
+    "last_verified": "2026-06-11",
+    "estimated": true,
+    "alcohol_available": false,
+    "scores": {
+      "purine_score": 4,
+      "alcohol_score": 0,
+      "fructose_score": 6,
+      "dehydration_score": 7
+    },
+    "score_notes": {
+      "purine": "Pretzels (grain, low purine) but a turkey-leg/hot-dog option pushes the average to moderate.",
+      "alcohol": "No alcohol served.",
+      "fructose": "Frozen lemonade and slushies are sugar-heavy.",
+      "dehydration": "Soft pretzels with cheese sauce are very high in sodium."
+    }
+  },
+  {
+    "id": "tomorrowland-terrace",
+    "name": "Tomorrowland Terrace Restaurant",
+    "land": "tomorrowland",
+    "service_type": "quick_service",
+    "disney_url": "https://disneyworld.disney.go.com/dining/magic-kingdom/tomorrowland-terrace-restaurant/",
+    "map_coords": { "x": 162, "y": 591 },
+    "last_verified": "2026-06-11",
+    "estimated": true,
+    "alcohol_available": true,
+    "scores": {
+      "purine_score": 6,
+      "alcohol_score": 5,
+      "fructose_score": 5,
+      "dehydration_score": 6
+    },
+    "score_notes": {
+      "purine": "Burgers and plant-based options (Impossible burger); beef option keeps the venue average in the moderate red-meat range.",
+      "alcohol": "Beer is served when this seasonal location is open.",
+      "fructose": "Standard fountain soda menu.",
+      "dehydration": "Burgers and fries are high in sodium."
+    }
+  },
+  {
+    "id": "cool-ship",
+    "name": "Cool Ship",
+    "land": "tomorrowland",
+    "service_type": "kiosk",
+    "disney_url": "https://disneyworld.disney.go.com/dining/magic-kingdom/cool-ship/",
+    "map_coords": { "x": 172, "y": 729 },
+    "last_verified": "2026-06-11",
+    "estimated": true,
+    "alcohol_available": false,
+    "scores": {
+      "purine_score": 1,
+      "alcohol_score": 0,
+      "fructose_score": 8,
+      "dehydration_score": 2
+    },
+    "score_notes": {
+      "purine": "Beverage-only kiosk; negligible purine content.",
+      "alcohol": "No alcohol served.",
+      "fructose": "Frozen slushies and specialty sodas are sugar-dense.",
+      "dehydration": "No high-sodium food items."
+    }
+  },
+  {
+    "id": "auntie-gravitys",
+    "name": "Auntie Gravity's Galactic Goodies",
+    "land": "tomorrowland",
+    "service_type": "kiosk",
+    "disney_url": "https://disneyworld.disney.go.com/dining/magic-kingdom/auntie-gravitys-galactic-goodies/",
+    "map_coords": { "x": 224, "y": 549 },
+    "last_verified": "2026-06-11",
+    "estimated": true,
+    "alcohol_available": false,
+    "scores": {
+      "purine_score": 1,
+      "alcohol_score": 0,
+      "fructose_score": 7,
+      "dehydration_score": 2
+    },
+    "score_notes": {
+      "purine": "Soft serve and fruit cups are dairy/fruit based — very low purine.",
+      "alcohol": "No alcohol served.",
+      "fructose": "Soft-serve sundaes and floats are high in added sugar.",
+      "dehydration": "No high-sodium food items."
+    }
+  },
+  {
+    "id": "be-our-guest",
+    "name": "Be Our Guest Restaurant",
+    "land": "fantasyland",
+    "service_type": "table_service",
+    "disney_url": "https://disneyworld.disney.go.com/dining/magic-kingdom/be-our-guest-restaurant/",
+    "map_coords": { "x": 133, "y": 402 },
+    "last_verified": "2026-06-11",
+    "estimated": true,
+    "alcohol_available": true,
+    "scores": {
+      "purine_score": 7,
+      "alcohol_score": 4,
+      "fructose_score": 6,
+      "dehydration_score": 6
+    },
+    "score_notes": {
+      "purine": "Dinner menu features braised pork and filet mignon (red meat, moderate-to-high purine).",
+      "alcohol": "Wine is served at dinner; not the focus of the meal.",
+      "fructose": "Signature 'The Grey Stuff' dessert and sweetened lemonade contribute to fructose load.",
+      "dehydration": "Rich sauces and cured meats (croque monsieur at lunch) are high in sodium."
+    }
+  },
+  {
+    "id": "pinocchio-village-haus",
+    "name": "Pinocchio Village Haus",
+    "land": "fantasyland",
+    "service_type": "quick_service",
+    "disney_url": "https://disneyworld.disney.go.com/dining/magic-kingdom/pinocchio-village-haus/",
+    "map_coords": { "x": 283, "y": 375 },
+    "last_verified": "2026-06-11",
+    "estimated": true,
+    "alcohol_available": false,
+    "scores": {
+      "purine_score": 6,
+      "alcohol_score": 0,
+      "fructose_score": 5,
+      "dehydration_score": 6
+    },
+    "score_notes": {
+      "purine": "Meatball and chicken parmesan flatbreads are red meat/poultry, moderate purine.",
+      "alcohol": "No alcohol served.",
+      "fructose": "Standard fountain soda menu.",
+      "dehydration": "Flatbreads with cured meat and cheese are high in sodium."
+    }
+  },
+  {
+    "id": "friars-nook",
+    "name": "The Friar's Nook",
+    "land": "fantasyland",
+    "service_type": "quick_service",
+    "disney_url": "https://disneyworld.disney.go.com/dining/magic-kingdom/the-friars-nook/",
+    "map_coords": { "x": 274, "y": 274 },
+    "last_verified": "2026-06-11",
+    "estimated": true,
+    "alcohol_available": false,
+    "scores": {
+      "purine_score": 5,
+      "alcohol_score": 0,
+      "fructose_score": 4,
+      "dehydration_score": 8
+    },
+    "score_notes": {
+      "purine": "Loaded tots with chili (ground beef, red meat) push purine to moderate; plain tots are lower.",
+      "alcohol": "No alcohol served.",
+      "fructose": "Mostly savory; soda is the main sugar source.",
+      "dehydration": "Chili-cheese tots are extremely high in sodium."
+    }
+  },
+  {
+    "id": "gastons-tavern",
+    "name": "Gaston's Tavern",
+    "land": "fantasyland",
+    "service_type": "kiosk",
+    "disney_url": "https://disneyworld.disney.go.com/dining/magic-kingdom/gastons-tavern/",
+    "map_coords": { "x": 271, "y": 172 },
+    "last_verified": "2026-06-11",
+    "estimated": true,
+    "alcohol_available": false,
+    "scores": {
+      "purine_score": 7,
+      "alcohol_score": 0,
+      "fructose_score": 8,
+      "dehydration_score": 8
+    },
+    "score_notes": {
+      "purine": "Roasted turkey legs are poultry at the higher end of the Kaneko range.",
+      "alcohol": "LeFou's Brew is a non-alcoholic frozen apple-juice beverage despite the 'Tavern' name.",
+      "fructose": "LeFou's Brew and warm cinnamon rolls are very high in added sugar.",
+      "dehydration": "Turkey legs are heavily brined and extremely high in sodium."
+    }
+  },
+  {
+    "id": "prince-erics-village-market",
+    "name": "Prince Eric's Village Market",
+    "land": "fantasyland",
+    "service_type": "snack_cart",
+    "disney_url": "https://disneyworld.disney.go.com/dining/magic-kingdom/prince-erics-village-market/",
+    "map_coords": { "x": 218, "y": 397 },
+    "last_verified": "2026-06-11",
+    "estimated": true,
+    "alcohol_available": false,
+    "scores": {
+      "purine_score": 2,
+      "alcohol_score": 0,
+      "fructose_score": 5,
+      "dehydration_score": 4
+    },
+    "score_notes": {
+      "purine": "Whole fruit, churros, and pretzels are low-purine grain/fruit items.",
+      "alcohol": "No alcohol served.",
+      "fructose": "Churros and fruit cups carry moderate natural and added sugar.",
+      "dehydration": "Soft pretzels and popcorn add moderate sodium."
+    }
+  },
+  {
+    "id": "storybook-treats",
+    "name": "Storybook Treats",
+    "land": "fantasyland",
+    "service_type": "kiosk",
+    "disney_url": "https://disneyworld.disney.go.com/dining/magic-kingdom/storybook-treats/",
+    "map_coords": { "x": 353, "y": 397 },
+    "last_verified": "2026-06-11",
+    "estimated": true,
+    "alcohol_available": false,
+    "scores": {
+      "purine_score": 1,
+      "alcohol_score": 0,
+      "fructose_score": 8,
+      "dehydration_score": 2
+    },
+    "score_notes": {
+      "purine": "Ice cream and soft-serve are dairy-based — very low purine.",
+      "alcohol": "No alcohol served.",
+      "fructose": "Sundaes, floats, and milkshakes are high in added sugar.",
+      "dehydration": "No high-sodium food items."
+    }
+  },
+  {
+    "id": "liberty-tree-tavern",
+    "name": "Liberty Tree Tavern",
+    "land": "liberty_square",
+    "service_type": "table_service",
+    "disney_url": "https://disneyworld.disney.go.com/dining/magic-kingdom/liberty-tree-tavern/",
+    "map_coords": { "x": 428, "y": 230 },
+    "last_verified": "2026-06-11",
+    "estimated": true,
+    "alcohol_available": true,
+    "scores": {
+      "purine_score": 7,
+      "alcohol_score": 5,
+      "fructose_score": 5,
+      "dehydration_score": 7
+    },
+    "score_notes": {
+      "purine": "Family-style Thanksgiving feast with turkey, pot roast, and ham (poultry and red meat, moderate-to-high purine).",
+      "alcohol": "Beer and wine are offered with the family-style meal.",
+      "fructose": "Seasonal pie and sweetened cranberry relish; soda available.",
+      "dehydration": "Roasted meats and gravies are high in sodium."
+    }
+  },
+  {
+    "id": "columbia-harbour-house",
+    "name": "Columbia Harbour House",
+    "land": "liberty_square",
+    "service_type": "quick_service",
+    "disney_url": "https://disneyworld.disney.go.com/dining/magic-kingdom/columbia-harbour-house/",
+    "map_coords": { "x": 500, "y": 150 },
+    "last_verified": "2026-06-11",
+    "estimated": true,
+    "alcohol_available": false,
+    "scores": {
+      "purine_score": 6,
+      "alcohol_score": 0,
+      "fructose_score": 4,
+      "dehydration_score": 6
+    },
+    "score_notes": {
+      "purine": "Fried fish (moderate-purine fish) and a lobster roll (moderate-purine shellfish) anchor the menu; a vegetarian chili offers a lower-purine option.",
+      "alcohol": "No alcohol served.",
+      "fructose": "Mostly savory; soda and sweet tea are the main sugar sources.",
+      "dehydration": "Fried fish, chowder, and chips are high in sodium."
+    }
+  },
+  {
+    "id": "sleepy-hollow",
+    "name": "Sleepy Hollow",
+    "land": "liberty_square",
+    "service_type": "kiosk",
+    "disney_url": "https://disneyworld.disney.go.com/dining/magic-kingdom/sleepy-hollow/",
+    "map_coords": { "x": 552, "y": 307 },
+    "last_verified": "2026-06-11",
+    "estimated": true,
+    "alcohol_available": false,
+    "scores": {
+      "purine_score": 1,
+      "alcohol_score": 0,
+      "fructose_score": 9,
+      "dehydration_score": 2
+    },
+    "score_notes": {
+      "purine": "Waffles, funnel cakes, and ice cream are very low-purine.",
+      "alcohol": "No alcohol served.",
+      "fructose": "Funnel cakes and chocolate-hazelnut waffles are among the highest sugar items in the park.",
+      "dehydration": "No high-sodium food items."
+    }
+  },
+  {
+    "id": "pecos-bill",
+    "name": "Pecos Bill Tall Tale Inn and Café",
+    "land": "frontierland",
+    "service_type": "quick_service",
+    "disney_url": "https://disneyworld.disney.go.com/dining/magic-kingdom/pecos-bills-tall-tale-inn-and-cafe/",
+    "map_coords": { "x": 712, "y": 288 },
+    "last_verified": "2026-06-11",
+    "estimated": true,
+    "alcohol_available": false,
+    "scores": {
+      "purine_score": 6,
+      "alcohol_score": 0,
+      "fructose_score": 4,
+      "dehydration_score": 7
+    },
+    "score_notes": {
+      "purine": "Beef taco salads, burgers, and nachos are red meat, moderate purine.",
+      "alcohol": "No alcohol served.",
+      "fructose": "Mostly savory build-your-own bowls; soda is the main sugar source.",
+      "dehydration": "Nacho toppings bar (cheese sauce, salsa, beans) is high in sodium."
+    }
+  },
+  {
+    "id": "golden-oak-outpost",
+    "name": "Golden Oak Outpost",
+    "land": "frontierland",
+    "service_type": "kiosk",
+    "disney_url": "https://disneyworld.disney.go.com/dining/magic-kingdom/golden-oak-outpost/",
+    "map_coords": { "x": 691, "y": 390 },
+    "last_verified": "2026-06-11",
+    "estimated": true,
+    "alcohol_available": false,
+    "scores": {
+      "purine_score": 5,
+      "alcohol_score": 0,
+      "fructose_score": 6,
+      "dehydration_score": 6
+    },
+    "score_notes": {
+      "purine": "Chicken nuggets and fritters are poultry-based, moderate purine.",
+      "alcohol": "No alcohol served.",
+      "fructose": "Apple and pineapple fritters are deep-fried and sugar-glazed.",
+      "dehydration": "Fried items and dipping sauces add moderate sodium."
+    }
+  },
+  {
+    "id": "westward-ho",
+    "name": "Westward Ho Refreshments",
+    "land": "frontierland",
+    "service_type": "snack_cart",
+    "disney_url": "https://disneyworld.disney.go.com/dining/magic-kingdom/westward-ho/",
+    "map_coords": { "x": 867, "y": 402 },
+    "last_verified": "2026-06-11",
+    "estimated": true,
+    "alcohol_available": false,
+    "scores": {
+      "purine_score": 7,
+      "alcohol_score": 0,
+      "fructose_score": 5,
+      "dehydration_score": 8
+    },
+    "score_notes": {
+      "purine": "Roasted turkey legs are poultry at the higher end of the Kaneko range.",
+      "alcohol": "No alcohol served.",
+      "fructose": "Churros add a moderate sugar load.",
+      "dehydration": "Turkey legs are heavily brined and extremely high in sodium."
+    }
+  },
+  {
+    "id": "skipper-canteen",
+    "name": "Jungle Navigation Co. Ltd. Skipper Canteen",
+    "land": "adventureland",
+    "service_type": "table_service",
+    "disney_url": "https://disneyworld.disney.go.com/dining/magic-kingdom/skipper-canteen/",
+    "map_coords": { "x": 809, "y": 583 },
+    "last_verified": "2026-06-11",
+    "estimated": true,
+    "alcohol_available": true,
+    "scores": {
+      "purine_score": 7,
+      "alcohol_score": 8,
+      "fructose_score": 6,
+      "dehydration_score": 6
+    },
+    "score_notes": {
+      "purine": "Tamarind shrimp (moderate-purine shellfish) and char siu pork ribs (red meat) anchor the dinner menu.",
+      "alcohol": "Themed cocktails (e.g., 'Schweitzer Slammer') are a signature, prominently-marketed part of the experience.",
+      "fructose": "Tropical cocktails and desserts (e.g., 'Tipsy Tile' chocolate cake) carry meaningful sugar.",
+      "dehydration": "Marinades and sauces are high in sodium."
+    }
+  },
+  {
+    "id": "tortuga-tavern",
+    "name": "Tortuga Tavern",
+    "land": "adventureland",
+    "service_type": "quick_service",
+    "disney_url": "https://disneyworld.disney.go.com/dining/magic-kingdom/tortuga-tavern/",
+    "map_coords": { "x": 717, "y": 625 },
+    "last_verified": "2026-06-11",
+    "estimated": true,
+    "alcohol_available": true,
+    "scores": {
+      "purine_score": 6,
+      "alcohol_score": 6,
+      "fructose_score": 5,
+      "dehydration_score": 7
+    },
+    "score_notes": {
+      "purine": "Pulled pork and chicken (red meat/poultry) are moderate purine.",
+      "alcohol": "Rum-based specialty drinks are offered when this seasonal location is open.",
+      "fructose": "BBQ sauces and soda contribute moderate sugar.",
+      "dehydration": "BBQ pulled pork and sauces are high in sodium."
+    }
+  },
+  {
+    "id": "sunshine-tree-terrace",
+    "name": "Sunshine Tree Terrace",
+    "land": "adventureland",
+    "service_type": "kiosk",
+    "disney_url": "https://disneyworld.disney.go.com/dining/magic-kingdom/sunshine-tree-terrace/",
+    "map_coords": { "x": 769, "y": 769 },
+    "last_verified": "2026-06-11",
+    "estimated": true,
+    "alcohol_available": false,
+    "scores": {
+      "purine_score": 1,
+      "alcohol_score": 0,
+      "fructose_score": 7,
+      "dehydration_score": 2
+    },
+    "score_notes": {
+      "purine": "Citrus swirl floats are fruit/dairy based — very low purine.",
+      "alcohol": "No alcohol served.",
+      "fructose": "Citrus swirl (soft serve + frozen orange juice) is high in added and natural sugar.",
+      "dehydration": "No high-sodium food items."
+    }
+  },
+  {
+    "id": "aloha-isle",
+    "name": "Aloha Isle",
+    "land": "adventureland",
+    "service_type": "kiosk",
+    "disney_url": "https://disneyworld.disney.go.com/dining/magic-kingdom/aloha-isle/",
+    "map_coords": { "x": 647, "y": 603 },
+    "last_verified": "2026-06-11",
+    "estimated": true,
+    "alcohol_available": false,
+    "scores": {
+      "purine_score": 1,
+      "alcohol_score": 0,
+      "fructose_score": 8,
+      "dehydration_score": 2
+    },
+    "score_notes": {
+      "purine": "Dole Whip (pineapple soft serve) is fruit/dairy based — very low purine.",
+      "alcohol": "No alcohol served.",
+      "fructose": "Dole Whip floats are among the highest sugar treats in the park.",
+      "dehydration": "No high-sodium food items."
+    }
+  }
+]
