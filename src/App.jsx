@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { lazy, Suspense, useState } from 'react';
 import TogglePanel from './components/TogglePanel.jsx';
 import Legend from './components/Legend.jsx';
 import VenueCard from './components/VenueCard.jsx';
@@ -6,6 +6,10 @@ import ListView from './components/ListView.jsx';
 import MapView from './components/MapView.jsx';
 import venues from './data/venues.json';
 import menuItems from './data/menu_items.json';
+
+// Lazy-loaded so the Leaflet/react-leaflet bundle only downloads when the
+// GPS Map tab is opened.
+const GPSMapView = lazy(() => import('./components/GPSMapView.jsx'));
 
 const DEFAULT_TOGGLES = { purines: true, alcohol: true, fructose: true };
 
@@ -59,22 +63,44 @@ function App() {
           >
             List View
           </button>
+          <button
+            type="button"
+            role="tab"
+            aria-selected={view === 'gps'}
+            onClick={() => setView('gps')}
+            className={`px-4 py-2 rounded-lg text-sm font-semibold ${
+              view === 'gps' ? 'bg-indigo-600 text-white' : 'bg-white text-gray-600 border border-gray-300'
+            }`}
+          >
+            GPS Map
+          </button>
         </div>
 
-        {view === 'map' ? (
+        {view === 'map' && (
           <MapView
             venues={venues}
             activeToggles={activeToggles}
             strictnessMode={strictnessMode}
             onSelectVenue={setSelectedVenue}
           />
-        ) : (
+        )}
+        {view === 'list' && (
           <ListView
             venues={venues}
             activeToggles={activeToggles}
             strictnessMode={strictnessMode}
             onSelectVenue={setSelectedVenue}
           />
+        )}
+        {view === 'gps' && (
+          <Suspense fallback={<div className="bg-white rounded-xl shadow p-4 text-sm text-gray-500">Loading map&hellip;</div>}>
+            <GPSMapView
+              venues={venues}
+              activeToggles={activeToggles}
+              strictnessMode={strictnessMode}
+              onSelectVenue={setSelectedVenue}
+            />
+          </Suspense>
         )}
 
         <Legend />

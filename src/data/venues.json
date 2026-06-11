@@ -20,7 +20,8 @@
       "alcohol": "No alcohol served.",
       "fructose": "Fountain sodas, lemonade, and a brownie sundae push fructose load to moderate-high.",
       "dehydration": "Hot dogs, fries, and chili are high in sodium."
-    }
+    },
+    "gps_coords": { "lat": 28.417075, "lng": -81.58091 }
   },
   {
     "id": "crystal-palace",
@@ -43,7 +44,8 @@
       "alcohol": "Beer and wine are available at lunch/dinner but not a focal point of the meal.",
       "fructose": "Buffet dessert table (cakes, cobblers) and soda fountain contribute meaningfully.",
       "dehydration": "Varied buffet sodium; carved meats and gravies push it to moderate."
-    }
+    },
+    "gps_coords": { "lat": 28.416552, "lng": -81.581602 }
   },
   {
     "id": "main-street-bakery",
@@ -66,7 +68,8 @@
       "alcohol": "No alcohol served.",
       "fructose": "Frappuccinos, sweetened espresso drinks, and pastries carry a high sugar load.",
       "dehydration": "Cured-meat sandwiches and salty pastries add moderate sodium."
-    }
+    },
+    "gps_coords": { "lat": 28.417133, "lng": -81.581176 }
   },
   {
     "id": "plaza-restaurant",
@@ -89,7 +92,8 @@
       "alcohol": "No alcohol served.",
       "fructose": "Famous for ice cream sundaes, milkshakes, and floats — high sugar load.",
       "dehydration": "Burgers and fries are high in sodium."
-    }
+    },
+    "gps_coords": { "lat": 28.4168, "lng": -81.580572 }
   },
   {
     "id": "tonys-town-square",
@@ -112,7 +116,8 @@
       "alcohol": "Beer and wine are offered as part of the Italian dining experience.",
       "fructose": "Tiramisu and soda are available, but not the centerpiece of the menu.",
       "dehydration": "Tomato sauces and parmesan add moderate sodium."
-    }
+    },
+    "gps_coords": { "lat": 28.416881, "lng": -81.58174 }
   },
   {
     "id": "cosmic-rays-starlight-cafe",
@@ -135,7 +140,8 @@
       "alcohol": "No alcohol served.",
       "fructose": "Soft drinks and milkshakes available.",
       "dehydration": "Rotisserie chicken and ribs are heavily seasoned/salted."
-    }
+    },
+    "gps_coords": { "lat": 28.418538, "lng": -81.578347 }
   },
   {
     "id": "the-lunching-pad",
@@ -158,7 +164,8 @@
       "alcohol": "No alcohol served.",
       "fructose": "Frozen lemonade and slushies are sugar-heavy.",
       "dehydration": "Soft pretzels with cheese sauce are very high in sodium."
-    }
+    },
+    "gps_coords": { "lat": 28.418997, "lng": -81.57824 }
   },
   {
     "id": "tomorrowland-terrace",
@@ -181,7 +188,8 @@
       "alcohol": "Beer is served when this seasonal location is open.",
       "fructose": "Standard fountain soda menu.",
       "dehydration": "Burgers and fries are high in sodium."
-    }
+    },
+    "gps_coords": { "lat": 28.419083, "lng": -81.578992 }
   },
   {
     "id": "cool-ship",
@@ -204,7 +212,8 @@
       "alcohol": "No alcohol served.",
       "fructose": "Frozen slushies and specialty sodas are sugar-dense.",
       "dehydration": "No high-sodium food items."
-    }
+    },
+    "gps_coords": { "lat": 28.418461, "lng": -81.578941 }
   },
   {
     "id": "auntie-gravitys",
@@ -227,7 +236,8 @@
       "alcohol": "No alcohol served.",
       "fructose": "Soft-serve sundaes and floats are high in added sugar.",
       "dehydration": "No high-sodium food items."
-    }
+    },
+    "gps_coords": { "lat": 28.419272, "lng": -81.578675 }
   },
   {
     "id": "be-our-guest",
@@ -250,7 +260,8 @@
       "alcohol": "Wine is served at dinner; not the focus of the meal.",
       "fructose": "Signature 'The Grey Stuff' dessert and sweetened lemonade contribute to fructose load.",
       "dehydration": "Rich sauces and cured meats (croque monsieur at lunch) are high in sodium."
-    }
+    },
+    "gps_coords": { "lat": 28.420827, "lng": -81.580393 }
   },
   {
     "id": "pinocchio-village-haus",
@@ -273,7 +284,8 @@
       "alcohol": "No alcohol served.",
       "fructose": "Standard fountain soda menu.",
       "dehydration": "Flatbreads with cured meat and cheese are high in sodium."
-    }
+    },
+    "gps_coords": { "lat": 28.420948, "lng": -81.579625 }
   },
   {
     "id": "friars-nook",
@@ -296,7 +308,8 @@
       "alcohol": "No alcohol served.",
       "fructose": "Mostly savory; soda is the main sugar source.",
       "dehydration": "Chili-cheese tots are extremely high in sodium."
-    }
+    },
+    "gps_coords": { "lat": 28.421403, "lng": -81.579671 }
   },
   {
     "id": "gastons-tavern",
@@ -319,7 +332,8 @@
       "alcohol": "LeFou's Brew is a non-alcoholic frozen apple-juice beverage despite the 'Tavern' name.",
       "fructose": "LeFou's Brew and warm cinnamon rolls are very high in added sugar.",
       "dehydration": "Turkey legs are heavily brined and extremely high in sodium."
-    }
+    },
+    "gps_coords": { "lat": 28.421863, "lng": -81.579686 }
   },
   {
     "id": "prince-erics-village-market",
@@ -342,7 +356,8 @@
       "alcohol": "No alcohol served.",
       "fructose": "Churros and fruit cups carry moderate natural and added sugar.",
       "dehydration": "Soft pretzels and popcorn add moderate sodium."
-    }
+    },
+    "gps_coords": { "lat": 28.420849, "lng": -81.579958 }
   },
   {
     "id": "storybook-treats",
@@ -365,7 +380,8 @@
       "alcohol": "No alcohol served.",
       "fructose": "Sundaes, floats, and milkshakes are high in added sugar.",
       "dehydration": "No high-sodium food items."
-    }
+    },
+    "gps_coords": { "lat": 28.420849, "lng": -81.579266 }
   },
   {
     "id": "liberty-tree-tavern",
@@ -388,7 +404,8 @@
       "alcohol": "Beer and wine are offered with the family-style meal.",
       "fructose": "Seasonal pie and sweetened cranberry relish; soda available.",
       "dehydration": "Roasted meats and gravies are high in sodium."
-    }
+    },
+    "gps_coords": { "lat": 28.420939, "lng": -81.582457 }
   },
   {
     "id": "columbia-harbour-house",
@@ -411,7 +428,8 @@
       "alcohol": "No alcohol served.",
       "fructose": "Mostly savory; soda and sweet tea are the main sugar sources.",
       "dehydration": "Fried fish, chowder, and chips are high in sodium."
-    }
+    },
+    "gps_coords": { "lat": 28.421299, "lng": -81.582088 }
   },
   {
     "id": "sleepy-hollow",
@@ -434,7 +452,8 @@
       "alcohol": "No alcohol served.",
       "fructose": "Funnel cakes and chocolate-hazelnut waffles are among the highest sugar items in the park.",
       "dehydration": "No high-sodium food items."
-    }
+    },
+    "gps_coords": { "lat": 28.420592, "lng": -81.581822 }
   },
   {
     "id": "pecos-bill",
@@ -457,7 +476,8 @@
       "alcohol": "No alcohol served.",
       "fructose": "Mostly savory build-your-own bowls; soda is the main sugar source.",
       "dehydration": "Nacho toppings bar (cheese sauce, salsa, beans) is high in sodium."
-    }
+    },
+    "gps_coords": { "lat": 28.420276, "lng": -81.584706 }
   },
   {
     "id": "golden-oak-outpost",
@@ -480,7 +500,8 @@
       "alcohol": "No alcohol served.",
       "fructose": "Apple and pineapple fritters are deep-fried and sugar-glazed.",
       "dehydration": "Fried items and dipping sauces add moderate sodium."
-    }
+    },
+    "gps_coords": { "lat": 28.419817, "lng": -81.584814 }
   },
   {
     "id": "westward-ho",
@@ -503,7 +524,8 @@
       "alcohol": "No alcohol served.",
       "fructose": "Churros add a moderate sugar load.",
       "dehydration": "Turkey legs are heavily brined and extremely high in sodium."
-    }
+    },
+    "gps_coords": { "lat": 28.419763, "lng": -81.583913 }
   },
   {
     "id": "skipper-canteen",
@@ -526,7 +548,8 @@
       "alcohol": "Themed cocktails (e.g., 'Schweitzer Slammer') are a signature, prominently-marketed part of the experience.",
       "fructose": "Tropical cocktails and desserts (e.g., 'Tipsy Tile' chocolate cake) carry meaningful sugar.",
       "dehydration": "Marinades and sauces are high in sodium."
-    }
+    },
+    "gps_coords": { "lat": 28.417978, "lng": -81.582974 }
   },
   {
     "id": "tortuga-tavern",
@@ -549,7 +572,8 @@
       "alcohol": "Rum-based specialty drinks are offered when this seasonal location is open.",
       "fructose": "BBQ sauces and soda contribute moderate sugar.",
       "dehydration": "BBQ pulled pork and sauces are high in sodium."
-    }
+    },
+    "gps_coords": { "lat": 28.417789, "lng": -81.583446 }
   },
   {
     "id": "sunshine-tree-terrace",
@@ -572,7 +596,8 @@
       "alcohol": "No alcohol served.",
       "fructose": "Citrus swirl (soft serve + frozen orange juice) is high in added and natural sugar.",
       "dehydration": "No high-sodium food items."
-    }
+    },
+    "gps_coords": { "lat": 28.41714, "lng": -81.583179 }
   },
   {
     "id": "aloha-isle",
@@ -595,6 +620,7 @@
       "alcohol": "No alcohol served.",
       "fructose": "Dole Whip floats are among the highest sugar treats in the park.",
       "dehydration": "No high-sodium food items."
-    }
+    },
+    "gps_coords": { "lat": 28.418077, "lng": -81.583805 }
   }
 ]

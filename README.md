@@ -32,14 +32,22 @@ dietary triggers.
 2. **Pick a strictness mode** — *Strict* weighs all three factors equally;
    *Moderate* and *Flexible* progressively de-emphasize alcohol and
    fructose for patients with well-controlled gout.
-3. **Browse the map or list** — venues are color-coded green (lower risk),
-   yellow (moderate risk), or red (higher risk), with ✅ ⚠️ ❌ icons for
-   colorblind accessibility.
+3. **Browse the abstract map, GPS map, or list** — venues are color-coded
+   green (lower risk), yellow (moderate risk), or red (higher risk), with
+   ✅ ⚠️ ❌ icons for colorblind accessibility. The GPS Map tab plots venues
+   on a real OpenStreetMap base layer.
 4. **Tap a venue** for a score breakdown, higher/lower-risk menu
    highlights, and a link to the official Disney menu page.
 
 See [`docs/scoring_methodology.md`](docs/scoring_methodology.md) for the
 full clinical rationale and citations behind the scoring model.
+
+> ⚠️ **GPS Map note:** The `gps_coords` in `src/data/venues.json` are
+> approximate placeholders derived from the venue's position within its
+> land relative to a verified Cinderella Castle anchor point — they have
+> **not** been checked against satellite imagery or surveyed park data.
+> Do not use the GPS Map for in-park navigation until these are verified
+> (e.g., against OpenStreetMap node positions or on-site GPS readings).
 
 ---
 
