@@ -1,7 +1,6 @@
 import { lazy, Suspense, useState } from 'react';
 import TogglePanel from './components/TogglePanel.jsx';
 import Legend from './components/Legend.jsx';
-import VenueCard from './components/VenueCard.jsx';
 import ListView from './components/ListView.jsx';
 import MapView from './components/MapView.jsx';
 import venues from './data/venues.json';
@@ -10,6 +9,8 @@ import menuItems from './data/menu_items.json';
 // Lazy-loaded so the Leaflet/react-leaflet bundle only downloads when the
 // GPS Map tab is opened.
 const GPSMapView = lazy(() => import('./components/GPSMapView.jsx'));
+// Lazy-loaded so the Recharts bundle only downloads when a venue card is opened.
+const VenueCard = lazy(() => import('./components/VenueCard.jsx'));
 
 const DEFAULT_TOGGLES = { purines: true, alcohol: true, fructose: true };
 
@@ -107,13 +108,15 @@ function App() {
       </main>
 
       {selectedVenue && (
-        <VenueCard
-          venue={selectedVenue}
-          menuItems={menuItems}
-          activeToggles={activeToggles}
-          strictnessMode={strictnessMode}
-          onClose={() => setSelectedVenue(null)}
-        />
+        <Suspense fallback={null}>
+          <VenueCard
+            venue={selectedVenue}
+            menuItems={menuItems}
+            activeToggles={activeToggles}
+            strictnessMode={strictnessMode}
+            onClose={() => setSelectedVenue(null)}
+          />
+        </Suspense>
       )}
     </div>
   );
