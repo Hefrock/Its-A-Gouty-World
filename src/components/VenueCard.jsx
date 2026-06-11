@@ -29,8 +29,12 @@ export default function VenueCard({ venue, menuItems, activeToggles, strictnessM
 
   const items = menuItems.filter((item) => item.venue_id === venue.id);
   const sorted = [...items].sort((a, b) => itemRisk(b) - itemRisk(a));
-  const highest = sorted.slice(0, 3);
-  const lowest = sorted.slice(-3).reverse();
+  // Split into non-overlapping halves (capped at 3 each) so a menu item never
+  // appears in both the higher-risk and lower-risk lists. With small menus
+  // (most venues have 3-4 items), a single middle item may be omitted.
+  const maxEach = sorted.length === 1 ? 1 : Math.min(3, Math.floor(sorted.length / 2));
+  const highest = sorted.slice(0, maxEach);
+  const lowest = sorted.slice(sorted.length - maxEach).reverse();
 
   const land = LANDS[venue.land];
 
