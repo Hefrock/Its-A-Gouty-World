@@ -1,0 +1,54 @@
+name: Data Refresh (GPS + USDA)
+
+on:
+  workflow_dispatch:
+    inputs:
+      usda_api_key:
+        description: 'USDA FoodData Central API key (optional; falls back to the rate-limited DEMO_KEY)'
+        required: false
+        type: string
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install pipeline dependencies
+        run: pip install -r scripts/requirements.txt
+
+      - name: Verify GPS coordinates against OpenStreetMap
+        run: python3 scripts/verify_gps_coords.py
+
+      - name: Enrich menu items with USDA nutrient data
+        run: python3 scripts/enrich_usda.py --api-key "${{ inputs.usda_api_key || secrets.USDA_API_KEY || 'DEMO_KEY' }}"
+
+      - name: Open pull request with refreshed data
+        uses: peter-evans/create-pull-request@v6
+        with:
+          commit-message: "Refresh GPS coordinates and USDA menu enrichment data"
+          title: "Automated data refresh: GPS coordinates + USDA enrichment"
+          body: |
+            Automated run of `scripts/verify_gps_coords.py` and `scripts/enrich_usda.py`.
+
+            - See `data_sources/gps_verification_report.md` for which venues were
+              matched/updated against OpenStreetMap and which still need manual review.
+            - USDA nutrient enrichment results are merged into `src/data/menu_items.json`;
+              raw responses are cached under `data_sources/usda_cache/` (gitignored).
+
+            Please review the diff — especially any venues flagged in the GPS report —
+            before merging.
+          branch: automated/data-refresh
+          delete-branch: true
+          add-paths: |
+            src/data/venues.json
+            src/data/menu_items.json
+            data_sources/gps_verification_report.md

@@ -21,8 +21,6 @@ dietary triggers.
 
 ![Map view of It's a Gouty World, showing the Magic Kingdom hub-and-spoke layout with color-coded venue risk markers](docs/screenshot-map.png)
 
-*(Add a screenshot to `docs/screenshot-map.png` after your first deploy.)*
-
 ---
 
 ## How it works

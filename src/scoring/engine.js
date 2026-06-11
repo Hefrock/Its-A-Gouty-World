@@ -32,7 +32,7 @@ export function computeVenueScore(venue, activeToggles, strictnessMode) {
   }
 
   if (totalWeight === 0) {
-    return { score: 0, tier: 'green', label: 'No factors selected', ...scoreToTier(0) };
+    return { ...scoreToTier(0), score: 0, label: 'No factors selected' };
   }
 
   const composite = weightedScore / totalWeight;
