@@ -48,7 +48,7 @@ def slugify(name: str) -> str:
     return slug.strip("-")
 
 
-def fetch_food(session: requests.Session, query: str, api_key: str) -> dict | None:
+def fetch_food(session: requests.Session, query: str, api_key: str, retries: int = 3) -> dict | None:
     # Build the query string manually with %20 (not requests' default '+') for
     # spaces -- USDA's API rejects dataType values like "Survey (FNDDS)" with a
     # 400 if the space is sent as a literal '+'.
@@ -60,15 +60,45 @@ def fetch_food(session: requests.Session, query: str, api_key: str) -> dict | No
         ("dataType", "SR Legacy"),
     ]
     qs = urlencode(params, quote_via=quote)
-    resp = session.get(f"{USDA_SEARCH_URL}?{qs}", timeout=15)
-    if not resp.ok:
+    url = f"{USDA_SEARCH_URL}?{qs}"
+
+    last_exc: Exception | None = None
+    for attempt in range(retries):
+        try:
+            resp = session.get(url, timeout=15)
+        except requests.RequestException as exc:
+            last_exc = exc
+            session.close()
+            time.sleep(REQUEST_DELAY_SECONDS)
+            continue
+
+        if resp.ok:
+            data = resp.json()
+            foods = data.get("foods") or []
+            return foods[0] if foods else None
+
+        # USDA returns proper JSON error bodies for genuine request problems
+        # (bad api_key, malformed params, etc). A bare nginx HTML error page
+        # for the *same* well-formed query is an intermittent infrastructure
+        # hiccup (e.g. a stale pooled keep-alive connection getting rejected)
+        # -- close the pool and retry on a fresh connection rather than
+        # treating it as a permanent failure for this item.
+        if "application/json" not in resp.headers.get("Content-Type", ""):
+            last_exc = requests.HTTPError(
+                f"{resp.status_code} {resp.reason} for url: {resp.url}\n"
+                f"Response body: {resp.text[:500]}",
+                response=resp,
+            )
+            session.close()
+            time.sleep(REQUEST_DELAY_SECONDS)
+            continue
+
         raise requests.HTTPError(
             f"{resp.status_code} {resp.reason} for url: {resp.url}\nResponse body: {resp.text[:500]}",
             response=resp,
         )
-    data = resp.json()
-    foods = data.get("foods") or []
-    return foods[0] if foods else None
+
+    raise last_exc
 
 
 def extract_nutrients(food: dict) -> dict:
@@ -104,7 +134,10 @@ def main():
                 food = fetch_food(session, item["item_name"], args.api_key)
             except requests.RequestException as exc:
                 print(f"  [warn] USDA query failed for '{item['item_name']}': {exc}")
-                food = None
+                # Don't cache transient/connection failures -- leave this item
+                # uncached so it gets retried on the next run.
+                time.sleep(REQUEST_DELAY_SECONDS)
+                continue
             cache_path.write_text(json.dumps(food, indent=2), encoding="utf-8")
             time.sleep(REQUEST_DELAY_SECONDS)
 
