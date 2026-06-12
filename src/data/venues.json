@@ -69,7 +69,7 @@
       "fructose": "Frappuccinos, sweetened espresso drinks, and pastries carry a high sugar load.",
       "dehydration": "Cured-meat sandwiches and salty pastries add moderate sodium."
     },
-    "gps_coords": { "lat": 28.417133, "lng": -81.581176 }
+    "gps_coords": { "lat": 28.418037, "lng": -81.581125 }
   },
   {
     "id": "plaza-restaurant",
@@ -192,26 +192,26 @@
     "gps_coords": { "lat": 28.417972, "lng": -81.580468 }
   },
   {
-    "id": "cool-ship",
-    "name": "Cool Ship",
+    "id": "astrofizz",
+    "name": "AstroFizz",
     "land": "tomorrowland",
     "service_type": "kiosk",
-    "disney_url": "https://disneyworld.disney.go.com/dining/magic-kingdom/cool-ship/",
+    "disney_url": "https://disneyworld.disney.go.com/dining/magic-kingdom/astrofizz/",
     "map_coords": { "x": 172, "y": 729 },
-    "last_verified": "2026-06-11",
+    "last_verified": "2026-06-12",
     "estimated": true,
     "alcohol_available": false,
     "scores": {
       "purine_score": 1,
       "alcohol_score": 0,
       "fructose_score": 8,
-      "dehydration_score": 2
+      "dehydration_score": 3
     },
     "score_notes": {
-      "purine": "Beverage-only kiosk; negligible purine content.",
+      "purine": "Snack/beverage kiosk; churro and frozen slushies are negligible purine sources.",
       "alcohol": "No alcohol served.",
-      "fructose": "Frozen slushies and specialty sodas are sugar-dense.",
-      "dehydration": "No high-sodium food items."
+      "fructose": "Frozen slushies and the signature Cherry Cola Churro are sugar-dense; diet fountain options available.",
+      "dehydration": "Popcorn adds modest sodium; otherwise low-sodium snacks and beverages."
     },
     "gps_coords": { "lat": 28.418461, "lng": -81.578941 }
   },

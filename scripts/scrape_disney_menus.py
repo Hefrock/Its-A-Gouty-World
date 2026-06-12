@@ -66,7 +66,7 @@ FALLBACK_VENUES = [
     {"name": "Cosmic Ray's Starlight Café", "land": "tomorrowland", "service_type": "quick_service"},
     {"name": "The Lunching Pad", "land": "tomorrowland", "service_type": "snack_cart"},
     {"name": "Tomorrowland Terrace Restaurant", "land": "tomorrowland", "service_type": "quick_service"},
-    {"name": "Cool Ship", "land": "tomorrowland", "service_type": "kiosk"},
+    {"name": "AstroFizz", "land": "tomorrowland", "service_type": "kiosk"},
     {"name": "Auntie Gravity's Galactic Goodies", "land": "tomorrowland", "service_type": "kiosk"},
 ]
 
