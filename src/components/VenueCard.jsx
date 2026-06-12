@@ -10,6 +10,12 @@ const SERVICE_TYPE_LABELS = {
   kiosk: 'Kiosk',
 };
 
+const OPERATING_STATUS_LABELS = {
+  temporarily_closed: '⚠️ Currently Closed',
+  seasonal_pause: '⚠️ Seasonal Closure',
+  limited_service: '⚠️ Limited Service',
+};
+
 // Rough relative-risk score for ranking individual menu items (not part of
 // the venue composite score, which is computed from venue.scores only).
 function itemRisk(item) {
@@ -57,6 +63,15 @@ export default function VenueCard({ venue, menuItems, activeToggles, strictnessM
             &times;
           </button>
         </div>
+
+        {venue.operating_status && venue.operating_status !== 'open' && (
+          <div className="mb-4 rounded-md border border-amber-300 bg-amber-50 px-3 py-2 text-sm text-amber-800">
+            <p className="font-semibold">
+              {OPERATING_STATUS_LABELS[venue.operating_status] ?? 'Status update'}
+            </p>
+            {venue.status_note && <p className="mt-1">{venue.status_note}</p>}
+          </div>
+        )}
 
         <div className={`inline-flex items-center gap-2 px-3 py-1 rounded-full border ${result.bgClass} ${result.textClass} ${result.borderClass} text-sm font-semibold mb-4`}>
           <span aria-hidden="true">{result.icon}</span>
