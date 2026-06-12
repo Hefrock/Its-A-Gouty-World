@@ -174,9 +174,11 @@
     "service_type": "quick_service",
     "disney_url": "https://disneyworld.disney.go.com/dining/magic-kingdom/tomorrowland-terrace-restaurant/",
     "map_coords": { "x": 162, "y": 591 },
-    "last_verified": "2026-06-11",
+    "last_verified": "2026-06-12",
     "estimated": true,
     "alcohol_available": true,
+    "operating_status": "limited_service",
+    "status_note": "Quick-service walk-up dining is currently suspended; the location is now used only for after-hours dessert party events, not regular meals.",
     "scores": {
       "purine_score": 6,
       "alcohol_score": 5,
@@ -558,9 +560,11 @@
     "service_type": "quick_service",
     "disney_url": "https://disneyworld.disney.go.com/dining/magic-kingdom/tortuga-tavern/",
     "map_coords": { "x": 717, "y": 625 },
-    "last_verified": "2026-06-11",
+    "last_verified": "2026-06-12",
     "estimated": true,
     "alcohol_available": true,
+    "operating_status": "temporarily_closed",
+    "status_note": "Reported closed and boarded up since summer 2024, and removed from the official park map as of 2026. Kept in this dataset in case it reopens — verify current status before planning a visit here.",
     "scores": {
       "purine_score": 6,
       "alcohol_score": 6,
@@ -622,5 +626,151 @@
       "dehydration": "No high-sodium food items."
     },
     "gps_coords": { "lat": 28.41863, "lng": -81.58374 }
+  },
+  {
+    "id": "cheshire-cafe",
+    "name": "Cheshire Café",
+    "land": "fantasyland",
+    "service_type": "kiosk",
+    "disney_url": "https://disneyworld.disney.go.com/dining/magic-kingdom/cheshire-cafe/",
+    "map_coords": { "x": 340, "y": 470 },
+    "last_verified": "2026-06-12",
+    "estimated": true,
+    "alcohol_available": false,
+    "scores": {
+      "purine_score": 1,
+      "alcohol_score": 0,
+      "fructose_score": 8,
+      "dehydration_score": 4
+    },
+    "score_notes": {
+      "purine": "Pastries, a cupcake, and a pepper jack pretzel are grain/dairy based — very low purine.",
+      "alcohol": "No alcohol served.",
+      "fructose": "Tea slushies, a sprinkle-filled cupcake, and a sweetened cold brew drink are high in added sugar.",
+      "dehydration": "The Pepper Jack Pretzel is the only notably salty item."
+    },
+    "gps_coords": { "lat": 28.4204, "lng": -81.5796 }
+  },
+  {
+    "id": "cinderella-royal-table",
+    "name": "Cinderella's Royal Table",
+    "land": "fantasyland",
+    "service_type": "table_service",
+    "disney_url": "https://disneyworld.disney.go.com/dining/magic-kingdom/cinderella-royal-table/",
+    "map_coords": { "x": 250, "y": 330 },
+    "last_verified": "2026-06-12",
+    "estimated": true,
+    "alcohol_available": true,
+    "scores": {
+      "purine_score": 6,
+      "alcohol_score": 3,
+      "fructose_score": 6,
+      "dehydration_score": 6
+    },
+    "score_notes": {
+      "purine": "Prix-fixe dinner centers on filet mignon, crispy pork belly, and a corvina catch-of-the-day (red meat and moderate-purine fish); a cauliflower-quinoa salad is the lower-purine alternative.",
+      "alcohol": "Wine, beer, and specialty cocktails are available for adult guests, but the experience is built around the included non-alcoholic beverage and character visits.",
+      "fructose": "A dessert ('The Clock Strikes Twelve' chocolate tart) is included with every meal.",
+      "dehydration": "Rich sauces, glazes, and smoked-gouda grits push sodium to moderate-high."
+    },
+    "gps_coords": { "lat": 28.4194, "lng": -81.5811 }
+  },
+  {
+    "id": "diamond-horseshoe",
+    "name": "The Diamond Horseshoe",
+    "land": "frontierland",
+    "service_type": "table_service",
+    "disney_url": "https://disneyworld.disney.go.com/dining/magic-kingdom/diamond-horseshoe/",
+    "map_coords": { "x": 600, "y": 260 },
+    "last_verified": "2026-06-12",
+    "estimated": true,
+    "alcohol_available": true,
+    "operating_status": "seasonal_pause",
+    "status_note": "Table-service dining paused May 16, 2026 for the seasonal 'Jessie's Roundup' experience; expected to resume fall 2026. Liberty Tree Tavern next door serves the same all-you-care-to-enjoy menu at the same price during the pause.",
+    "scores": {
+      "purine_score": 7,
+      "alcohol_score": 5,
+      "fructose_score": 6,
+      "dehydration_score": 7
+    },
+    "score_notes": {
+      "purine": "All-you-care-to-enjoy family-style menu of roasted turkey, pot roast, and smoked pork loin (poultry and red meat, moderate-to-high purine).",
+      "alcohol": "Beer and wine are offered with the family-style meal, same as next-door Liberty Tree Tavern.",
+      "fructose": "Toffee cake and sweetened cranberry salad contribute to the fructose load.",
+      "dehydration": "Roasted meats, gravies, and mac and cheese are high in sodium."
+    },
+    "gps_coords": { "lat": 28.4185, "lng": -81.5829 }
+  },
+  {
+    "id": "liberty-square-market",
+    "name": "Liberty Square Market",
+    "land": "liberty_square",
+    "service_type": "snack_cart",
+    "disney_url": "https://disneyworld.disney.go.com/dining/magic-kingdom/liberty-square-market/",
+    "map_coords": { "x": 470, "y": 190 },
+    "last_verified": "2026-06-12",
+    "estimated": true,
+    "alcohol_available": false,
+    "scores": {
+      "purine_score": 6,
+      "alcohol_score": 0,
+      "fructose_score": 4,
+      "dehydration_score": 8
+    },
+    "score_notes": {
+      "purine": "The signature smoked turkey leg (poultry) is a large portion at the higher end of the Kaneko range; an all-beef hot dog adds red meat.",
+      "alcohol": "No alcohol served.",
+      "fructose": "A frozen lemonade slushie is the main sugar source; most other items (fruit, pretzels, cheese) are savory or unsweetened.",
+      "dehydration": "Smoked turkey legs, hot dogs, and pretzels are heavily brined and extremely high in sodium."
+    },
+    "gps_coords": { "lat": 28.4193, "lng": -81.5829 }
+  },
+  {
+    "id": "plaza-ice-cream-parlor",
+    "name": "Plaza Ice Cream Parlor",
+    "land": "main_street",
+    "service_type": "kiosk",
+    "disney_url": "https://disneyworld.disney.go.com/dining/magic-kingdom/plaza-ice-cream-parlor/",
+    "map_coords": { "x": 660, "y": 710 },
+    "last_verified": "2026-06-12",
+    "estimated": true,
+    "alcohol_available": false,
+    "scores": {
+      "purine_score": 1,
+      "alcohol_score": 0,
+      "fructose_score": 9,
+      "dehydration_score": 2
+    },
+    "score_notes": {
+      "purine": "Hand-scooped ice cream, sundaes, and shakes are dairy-based — very low purine.",
+      "alcohol": "No alcohol served.",
+      "fructose": "Sundaes, shakes, and floats are among the highest sugar items in the park.",
+      "dehydration": "No high-sodium food items."
+    },
+    "gps_coords": { "lat": 28.41785, "lng": -81.58075 }
+  },
+  {
+    "id": "beak-and-barrel",
+    "name": "The Beak and Barrel",
+    "land": "adventureland",
+    "service_type": "kiosk",
+    "disney_url": "https://disneyworld.disney.go.com/dining/magic-kingdom/beak-barrel/",
+    "map_coords": { "x": 750, "y": 690 },
+    "last_verified": "2026-06-12",
+    "estimated": true,
+    "alcohol_available": true,
+    "scores": {
+      "purine_score": 2,
+      "alcohol_score": 9,
+      "fructose_score": 7,
+      "dehydration_score": 6
+    },
+    "score_notes": {
+      "purine": "Menu is overwhelmingly drinks; the only foods (corn griddle cakes, plantain chips, flatbread) are grain-based with low purine.",
+      "alcohol": "A pirate-themed cocktail and beer lounge — alcohol is the centerpiece of the entire menu, more prominently than any other Magic Kingdom venue.",
+      "fructose": "Cocktails built on guava, lime, citrus, and ube, plus a dessert-style 'Treasure Trove' drink, carry a high sugar load.",
+      "dehydration": "Salty snacks (caramel popcorn, cotija cheese, dips) alongside alcohol increase dehydration risk."
+    },
+    "gps_coords": { "lat": 28.4176, "lng": -81.5837 }
   }
 ]
