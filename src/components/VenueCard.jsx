@@ -39,7 +39,7 @@ export default function VenueCard({ venue, menuItems, activeToggles, strictnessM
   const land = LANDS[venue.land];
 
   return (
-    <div className="fixed inset-0 z-50 flex items-end sm:items-center justify-center bg-black/40">
+    <div className="fixed inset-0 z-[1100] flex items-end sm:items-center justify-center bg-black/40">
       <div className="bg-white w-full sm:max-w-lg sm:rounded-xl rounded-t-xl shadow-xl max-h-[90vh] overflow-y-auto p-5">
         <div className="flex items-start justify-between gap-2 mb-2">
           <div>
