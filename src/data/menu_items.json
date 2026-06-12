@@ -459,7 +459,10 @@
     "is_ssb": false,
     "sugar_g": 35,
     "sodium_mg": 150,
-    "notes": "Signature churro rolled in cherry sugar with Coca-Cola Cherry icing and popping candy; high sugar, low purine."
+    "notes": "Signature churro rolled in cherry sugar with Coca-Cola Cherry icing and popping candy; high sugar, low purine.",
+    "usda_fdc_id": "2708070",
+    "usda_sodium_mg": 309,
+    "usda_protein_g": 6.0
   },
   {
     "venue_id": "astrofizz",
@@ -486,7 +489,10 @@
     "is_ssb": false,
     "sugar_g": 0,
     "sodium_mg": 30,
-    "notes": "Diet fountain option; no fructose pathway contribution."
+    "notes": "Diet fountain option; no fructose pathway contribution.",
+    "usda_fdc_id": "2707658",
+    "usda_sodium_mg": 602,
+    "usda_protein_g": 10.8
   },
   {
     "venue_id": "auntie-gravitys",
@@ -873,7 +879,10 @@
     "is_ssb": false,
     "sugar_g": 34,
     "sodium_mg": 210,
-    "notes": "Lowest-purine item on the menu."
+    "notes": "Lowest-purine item on the menu.",
+    "usda_fdc_id": "2708017",
+    "usda_sodium_mg": 467,
+    "usda_protein_g": 6.5
   },
   {
     "venue_id": "columbia-harbour-house",
