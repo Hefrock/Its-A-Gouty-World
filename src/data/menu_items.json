@@ -201,7 +201,10 @@
     "is_ssb": false,
     "sugar_g": 52,
     "sodium_mg": 140,
-    "notes": "High sugar, low purine."
+    "notes": "High sugar, low purine.",
+    "usda_fdc_id": "173302",
+    "usda_sodium_mg": 94.0,
+    "usda_protein_g": 4.1
   },
   {
     "venue_id": "plaza-restaurant",
@@ -303,7 +306,10 @@
     "is_ssb": false,
     "sugar_g": 6,
     "sodium_mg": 1050,
-    "notes": "Beef and bacon; moderate purine."
+    "notes": "Beef and bacon; moderate purine.",
+    "usda_fdc_id": "2706892",
+    "usda_sodium_mg": 628,
+    "usda_protein_g": 13.5
   },
   {
     "venue_id": "cosmic-rays-starlight-cafe",
@@ -375,7 +381,10 @@
     "is_ssb": true,
     "sugar_g": 48,
     "sodium_mg": 20,
-    "notes": "Sugar-sweetened frozen beverage."
+    "notes": "Sugar-sweetened frozen beverage.",
+    "usda_fdc_id": "2710572",
+    "usda_sodium_mg": 7,
+    "usda_protein_g": 0.2
   },
   {
     "venue_id": "tomorrowland-terrace",
@@ -402,7 +411,10 @@
     "is_ssb": false,
     "sugar_g": 4,
     "sodium_mg": 760,
-    "notes": "Plant-based patty; lower purine alternative."
+    "notes": "Plant-based patty; lower purine alternative.",
+    "usda_fdc_id": "2707481",
+    "usda_sodium_mg": 534,
+    "usda_protein_g": 13.0
   },
   {
     "venue_id": "tomorrowland-terrace",
@@ -414,7 +426,10 @@
     "is_ssb": false,
     "sugar_g": 10,
     "sodium_mg": 15,
-    "notes": "Beer carries the highest gout-risk among alcohol types per Choi & Curhan 2004."
+    "notes": "Beer carries the highest gout-risk among alcohol types per Choi & Curhan 2004.",
+    "usda_fdc_id": "2710616",
+    "usda_sodium_mg": 4,
+    "usda_protein_g": 0.5
   },
   {
     "venue_id": "tomorrowland-terrace",
@@ -426,7 +441,10 @@
     "is_ssb": true,
     "sugar_g": 65,
     "sodium_mg": 30,
-    "notes": "Sugar-sweetened soft drink."
+    "notes": "Sugar-sweetened soft drink.",
+    "usda_fdc_id": "2710655",
+    "usda_sodium_mg": 16,
+    "usda_protein_g": 0
   },
   {
     "venue_id": "cool-ship",
@@ -798,7 +816,10 @@
     "is_ssb": false,
     "sugar_g": 22,
     "sodium_mg": 60,
-    "notes": "Lowest-sugar option at this stand."
+    "notes": "Lowest-sugar option at this stand.",
+    "usda_fdc_id": "2705640",
+    "usda_sodium_mg": 92,
+    "usda_protein_g": 4.4
   },
   {
     "venue_id": "liberty-tree-tavern",
@@ -969,7 +990,10 @@
     "is_ssb": false,
     "sugar_g": 6,
     "sodium_mg": 1340,
-    "notes": "Seasoned ground beef; moderate purine."
+    "notes": "Seasoned ground beef; moderate purine.",
+    "usda_fdc_id": "170736",
+    "usda_sodium_mg": 363,
+    "usda_protein_g": 6.7
   },
   {
     "venue_id": "pecos-bill",
@@ -981,7 +1005,10 @@
     "is_ssb": false,
     "sugar_g": 3,
     "sodium_mg": 1520,
-    "notes": "Highest-sodium item; moderate purine."
+    "notes": "Highest-sodium item; moderate purine.",
+    "usda_fdc_id": "2708580",
+    "usda_sodium_mg": 430,
+    "usda_protein_g": 11.2
   },
   {
     "venue_id": "pecos-bill",
