@@ -54,7 +54,10 @@
     "is_ssb": false,
     "sugar_g": 45,
     "sodium_mg": 120,
-    "notes": "High sugar, low purine."
+    "notes": "High sugar, low purine.",
+    "usda_fdc_id": "172062",
+    "usda_sodium_mg": 47.0,
+    "usda_protein_g": 3.2
   },
   {
     "venue_id": "crystal-palace",
@@ -888,7 +891,10 @@
     "is_ssb": false,
     "sugar_g": 3,
     "sodium_mg": 970,
-    "notes": "Shellfish; moderate-high purine."
+    "notes": "Shellfish; moderate-high purine.",
+    "usda_fdc_id": "2706349",
+    "usda_sodium_mg": 535,
+    "usda_protein_g": 20.9
   },
   {
     "venue_id": "columbia-harbour-house",
