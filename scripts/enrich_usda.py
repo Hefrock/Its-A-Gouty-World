@@ -24,6 +24,7 @@ import json
 import re
 import time
 from pathlib import Path
+from urllib.parse import quote, urlencode
 
 import requests
 
@@ -48,9 +49,23 @@ def slugify(name: str) -> str:
 
 
 def fetch_food(session: requests.Session, query: str, api_key: str) -> dict | None:
-    params = {"query": query, "api_key": api_key, "pageSize": 1, "dataType": ["Survey (FNDDS)", "SR Legacy"]}
-    resp = session.get(USDA_SEARCH_URL, params=params, timeout=15)
-    resp.raise_for_status()
+    # Build the query string manually with %20 (not requests' default '+') for
+    # spaces -- USDA's API rejects dataType values like "Survey (FNDDS)" with a
+    # 400 if the space is sent as a literal '+'.
+    params = [
+        ("query", query),
+        ("api_key", api_key),
+        ("pageSize", 1),
+        ("dataType", "Survey (FNDDS)"),
+        ("dataType", "SR Legacy"),
+    ]
+    qs = urlencode(params, quote_via=quote)
+    resp = session.get(f"{USDA_SEARCH_URL}?{qs}", timeout=15)
+    if not resp.ok:
+        raise requests.HTTPError(
+            f"{resp.status_code} {resp.reason} for url: {resp.url}\nResponse body: {resp.text[:500]}",
+            response=resp,
+        )
     data = resp.json()
     foods = data.get("foods") or []
     return foods[0] if foods else None
