@@ -35,13 +35,13 @@
     "alcohol_available": true,
     "scores": {
       "purine_score": 5,
-      "alcohol_score": 3,
+      "alcohol_score": 6,
       "fructose_score": 6,
       "dehydration_score": 5
     },
     "score_notes": {
-      "purine": "Buffet includes carved meats and fried chicken (moderate purine) alongside salads and vegetables (low purine), so the venue average lands in the middle.",
-      "alcohol": "Beer and wine are available at lunch/dinner but not a focal point of the meal.",
+      "purine": "Buffet includes carved meats, prime rib, and fried chicken (moderate-to-high purine) alongside salads and vegetables (low purine), so the venue average lands in the middle.",
+      "alcohol": "Full beer, wine, and specialty cocktail selection (e.g., mimosas, margaritas) is offered with lunch/dinner.",
       "fructose": "Buffet dessert table (cakes, cobblers) and soda fountain contribute meaningfully.",
       "dehydration": "Varied buffet sodium; carved meats and gravies push it to moderate."
     },
@@ -80,18 +80,18 @@
     "map_coords": { "x": 618, "y": 754 },
     "last_verified": "2026-06-11",
     "estimated": true,
-    "alcohol_available": false,
+    "alcohol_available": true,
     "scores": {
       "purine_score": 6,
-      "alcohol_score": 0,
+      "alcohol_score": 6,
       "fructose_score": 8,
       "dehydration_score": 7
     },
     "score_notes": {
-      "purine": "Menu centers on beef burgers and patty melts (red meat, moderate purine).",
-      "alcohol": "No alcohol served.",
+      "purine": "Menu centers on beef burgers, smoked turkey club, and patty melts (red meat/poultry, moderate purine).",
+      "alcohol": "Beer, wine, and specialty cocktails (e.g., margaritas, IPA) are available — not just a non-alcoholic menu as previously noted.",
       "fructose": "Famous for ice cream sundaes, milkshakes, and floats — high sugar load.",
-      "dehydration": "Burgers and fries are high in sodium."
+      "dehydration": "Burgers, loaded fries, and the smoked turkey club are high in sodium."
     },
     "gps_coords": { "lat": 28.417915, "lng": -81.580916 }
   },
@@ -252,13 +252,13 @@
     "estimated": true,
     "alcohol_available": true,
     "scores": {
-      "purine_score": 7,
+      "purine_score": 8,
       "alcohol_score": 4,
       "fructose_score": 6,
       "dehydration_score": 6
     },
     "score_notes": {
-      "purine": "Dinner menu features braised pork and filet mignon (red meat, moderate-to-high purine).",
+      "purine": "Dinner menu features braised pork and filet mignon (red meat, moderate-to-high purine), plus a duck and pork terrine appetizer that is the highest-purine item on the menu.",
       "alcohol": "Wine is served at dinner; not the focus of the meal.",
       "fructose": "Signature 'The Grey Stuff' dessert and sweetened lemonade contribute to fructose load.",
       "dehydration": "Rich sauces and cured meats (croque monsieur at lunch) are high in sodium."
