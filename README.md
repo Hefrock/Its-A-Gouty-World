@@ -1,6 +1,16 @@
 # It's a Gouty World 🏰
 
+![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)
+![React 19](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-646CFF?logo=vite&logoColor=white)
+![Status](https://img.shields.io/badge/status-educational%2Fresearch-yellow)
+![Disclaimer](https://img.shields.io/badge/⚠️-Not%20Medical%20Advice-red)
+
+![Map view of It's a Gouty World, showing the Magic Kingdom hub-and-spoke layout with color-coded venue risk markers](docs/screenshot-map.png)
+
 **A gout-safe dining heatmap for Magic Kingdom.**
+
+🔗 **[Live demo](https://hefrock.github.io/Its-A-Gouty-World/)**
 
 An interactive React app that visualizes every Magic Kingdom eatery on a
 risk heatmap for patients managing recurring gouty arthritis. Toggle three
@@ -14,12 +24,6 @@ dietary triggers.
 > ⚠️ **Medical disclaimer:** This tool is for informational purposes only and
 > does not replace clinical dietary counseling. Consult your physician or a
 > registered dietitian for personalized guidance.
-
----
-
-## Screenshot
-
-![Map view of It's a Gouty World, showing the Magic Kingdom hub-and-spoke layout with color-coded venue risk markers](docs/screenshot-map.png)
 
 ---
 
