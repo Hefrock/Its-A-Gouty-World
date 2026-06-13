@@ -649,7 +649,7 @@
       "fructose": "Tea slushies, a sprinkle-filled cupcake, and a sweetened cold brew drink are high in added sugar.",
       "dehydration": "The Pepper Jack Pretzel is the only notably salty item."
     },
-    "gps_coords": { "lat": 28.4204, "lng": -81.5796 }
+    "gps_coords": { "lat": 28.419954, "lng": -81.579618 }
   },
   {
     "id": "cinderella-royal-table",
@@ -673,7 +673,7 @@
       "fructose": "A dessert ('The Clock Strikes Twelve' chocolate tart) is included with every meal.",
       "dehydration": "Rich sauces, glazes, and smoked-gouda grits push sodium to moderate-high."
     },
-    "gps_coords": { "lat": 28.4194, "lng": -81.5811 }
+    "gps_coords": { "lat": 28.419715, "lng": -81.57966 }
   },
   {
     "id": "diamond-horseshoe",
@@ -699,7 +699,7 @@
       "fructose": "Toffee cake and sweetened cranberry salad contribute to the fructose load.",
       "dehydration": "Roasted meats, gravies, and mac and cheese are high in sodium."
     },
-    "gps_coords": { "lat": 28.4185, "lng": -81.5829 }
+    "gps_coords": { "lat": 28.419105, "lng": -81.581818 }
   },
   {
     "id": "liberty-square-market",
@@ -723,7 +723,7 @@
       "fructose": "A frozen lemonade slushie is the main sugar source; most other items (fruit, pretzels, cheese) are savory or unsweetened.",
       "dehydration": "Smoked turkey legs, hot dogs, and pretzels are heavily brined and extremely high in sodium."
     },
-    "gps_coords": { "lat": 28.4193, "lng": -81.5829 }
+    "gps_coords": { "lat": 28.419713, "lng": -81.581545 }
   },
   {
     "id": "plaza-ice-cream-parlor",
@@ -747,7 +747,7 @@
       "fructose": "Sundaes, shakes, and floats are among the highest sugar items in the park.",
       "dehydration": "No high-sodium food items."
     },
-    "gps_coords": { "lat": 28.41785, "lng": -81.58075 }
+    "gps_coords": { "lat": 28.418132, "lng": -81.580749 }
   },
   {
     "id": "beak-and-barrel",
@@ -771,6 +771,6 @@
       "fructose": "Cocktails built on guava, lime, citrus, and ube, plus a dessert-style 'Treasure Trove' drink, carry a high sugar load.",
       "dehydration": "Salty snacks (caramel popcorn, cotija cheese, dips) alongside alcohol increase dehydration risk."
     },
-    "gps_coords": { "lat": 28.4176, "lng": -81.5837 }
+    "gps_coords": { "lat": 28.418353, "lng": -81.584458 }
   }
 ]

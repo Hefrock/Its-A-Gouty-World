@@ -52,12 +52,12 @@ Two extra indicators appear across the map and list views:
 See [`docs/scoring_methodology.md`](docs/scoring_methodology.md) for the
 full clinical rationale and citations behind the scoring model.
 
-> ⚠️ **GPS Map note:** The `gps_coords` in `src/data/venues.json` are
-> approximate placeholders derived from the venue's position within its
-> land relative to a verified Cinderella Castle anchor point — they have
-> **not** been checked against satellite imagery or surveyed park data.
-> Do not use the GPS Map for in-park navigation until these are verified
-> (e.g., against OpenStreetMap node positions or on-site GPS readings).
+> ⚠️ **GPS Map note:** The `gps_coords` in `src/data/venues.json` have been
+> cross-checked against OpenStreetMap node positions and Google Maps (see
+> [`data_sources/gps_verification_report.md`](data_sources/gps_verification_report.md)),
+> but have **not** been validated against on-site GPS readings inside the
+> park. Treat the GPS Map as a close approximation, not a surveyed
+> in-park navigation aid.
 
 ---
 

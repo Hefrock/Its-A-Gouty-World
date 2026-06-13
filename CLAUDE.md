@@ -23,10 +23,11 @@ spec below conflicts with this section, **this section is authoritative**:
   `venue.gps_coords`). This is an intentional, deliberate addition to the
   "No external map library" constraint below: the original SVG `MapView`
   remains the primary/default view (no Disney artwork, original geometry),
-  and the GPS Map is an opt-in secondary tab clearly labeled as using
-  unverified placeholder coordinates. `scripts/verify_gps_coords.py` and
-  `data_sources/gps_verification_report.md` track verification status, and
-  `.github/workflows/data-refresh.yml` periodically refreshes coordinates
+  and the GPS Map is an opt-in secondary tab. All 32 venues' `gps_coords`
+  have been cross-checked against OpenStreetMap node positions and/or
+  Google Maps (see `data_sources/gps_verification_report.md`), though not
+  yet against on-site GPS readings. `scripts/verify_gps_coords.py` and
+  `.github/workflows/data-refresh.yml` periodically refresh coordinates
   and USDA enrichment data.
 - **`src/scoring/thresholds.js`** defines the full score→tier mapping
   (`scoreToTier`), including `color`, `bgClass`, `textClass`, `borderClass`,
