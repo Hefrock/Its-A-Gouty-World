@@ -4,6 +4,14 @@ export default function Legend() {
   return (
     <div className="bg-white rounded-xl shadow p-4">
       <h2 className="text-sm font-semibold text-gray-700 mb-2">Legend</h2>
+      <p className="text-xs text-gray-600 mb-3">
+        Each venue's score is a weighted average of only the risk factors
+        toggled on above &mdash; not a sum, and not a worst-case. Switching a
+        factor on or off changes what gets averaged in, so a venue's score
+        and tier can shift even though nothing about its menu changed. The ⚡
+        indicator below flags venues where one active factor is severe (7+)
+        on its own but gets averaged into a lower overall tier.
+      </p>
       <ul className="space-y-2 text-sm">
         {Object.values(TIERS).map((tier) => (
           <li key={tier.tier} className="flex items-start gap-2">
