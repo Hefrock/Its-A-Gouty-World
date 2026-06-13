@@ -58,6 +58,9 @@
     "sugar_g": 45,
     "sodium_mg": 120,
     "notes": "High sugar, low purine.",
+    "usda_fdc_id": "172062",
+    "usda_sodium_mg": 47.0,
+    "usda_protein_g": 3.2,
     "flags": []
   },
   {
@@ -514,6 +517,9 @@
     "sugar_g": 35,
     "sodium_mg": 150,
     "notes": "Signature churro rolled in cherry sugar with Coca-Cola Cherry icing and popping candy; high sugar, low purine.",
+    "usda_fdc_id": "2708070",
+    "usda_sodium_mg": 309,
+    "usda_protein_g": 6.0,
     "flags": []
   },
   {
@@ -545,6 +551,9 @@
     "sugar_g": 0,
     "sodium_mg": 30,
     "notes": "Diet fountain option; no fructose pathway contribution.",
+    "usda_fdc_id": "2707658",
+    "usda_sodium_mg": 602,
+    "usda_protein_g": 10.8,
     "flags": []
   },
   {
@@ -985,6 +994,9 @@
     "sugar_g": 34,
     "sodium_mg": 210,
     "notes": "Lowest-purine item on the menu.",
+    "usda_fdc_id": "2708017",
+    "usda_sodium_mg": 467,
+    "usda_protein_g": 6.5,
     "flags": []
   },
   {
@@ -998,6 +1010,9 @@
     "sugar_g": 3,
     "sodium_mg": 970,
     "notes": "Shellfish; moderate-high purine.",
+    "usda_fdc_id": "2706349",
+    "usda_sodium_mg": 535,
+    "usda_protein_g": 20.9,
     "flags": [
       "high_purine"
     ]
