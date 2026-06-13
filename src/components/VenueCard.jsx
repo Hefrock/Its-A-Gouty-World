@@ -35,7 +35,7 @@ export default function VenueCard({ venue, menuItems, activeToggles, strictnessM
     ...row,
     fill: scoreToTier(row.score).color,
   }));
-  const extremeFactors = getExtremeFactors(venue, activeToggles);
+  const extremeFactors = getExtremeFactors(venue, activeToggles, result.tier);
 
   const items = menuItems.filter((item) => item.venue_id === venue.id);
   const sorted = [...items].sort((a, b) => itemRisk(b) - itemRisk(a));

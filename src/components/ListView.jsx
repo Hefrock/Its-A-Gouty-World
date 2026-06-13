@@ -41,7 +41,7 @@ export default function ListView({ venues, activeToggles, strictnessMode, onSele
           composite: result.score,
           tier: result.tier,
           tierInfo: result,
-          extremeFactors: getExtremeFactors(venue, activeToggles),
+          extremeFactors: getExtremeFactors(venue, activeToggles, result.tier),
         };
       })
       .filter((row) => row.name.toLowerCase().includes(search.toLowerCase()) || row.land.toLowerCase().includes(search.toLowerCase()));

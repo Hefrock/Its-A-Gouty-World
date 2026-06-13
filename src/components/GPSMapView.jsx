@@ -90,7 +90,7 @@ export default function GPSMapView({ venues, activeToggles, strictnessMode, onSe
           />
           {venues.map((venue) => {
             const result = computeVenueScore(venue, activeToggles, strictnessMode);
-            const extremeFactors = getExtremeFactors(venue, activeToggles);
+            const extremeFactors = getExtremeFactors(venue, activeToggles, result.tier);
             return (
               <VenueMarker
                 key={venue.id}
@@ -104,9 +104,10 @@ export default function GPSMapView({ venues, activeToggles, strictnessMode, onSe
         </MapContainer>
       </div>
       <p className="text-xs text-gray-500 mt-2">
-        GPS positions are approximate placeholders for prototyping and have not been
-        verified against satellite imagery or surveyed park data &mdash; do not rely
-        on them for in-park navigation yet. Map data &copy;{' '}
+        GPS positions have been cross-checked against OpenStreetMap and Google
+        Maps but have not been validated with on-site GPS readings &mdash; treat
+        this as a close approximation, not a surveyed in-park navigation aid.
+        Map data &copy;{' '}
         <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noreferrer" className="underline">
           OpenStreetMap
         </a>{' '}

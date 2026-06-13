@@ -18,7 +18,7 @@ export default function Legend() {
           <span aria-hidden="true">⚡</span>
           <span>
             <span className="font-semibold">High on one factor:</span>{' '}
-            Shown when a single active factor (purines, alcohol, or fructose/SSBs) scores 8+ on its own — averaging can pull the overall score into a lower tier even when one factor is severe.
+            Shown when a single active factor (purines, alcohol, or fructose/SSBs) is in the Higher Risk range (7+) on its own, but the overall score doesn't land in the Higher Risk tier — averaging can mask one severe factor.
           </span>
         </li>
         <li className="flex items-start gap-2">
