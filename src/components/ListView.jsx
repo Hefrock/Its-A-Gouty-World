@@ -1,5 +1,5 @@
 import { useMemo, useState } from 'react';
-import { computeVenueScore } from '../scoring/engine.js';
+import { computeVenueScore, getExtremeFactors } from '../scoring/engine.js';
 import { LANDS } from '../utils/mapCoords.js';
 
 const SERVICE_TYPE_LABELS = {
@@ -40,6 +40,7 @@ export default function ListView({ venues, activeToggles, strictnessMode, onSele
           composite: result.score,
           tier: result.tier,
           tierInfo: result,
+          extremeFactors: getExtremeFactors(venue, activeToggles),
         };
       })
       .filter((row) => row.name.toLowerCase().includes(search.toLowerCase()) || row.land.toLowerCase().includes(search.toLowerCase()));
@@ -116,6 +117,15 @@ export default function ListView({ venues, activeToggles, strictnessMode, onSele
                           <span aria-hidden="true">{row.tierInfo.icon}</span>
                           {row.tierInfo.label}
                         </span>
+                        {row.extremeFactors.length > 0 && (
+                          <span
+                            className="ml-1 text-red-600"
+                            title={`High ${row.extremeFactors.map((f) => `${f.label} (${f.score}/10)`).join(', ')} — averaged down in the composite score`}
+                          >
+                            <span aria-hidden="true">⚡</span>
+                            <span className="sr-only">High {row.extremeFactors.map((f) => f.label).join(', ')}</span>
+                          </span>
+                        )}
                       </td>
                     );
                   }

@@ -1,16 +1,17 @@
 import { useRef, useState } from 'react';
-import { computeVenueScore } from '../scoring/engine.js';
+import { computeVenueScore, getExtremeFactors } from '../scoring/engine.js';
 import { MAP_VIEWBOX, HUB, LANDS, getLandWedgePath, getLandLabelPos, getVenueCoords } from '../utils/mapCoords.js';
 
 export default function MapView({ venues, activeToggles, strictnessMode, onSelectVenue }) {
   const containerRef = useRef(null);
   const [hovered, setHovered] = useState(null);
 
-  function handleEnter(e, venue, result) {
+  function handleEnter(e, venue, result, extremeFactors) {
     const rect = containerRef.current.getBoundingClientRect();
     setHovered({
       venue,
       result,
+      extremeFactors,
       x: e.clientX - rect.left,
       y: e.clientY - rect.top,
     });
@@ -54,31 +55,48 @@ export default function MapView({ venues, activeToggles, strictnessMode, onSelec
 
           {venues.map((venue) => {
             const result = computeVenueScore(venue, activeToggles, strictnessMode);
+            const extremeFactors = getExtremeFactors(venue, activeToggles);
             const { x, y } = getVenueCoords(venue);
+            const extremeLabel = extremeFactors.length > 0
+              ? ` — high ${extremeFactors.map((f) => f.label).join(', ')} (${extremeFactors.map((f) => f.score).join(', ')}/10)`
+              : '';
             return (
-              <circle
-                key={venue.id}
-                cx={x}
-                cy={y}
-                r={14}
-                fill={result.color}
-                stroke="#1f2937"
-                strokeWidth={1.5}
-                tabIndex={0}
-                role="button"
-                aria-label={`${venue.name}: ${result.label}, score ${result.score} of 10`}
-                onMouseEnter={(e) => handleEnter(e, venue, result)}
-                onMouseLeave={() => setHovered(null)}
-                onFocus={(e) => handleEnter(e, venue, result)}
-                onBlur={() => setHovered(null)}
-                onClick={() => onSelectVenue(venue)}
-                onKeyDown={(e) => {
-                  if (e.key === 'Enter' || e.key === ' ') onSelectVenue(venue);
-                }}
-                style={{ cursor: 'pointer' }}
-              >
-                <title>{venue.name}: {result.label} ({result.score}/10)</title>
-              </circle>
+              <g key={venue.id}>
+                {extremeFactors.length > 0 && (
+                  <circle
+                    cx={x}
+                    cy={y}
+                    r={19}
+                    fill="none"
+                    stroke="#dc2626"
+                    strokeWidth={2}
+                    strokeDasharray="3,2"
+                    aria-hidden="true"
+                  />
+                )}
+                <circle
+                  cx={x}
+                  cy={y}
+                  r={14}
+                  fill={result.color}
+                  stroke="#1f2937"
+                  strokeWidth={1.5}
+                  tabIndex={0}
+                  role="button"
+                  aria-label={`${venue.name}: ${result.label}, score ${result.score} of 10${extremeLabel}`}
+                  onMouseEnter={(e) => handleEnter(e, venue, result, extremeFactors)}
+                  onMouseLeave={() => setHovered(null)}
+                  onFocus={(e) => handleEnter(e, venue, result, extremeFactors)}
+                  onBlur={() => setHovered(null)}
+                  onClick={() => onSelectVenue(venue)}
+                  onKeyDown={(e) => {
+                    if (e.key === 'Enter' || e.key === ' ') onSelectVenue(venue);
+                  }}
+                  style={{ cursor: 'pointer' }}
+                >
+                  <title>{venue.name}: {result.label} ({result.score}/10){extremeLabel}</title>
+                </circle>
+              </g>
             );
           })}
         </svg>
@@ -90,6 +108,11 @@ export default function MapView({ venues, activeToggles, strictnessMode, onSelec
           >
             <p className="font-semibold">{hovered.venue.name}</p>
             <p>{hovered.result.icon} {hovered.result.label} &mdash; {hovered.result.score}/10</p>
+            {hovered.extremeFactors?.length > 0 && (
+              <p className="text-red-300">
+                ⚡ High {hovered.extremeFactors.map((f) => `${f.label} (${f.score}/10)`).join(', ')}
+              </p>
+            )}
           </div>
         )}
       </div>

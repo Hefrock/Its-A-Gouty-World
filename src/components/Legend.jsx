@@ -14,6 +14,13 @@ export default function Legend() {
             </span>
           </li>
         ))}
+        <li className="flex items-start gap-2">
+          <span aria-hidden="true">⚡</span>
+          <span>
+            <span className="font-semibold">High on one factor:</span>{' '}
+            Shown when a single active factor (purines, alcohol, or fructose/SSBs) scores 8+ on its own — averaging can pull the overall score into a lower tier even when one factor is severe.
+          </span>
+        </li>
       </ul>
       <p className="text-xs text-gray-500 mt-3 border-t border-gray-200 pt-2">
         This tool is for informational purposes. Consult your physician or dietitian for personalized guidance.
