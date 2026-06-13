@@ -26,9 +26,13 @@ spec below conflicts with this section, **this section is authoritative**:
   and the GPS Map is an opt-in secondary tab. All 32 venues' `gps_coords`
   have been cross-checked against OpenStreetMap node positions and/or
   Google Maps (see `data_sources/gps_verification_report.md`), though not
-  yet against on-site GPS readings. `scripts/verify_gps_coords.py` and
-  `.github/workflows/data-refresh.yml` periodically refresh coordinates
-  and USDA enrichment data.
+  yet against on-site GPS readings. Each venue has a `gps_source` field
+  (`"osm"` or `"manual"`); `scripts/verify_gps_coords.py` (run periodically
+  via `.github/workflows/data-refresh.yml`) only re-matches `"osm"` venues
+  against OpenStreetMap and skips `"manual"` ones entirely, so a
+  manually-confirmed Google Maps position can never be silently overwritten
+  by a lower-confidence automated match. The same workflow also refreshes
+  USDA enrichment data in `menu_items.json`.
 - **`src/scoring/thresholds.js`** defines the full score→tier mapping
   (`scoreToTier`), including `color`, `bgClass`, `textClass`, `borderClass`,
   `icon`, and `label` per tier — not just the `tier`/`label` strings shown in
