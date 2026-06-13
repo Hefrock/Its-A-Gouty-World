@@ -2741,5 +2741,281 @@
     "sodium_mg": 180,
     "notes": "Dessert-party item; high sugar, low purine.",
     "flags": []
+  },
+  {
+    "venue_id": "the-lunching-pad",
+    "item_name": "Cuban Hot Dog",
+    "category": "entree",
+    "purine_category": "red_meat",
+    "purine_score_item": 6,
+    "alcohol": false,
+    "is_ssb": false,
+    "sugar_g": 4,
+    "sodium_mg": 1380,
+    "notes": "All-beef hot dog topped with diced ham, pickles, and Swiss fondue; combines two pork/red-meat purine sources.",
+    "flags": [
+      "high_sodium"
+    ]
+  },
+  {
+    "venue_id": "the-lunching-pad",
+    "item_name": "Cream Cheese Stuffed Pretzel",
+    "category": "dessert",
+    "purine_category": "grains",
+    "purine_score_item": 1,
+    "alcohol": false,
+    "is_ssb": false,
+    "sugar_g": 14,
+    "sodium_mg": 480,
+    "notes": "Warm pretzel filled with sweet cream cheese; low purine.",
+    "flags": []
+  },
+  {
+    "venue_id": "astrofizz",
+    "item_name": "Popcorn",
+    "category": "side",
+    "purine_category": "grains",
+    "purine_score_item": 1,
+    "alcohol": false,
+    "is_ssb": false,
+    "sugar_g": 0,
+    "sodium_mg": 290,
+    "notes": "Plain popcorn; low purine and sugar, moderate sodium.",
+    "flags": []
+  },
+  {
+    "venue_id": "astrofizz",
+    "item_name": "Mickey's Premium Ice Cream Bar",
+    "category": "dessert",
+    "purine_category": "dairy",
+    "purine_score_item": 1,
+    "alcohol": false,
+    "is_ssb": false,
+    "sugar_g": 17,
+    "sodium_mg": 55,
+    "notes": "Chocolate-covered vanilla ice cream bar; low purine.",
+    "flags": []
+  },
+  {
+    "venue_id": "auntie-gravitys",
+    "item_name": "Asteroid Shake",
+    "category": "beverage",
+    "purine_category": "dairy",
+    "purine_score_item": 1,
+    "alcohol": false,
+    "is_ssb": true,
+    "sugar_g": 58,
+    "sodium_mg": 230,
+    "notes": "Chocolate shake with hot fudge, whipped cream, and chocolate doughnut holes; very high sugar.",
+    "flags": [
+      "high_fructose"
+    ]
+  },
+  {
+    "venue_id": "auntie-gravitys",
+    "item_name": "Churro Shake",
+    "category": "beverage",
+    "purine_category": "dairy",
+    "purine_score_item": 1,
+    "alcohol": false,
+    "is_ssb": true,
+    "sugar_g": 54,
+    "sodium_mg": 210,
+    "notes": "Vanilla shake topped with salted caramel sauce and churro pieces; very high sugar.",
+    "flags": [
+      "high_fructose"
+    ]
+  },
+  {
+    "venue_id": "gastons-tavern",
+    "item_name": "Ham and Gruyere Sandwich",
+    "category": "entree",
+    "purine_category": "red_meat",
+    "purine_score_item": 5,
+    "alcohol": false,
+    "is_ssb": false,
+    "sugar_g": 3,
+    "sodium_mg": 1150,
+    "notes": "Ham and Gruyere in crispy croissant dough served with chips; moderate purine from cured pork.",
+    "flags": [
+      "high_sodium"
+    ]
+  },
+  {
+    "venue_id": "gastons-tavern",
+    "item_name": "Pluto Dome Cake",
+    "category": "dessert",
+    "purine_category": "dairy",
+    "purine_score_item": 1,
+    "alcohol": false,
+    "is_ssb": false,
+    "sugar_g": 36,
+    "sodium_mg": 160,
+    "notes": "Domed mousse cake; high sugar, low purine.",
+    "flags": []
+  },
+  {
+    "venue_id": "prince-erics-village-market",
+    "item_name": "Seaside Serenade",
+    "category": "beverage",
+    "purine_category": "sweets_plain",
+    "purine_score_item": 0,
+    "alcohol": false,
+    "is_ssb": true,
+    "sugar_g": 44,
+    "sodium_mg": 15,
+    "notes": "Pina colada slushy with curacao syrup and blue boba pearls; high sugar.",
+    "flags": [
+      "high_fructose"
+    ]
+  },
+  {
+    "venue_id": "prince-erics-village-market",
+    "item_name": "Shrimp Roll",
+    "category": "entree",
+    "purine_category": "shellfish_moderate",
+    "purine_score_item": 6,
+    "alcohol": false,
+    "is_ssb": false,
+    "sugar_g": 2,
+    "sodium_mg": 720,
+    "notes": "Chilled shrimp roll; moderate-high purine, the highest-purine item at this stand.",
+    "flags": []
+  },
+  {
+    "venue_id": "storybook-treats",
+    "item_name": "Rapunzel Sundae",
+    "category": "dessert",
+    "purine_category": "dairy",
+    "purine_score_item": 1,
+    "alcohol": false,
+    "is_ssb": false,
+    "sugar_g": 50,
+    "sodium_mg": 120,
+    "notes": "Shortcake with soft serve and berry compote; high sugar, low purine.",
+    "flags": []
+  },
+  {
+    "venue_id": "storybook-treats",
+    "item_name": "Aurora Cone",
+    "category": "dessert",
+    "purine_category": "dairy",
+    "purine_score_item": 1,
+    "alcohol": false,
+    "is_ssb": false,
+    "sugar_g": 34,
+    "sodium_mg": 70,
+    "notes": "DOLE Whip and soft-serve swirl topped with white chocolate crisp pearls; moderate-high sugar.",
+    "flags": []
+  },
+  {
+    "venue_id": "sleepy-hollow",
+    "item_name": "Chicken Waffle Sandwich",
+    "category": "entree",
+    "purine_category": "poultry",
+    "purine_score_item": 5,
+    "alcohol": false,
+    "is_ssb": false,
+    "sugar_g": 6,
+    "sodium_mg": 980,
+    "notes": "Fried chicken between waffles with house-made chips; moderate purine, the only savory entree at this stand.",
+    "flags": []
+  },
+  {
+    "venue_id": "sleepy-hollow",
+    "item_name": "Waffle with Berries and Cream",
+    "category": "dessert",
+    "purine_category": "grains",
+    "purine_score_item": 1,
+    "alcohol": false,
+    "is_ssb": false,
+    "sugar_g": 28,
+    "sodium_mg": 280,
+    "notes": "Waffle with berries, whipped cream, and powdered sugar; low purine.",
+    "flags": []
+  },
+  {
+    "venue_id": "golden-oak-outpost",
+    "item_name": "Hot Honey Chicken with Sweet Potato Fries",
+    "category": "entree",
+    "purine_category": "poultry",
+    "purine_score_item": 5,
+    "alcohol": false,
+    "is_ssb": false,
+    "sugar_g": 8,
+    "sodium_mg": 1080,
+    "notes": "Chicken nuggets in hot honey sauce with Cajun-spiced sweet potato fries; moderate purine.",
+    "flags": [
+      "high_sodium"
+    ]
+  },
+  {
+    "venue_id": "golden-oak-outpost",
+    "item_name": "Candied Bacon Skewer with Chips",
+    "category": "side",
+    "purine_category": "red_meat",
+    "purine_score_item": 4,
+    "alcohol": false,
+    "is_ssb": false,
+    "sugar_g": 12,
+    "sodium_mg": 920,
+    "notes": "Brown sugar-coated bacon skewer; pork, moderate purine plus added sugar.",
+    "flags": []
+  },
+  {
+    "venue_id": "westward-ho",
+    "item_name": "Fountain Soda",
+    "category": "beverage",
+    "purine_category": null,
+    "purine_score_item": 0,
+    "alcohol": false,
+    "is_ssb": true,
+    "sugar_g": 65,
+    "sodium_mg": 30,
+    "notes": "Standard refreshment-stand soda option; high sugar.",
+    "flags": [
+      "high_fructose"
+    ]
+  },
+  {
+    "venue_id": "sunshine-tree-terrace",
+    "item_name": "DOLE Whip Orange Cup",
+    "category": "dessert",
+    "purine_category": "dairy",
+    "purine_score_item": 1,
+    "alcohol": false,
+    "is_ssb": false,
+    "sugar_g": 30,
+    "sodium_mg": 35,
+    "notes": "Soft-serve cup; moderate sugar, low purine.",
+    "flags": []
+  },
+  {
+    "venue_id": "sunshine-tree-terrace",
+    "item_name": "I Lava You Float",
+    "category": "beverage",
+    "purine_category": "dairy",
+    "purine_score_item": 1,
+    "alcohol": false,
+    "is_ssb": true,
+    "sugar_g": 56,
+    "sodium_mg": 60,
+    "notes": "Fanta Strawberry and passion fruit with DOLE Whip Orange and popping candy; very high sugar.",
+    "flags": [
+      "high_fructose"
+    ]
+  },
+  {
+    "venue_id": "aloha-isle",
+    "item_name": "Pineapple Upside-Down Cake with DOLE Whip",
+    "category": "dessert",
+    "purine_category": "dairy",
+    "purine_score_item": 1,
+    "alcohol": false,
+    "is_ssb": false,
+    "sugar_g": 40,
+    "sodium_mg": 110,
+    "notes": "Pineapple upside-down cake served with DOLE Whip; high sugar, low purine.",
+    "flags": []
   }
 ]
