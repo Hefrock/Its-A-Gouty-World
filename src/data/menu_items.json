@@ -2390,5 +2390,356 @@
     "sodium_mg": 220,
     "notes": "Mixed greens with apples, cranberries, and cheese; low purine.",
     "flags": []
+  },
+  {
+    "venue_id": "caseys-corner",
+    "item_name": "Chipotle Barbecue Foot-long Hot Dog with Pulled Pork",
+    "category": "entree",
+    "purine_category": "red_meat",
+    "purine_score_item": 7,
+    "alcohol": false,
+    "is_ssb": false,
+    "sugar_g": 9,
+    "sodium_mg": 1850,
+    "notes": "All-beef foot-long topped with pulled pork, slaw, and chipotle BBQ sauce; combines two red-meat purine sources and is the menu's signature item.",
+    "flags": [
+      "high_purine",
+      "high_sodium"
+    ]
+  },
+  {
+    "venue_id": "caseys-corner",
+    "item_name": "Plant-based Dog",
+    "category": "entree",
+    "purine_category": "legumes",
+    "purine_score_item": 2,
+    "alcohol": false,
+    "is_ssb": false,
+    "sugar_g": 3,
+    "sodium_mg": 720,
+    "notes": "Plant-based sausage on a potato bun; lowest-purine entree option.",
+    "flags": []
+  },
+  {
+    "venue_id": "caseys-corner",
+    "item_name": "Baseball Brownie",
+    "category": "dessert",
+    "purine_category": "sweets_plain",
+    "purine_score_item": 0,
+    "alcohol": false,
+    "is_ssb": false,
+    "sugar_g": 42,
+    "sodium_mg": 160,
+    "notes": "Brownie with caramel corn mousse, dulce de leche, and white chocolate coating; high sugar.",
+    "flags": []
+  },
+  {
+    "venue_id": "caseys-corner",
+    "item_name": "French Fries",
+    "category": "side",
+    "purine_category": "grains",
+    "purine_score_item": 1,
+    "alcohol": false,
+    "is_ssb": false,
+    "sugar_g": 0,
+    "sodium_mg": 430,
+    "notes": "Standard side for hot dog meals; low purine.",
+    "flags": []
+  },
+  {
+    "venue_id": "main-street-bakery",
+    "item_name": "Bacon, Gouda & Egg Sandwich",
+    "category": "entree",
+    "purine_category": "red_meat",
+    "purine_score_item": 5,
+    "alcohol": false,
+    "is_ssb": false,
+    "sugar_g": 2,
+    "sodium_mg": 900,
+    "notes": "Breakfast sandwich with bacon and egg; moderate purine.",
+    "flags": []
+  },
+  {
+    "venue_id": "main-street-bakery",
+    "item_name": "Strawberry Acai Refresher",
+    "category": "beverage",
+    "purine_category": "sweets_plain",
+    "purine_score_item": 0,
+    "alcohol": false,
+    "is_ssb": true,
+    "sugar_g": 32,
+    "sodium_mg": 5,
+    "notes": "Sweetened fruit refresher; contributes to fructose load.",
+    "flags": []
+  },
+  {
+    "venue_id": "main-street-bakery",
+    "item_name": "Cake Pop",
+    "category": "dessert",
+    "purine_category": "grains",
+    "purine_score_item": 0,
+    "alcohol": false,
+    "is_ssb": false,
+    "sugar_g": 18,
+    "sodium_mg": 75,
+    "notes": "Grab-and-go dessert; moderate sugar, low purine.",
+    "flags": []
+  },
+  {
+    "venue_id": "cosmic-rays-starlight-cafe",
+    "item_name": "BBQ Ribs",
+    "category": "entree",
+    "purine_category": "red_meat",
+    "purine_score_item": 7,
+    "alcohol": false,
+    "is_ssb": false,
+    "sugar_g": 14,
+    "sodium_mg": 1380,
+    "notes": "Pork ribs with BBQ sauce; high-end red meat purine plus added sugar from the glaze.",
+    "flags": [
+      "high_purine",
+      "high_sodium"
+    ]
+  },
+  {
+    "venue_id": "cosmic-rays-starlight-cafe",
+    "item_name": "Greek Salad with Chicken",
+    "category": "side",
+    "purine_category": "poultry",
+    "purine_score_item": 4,
+    "alcohol": false,
+    "is_ssb": false,
+    "sugar_g": 5,
+    "sodium_mg": 760,
+    "notes": "Grilled chicken over Greek salad; moderate purine, lower than the burgers.",
+    "flags": []
+  },
+  {
+    "venue_id": "cosmic-rays-starlight-cafe",
+    "item_name": "Passion Fruit-Mandarin Tart",
+    "category": "dessert",
+    "purine_category": "sweets_plain",
+    "purine_score_item": 0,
+    "alcohol": false,
+    "is_ssb": false,
+    "sugar_g": 36,
+    "sodium_mg": 95,
+    "notes": "Fruit tart with whipped cream; high sugar, low purine.",
+    "flags": []
+  },
+  {
+    "venue_id": "pinocchio-village-haus",
+    "item_name": "All-Meat Flatbread",
+    "category": "entree",
+    "purine_category": "red_meat",
+    "purine_score_item": 7,
+    "alcohol": false,
+    "is_ssb": false,
+    "sugar_g": 5,
+    "sodium_mg": 1350,
+    "notes": "Sausage and ham flatbread with three cheeses; highest-purine item on the menu.",
+    "flags": [
+      "high_purine",
+      "high_sodium"
+    ]
+  },
+  {
+    "venue_id": "pinocchio-village-haus",
+    "item_name": "Buffalo Chicken Flatbread",
+    "category": "entree",
+    "purine_category": "poultry",
+    "purine_score_item": 6,
+    "alcohol": false,
+    "is_ssb": false,
+    "sugar_g": 4,
+    "sodium_mg": 1240,
+    "notes": "Grilled chicken flatbread with buffalo sauce and ranch; moderate purine.",
+    "flags": [
+      "high_sodium"
+    ]
+  },
+  {
+    "venue_id": "pinocchio-village-haus",
+    "item_name": "Gourmet Cheese Flatbread",
+    "category": "entree",
+    "purine_category": "dairy",
+    "purine_score_item": 2,
+    "alcohol": false,
+    "is_ssb": false,
+    "sugar_g": 4,
+    "sodium_mg": 1150,
+    "notes": "Four-cheese flatbread; lowest-purine entree, though still high in sodium.",
+    "flags": [
+      "high_sodium"
+    ]
+  },
+  {
+    "venue_id": "friars-nook",
+    "item_name": "Wild Toad Brat Burger",
+    "category": "entree",
+    "purine_category": "red_meat",
+    "purine_score_item": 6,
+    "alcohol": false,
+    "is_ssb": false,
+    "sugar_g": 4,
+    "sodium_mg": 1280,
+    "notes": "Bratwurst burger with toppings and tater bites; red meat, moderate-high purine.",
+    "flags": [
+      "high_sodium"
+    ]
+  },
+  {
+    "venue_id": "friars-nook",
+    "item_name": "Sausage and Gravy Tots",
+    "category": "entree",
+    "purine_category": "red_meat",
+    "purine_score_item": 5,
+    "alcohol": false,
+    "is_ssb": false,
+    "sugar_g": 2,
+    "sodium_mg": 1190,
+    "notes": "Tater tots topped with sausage gravy; moderate purine.",
+    "flags": [
+      "high_sodium"
+    ]
+  },
+  {
+    "venue_id": "friars-nook",
+    "item_name": "Bacon, Egg, and Cheddar Breakfast Sandwich",
+    "category": "entree",
+    "purine_category": "red_meat",
+    "purine_score_item": 4,
+    "alcohol": false,
+    "is_ssb": false,
+    "sugar_g": 2,
+    "sodium_mg": 980,
+    "notes": "Breakfast sandwich served with tots; moderate purine.",
+    "flags": []
+  },
+  {
+    "venue_id": "columbia-harbour-house",
+    "item_name": "Trio Platter",
+    "category": "entree",
+    "purine_category": "shellfish_moderate",
+    "purine_score_item": 7,
+    "alcohol": false,
+    "is_ssb": false,
+    "sugar_g": 3,
+    "sodium_mg": 1480,
+    "notes": "Beer-battered shrimp, chicken, and fish with hushpuppies; combines shellfish, fish, and poultry purine sources.",
+    "flags": [
+      "high_purine",
+      "high_sodium"
+    ]
+  },
+  {
+    "venue_id": "columbia-harbour-house",
+    "item_name": "Broiled Salmon Plate",
+    "category": "entree",
+    "purine_category": "fish_moderate",
+    "purine_score_item": 5,
+    "alcohol": false,
+    "is_ssb": false,
+    "sugar_g": 1,
+    "sodium_mg": 680,
+    "notes": "Broiled salmon with vegetables; moderate purine, lower sodium than the fried options.",
+    "flags": []
+  },
+  {
+    "venue_id": "columbia-harbour-house",
+    "item_name": "Boston Cream Pie",
+    "category": "dessert",
+    "purine_category": "dairy",
+    "purine_score_item": 1,
+    "alcohol": false,
+    "is_ssb": false,
+    "sugar_g": 34,
+    "sodium_mg": 230,
+    "notes": "Vanilla cake with cream filling and fudge icing; high sugar, low purine.",
+    "flags": []
+  },
+  {
+    "venue_id": "pecos-bill",
+    "item_name": "Coca-Cola Cherry Braised Beef Bowl",
+    "category": "entree",
+    "purine_category": "red_meat",
+    "purine_score_item": 7,
+    "alcohol": false,
+    "is_ssb": false,
+    "sugar_g": 16,
+    "sodium_mg": 1290,
+    "notes": "Braised beef in a cola-cherry glaze over rice; red meat, moderate-high purine plus added sugar.",
+    "flags": [
+      "high_purine",
+      "high_sodium"
+    ]
+  },
+  {
+    "venue_id": "pecos-bill",
+    "item_name": "Double Chili con Queso Burger",
+    "category": "entree",
+    "purine_category": "red_meat",
+    "purine_score_item": 7,
+    "alcohol": false,
+    "is_ssb": false,
+    "sugar_g": 4,
+    "sodium_mg": 1610,
+    "notes": "Double beef patty topped with chili and queso; highest-sodium item on the menu.",
+    "flags": [
+      "high_purine",
+      "high_sodium"
+    ]
+  },
+  {
+    "venue_id": "pecos-bill",
+    "item_name": "Grilled Masa Flatbread",
+    "category": "entree",
+    "purine_category": "vegetables_high",
+    "purine_score_item": 2,
+    "alcohol": false,
+    "is_ssb": false,
+    "sugar_g": 3,
+    "sodium_mg": 690,
+    "notes": "Plant-based masa flatbread; lowest-purine entree option, part of the create-your-own menu.",
+    "flags": []
+  },
+  {
+    "venue_id": "pecos-bill",
+    "item_name": "Charro Beans",
+    "category": "side",
+    "purine_category": "legumes",
+    "purine_score_item": 2,
+    "alcohol": false,
+    "is_ssb": false,
+    "sugar_g": 2,
+    "sodium_mg": 540,
+    "notes": "Pinto beans side; plant purines not strongly linked to gout risk.",
+    "flags": []
+  },
+  {
+    "venue_id": "tomorrowland-terrace",
+    "item_name": "Chocolate-Covered Strawberries",
+    "category": "dessert",
+    "purine_category": "sweets_plain",
+    "purine_score_item": 0,
+    "alcohol": false,
+    "is_ssb": false,
+    "sugar_g": 20,
+    "sodium_mg": 10,
+    "notes": "Dessert-party item; now part of the venue's primary offering during its limited-service hours.",
+    "flags": []
+  },
+  {
+    "venue_id": "tomorrowland-terrace",
+    "item_name": "Country Bear Cheesecake",
+    "category": "dessert",
+    "purine_category": "dairy",
+    "purine_score_item": 1,
+    "alcohol": false,
+    "is_ssb": false,
+    "sugar_g": 38,
+    "sodium_mg": 180,
+    "notes": "Dessert-party item; high sugar, low purine.",
+    "flags": []
   }
 ]
