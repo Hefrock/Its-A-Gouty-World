@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { computeVenueScore, getScoreBreakdown } from './engine.js';
+import { computeVenueScore, getScoreBreakdown, getExtremeFactors } from './engine.js';
 
 const venue = {
   scores: {
@@ -63,6 +63,47 @@ describe('getScoreBreakdown', () => {
       { factor: 'Purines', key: 'purine_score', score: 8 },
       { factor: 'Alcohol', key: 'alcohol_score', score: 4 },
       { factor: 'Fructose / SSBs', key: 'fructose_score', score: 2 },
+    ]);
+  });
+});
+
+describe('getExtremeFactors', () => {
+  const toggles = { purines: true, alcohol: true, fructose: true };
+
+  it('flags an active factor whose own tier is red when the composite tier is not red', () => {
+    // purine_score: 8 -> red on its own; composite (8,4,2)/3 = 4.7 -> yellow
+    const result = getExtremeFactors(venue, toggles, 'yellow');
+    expect(result).toEqual([{ toggle: 'purines', label: 'Purines', score: 8 }]);
+  });
+
+  it('flags a factor scoring exactly 7 (red tier boundary)', () => {
+    const sevenVenue = { scores: { purine_score: 7, alcohol_score: 0, fructose_score: 0 } };
+    const result = getExtremeFactors(sevenVenue, toggles, 'yellow');
+    expect(result).toEqual([{ toggle: 'purines', label: 'Purines', score: 7 }]);
+  });
+
+  it('does not flag a factor when the composite tier is already red', () => {
+    const result = getExtremeFactors(venue, toggles, 'red');
+    expect(result).toEqual([]);
+  });
+
+  it('does not flag a factor scoring 6 (yellow tier, below red)', () => {
+    const sixVenue = { scores: { purine_score: 6, alcohol_score: 0, fructose_score: 0 } };
+    const result = getExtremeFactors(sixVenue, toggles, 'green');
+    expect(result).toEqual([]);
+  });
+
+  it('ignores factors whose toggle is inactive', () => {
+    const result = getExtremeFactors(venue, { purines: false, alcohol: true, fructose: true }, 'yellow');
+    expect(result).toEqual([]);
+  });
+
+  it('can flag multiple factors at once', () => {
+    const multiVenue = { scores: { purine_score: 9, alcohol_score: 7, fructose_score: 2 } };
+    const result = getExtremeFactors(multiVenue, toggles, 'yellow');
+    expect(result).toEqual([
+      { toggle: 'purines', label: 'Purines', score: 9 },
+      { toggle: 'alcohol', label: 'Alcohol', score: 7 },
     ]);
   });
 });

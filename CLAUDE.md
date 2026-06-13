@@ -34,7 +34,7 @@ spec below conflicts with this section, **this section is authoritative**:
   the original `computeVenueScore` snippet below.
 - **`src/scoring/engine.js`** also exports `getScoreBreakdown(venue)` (used
   by `VenueCard`'s bar chart) and `getExtremeFactors(venue, activeToggles,
-  threshold)` — see "Extreme-axis indicator" below.
+  compositeTier)` — see "Extreme-axis indicator" below.
 - **`dehydration_score`** is collected in `venues.json` but intentionally
   **excluded** from the composite score (documented in
   `docs/scoring_methodology.md`); it's retained for possible future use.
@@ -50,10 +50,13 @@ spec below conflicts with this section, **this section is authoritative**:
   ranking (`itemRisk()`); `VenueCard` shows explainer copy rather than
   reconciling the two.
 - **Extreme-axis indicator (⚡):** Because the composite is a weighted
-  average, a single active factor scoring ≥8 can be "averaged down" into a
-  lower tier. `getExtremeFactors()` surfaces this independently as a ⚡ badge
-  in `VenueCard`, a dashed red ring on map markers, and a ⚡ icon in
-  `ListView`'s Risk Tier column, with an explanatory entry in `Legend.jsx`.
+  average, a single active factor whose own tier is Higher Risk (score ≥7)
+  can be "averaged down" into a lower composite tier.
+  `getExtremeFactors(venue, activeToggles, compositeTier)` flags any active
+  factor in the red tier when the composite tier is not also red, surfacing
+  it independently as a ⚡ badge in `VenueCard`, a dashed red ring on map
+  markers, and a ⚡ icon in `ListView`'s Risk Tier column, with an
+  explanatory entry in `Legend.jsx`.
 
 ---
 

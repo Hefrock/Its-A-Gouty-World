@@ -90,7 +90,7 @@ export default function GPSMapView({ venues, activeToggles, strictnessMode, onSe
           />
           {venues.map((venue) => {
             const result = computeVenueScore(venue, activeToggles, strictnessMode);
-            const extremeFactors = getExtremeFactors(venue, activeToggles);
+            const extremeFactors = getExtremeFactors(venue, activeToggles, result.tier);
             return (
               <VenueMarker
                 key={venue.id}

@@ -62,9 +62,12 @@ Barrel has `alcohol_score: 9` (alcohol is the centerpiece of its menu) but a
 composite of 6.0 in Strict mode — landing in the yellow "Moderate Risk" tier
 even though alcohol alone is in the red range.
 
-To prevent this from being hidden, any **active** factor scoring 8 or higher
-on its own is surfaced independently via a ⚡ "High {Factor}: X/10" indicator,
-shown as:
+To prevent this from being hidden, any **active** factor whose own tier is
+Higher Risk (score ≥ 7, the same red-tier boundary used everywhere else in
+the app) is surfaced independently via a ⚡ "High {Factor}: X/10" indicator —
+but only when the venue's **composite** tier is *not* already Higher Risk
+(otherwise the red tier already communicates the risk, and the badge would be
+redundant). This is shown as:
 
 - A badge on the `VenueCard` detail panel
 - A dashed red ring around the venue's marker on `MapView` and `GPSMapView`

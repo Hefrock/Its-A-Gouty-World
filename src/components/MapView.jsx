@@ -56,7 +56,7 @@ export default function MapView({ venues, activeToggles, strictnessMode, onSelec
 
           {venues.map((venue) => {
             const result = computeVenueScore(venue, activeToggles, strictnessMode);
-            const extremeFactors = getExtremeFactors(venue, activeToggles);
+            const extremeFactors = getExtremeFactors(venue, activeToggles, result.tier);
             const { x, y } = getVenueCoords(venue);
             const isNonOpen = venue.operating_status && venue.operating_status !== 'open';
             const extremeLabel = extremeFactors.length > 0

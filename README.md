@@ -41,9 +41,10 @@ Two extra indicators appear across the map and list views:
 
 - **⚡ High on one factor** — a venue's composite score is an average, which
   can mask a single factor that's severe on its own (e.g. a venue centered
-  on alcohol). Any active factor scoring 8+ is called out separately with a
-  ⚡ badge, a dashed red ring on the map, or an icon next to the Risk Tier in
-  the list.
+  on alcohol). Any active factor in the Higher Risk range (7+) is called out
+  separately — but only when the composite tier isn't already Higher
+  Risk — with a ⚡ badge, a dashed red ring on the map, or an icon next to
+  the Risk Tier in the list.
 - **⚠️ Closed / limited / seasonal** — venues that are temporarily closed, on
   a seasonal pause, or offering limited service are marked with a ⚠️ icon;
   open the venue card for details before planning around it.
