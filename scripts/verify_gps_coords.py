@@ -14,11 +14,20 @@ cross-checks them against real OpenStreetMap points of interest:
     4. For everything else, leave gps_coords untouched and list it in the
        generated report for manual review.
 
+Each venue in venues.json carries a "gps_source" field, either "osm" or
+"manual". Venues marked "manual" have been individually cross-checked
+against Google Maps and are SKIPPED entirely by this script — their
+gps_coords are left untouched and they are listed separately in the report
+as locked, so a re-run of the automated OSM pass can never silently
+overwrite a manually-confirmed position. To re-include a venue in the
+automated pass, change its "gps_source" to "osm" in venues.json.
+
 Usage:
     python3 scripts/verify_gps_coords.py
 
 Output:
-    - src/data/venues.json updated in place for confident matches
+    - src/data/venues.json updated in place for confident matches among
+      "osm"-sourced venues
     - data_sources/osm_cache/magic_kingdom_food_pois.json (raw OSM response, cached)
     - data_sources/gps_verification_report.md (human-readable summary)
 """
@@ -129,15 +138,34 @@ def main():
     text = VENUES_JSON.read_text(encoding="utf-8")
     venues = json.loads(text)
 
+    manual_venues = [v for v in venues if v.get("gps_source") == "manual"]
+    osm_venues = [v for v in venues if v.get("gps_source") != "manual"]
+
     pois = fetch_osm_pois()
     print(f"Fetched {len(pois)} named food/beverage POIs from OSM")
 
     report = [
         "# GPS Coordinate Verification Report",
         "",
-        f"Cross-referenced `src/data/venues.json` against {len(pois)} named "
-        "food/beverage points of interest from OpenStreetMap (via Overpass API), "
-        f"within a bounding box covering Magic Kingdom.",
+        "## Manually verified (locked)",
+        "",
+        f"The following {len(manual_venues)} venues have `gps_coords` cross-checked "
+        "against Google Maps and are marked `\"gps_source\": \"manual\"` in "
+        "`venues.json`. This script skips them entirely so a re-run of the "
+        "automated OSM pass can never overwrite a manually-confirmed position.",
+        "",
+    ]
+    for venue in sorted(manual_venues, key=lambda v: v["name"]):
+        c = venue["gps_coords"]
+        report.append(f"- 🔒 **{venue['name']}** — {c['lat']}, {c['lng']}")
+
+    report += [
+        "",
+        "## Automated OSM cross-check",
+        "",
+        f"Cross-referenced the remaining {len(osm_venues)} `\"gps_source\": \"osm\"` "
+        f"venues against {len(pois)} named food/beverage points of interest from "
+        "OpenStreetMap (via Overpass API), within a bounding box covering Magic Kingdom.",
         "",
         f"A venue's `gps_coords` were updated only when the closest OSM match had "
         f"name similarity >= {NAME_SIMILARITY_THRESHOLD} AND was within "
@@ -146,7 +174,7 @@ def main():
     ]
 
     updated, flagged, unmatched = 0, 0, 0
-    for venue in venues:
+    for venue in osm_venues:
         old = venue["gps_coords"]
         poi, score = best_match(venue["name"], pois)
 
@@ -174,12 +202,17 @@ def main():
             flagged += 1
 
     report.append("")
-    report.append(f"**Summary:** {updated} updated, {flagged} flagged for manual review, {unmatched} unmatched, out of {len(venues)} venues.")
+    report.append(
+        f"**Summary:** {len(manual_venues)} locked (manually verified), {updated} "
+        f"updated via OSM match, {flagged} flagged for manual review, {unmatched} "
+        f"unmatched, out of {len(venues)} venues."
+    )
 
     VENUES_JSON.write_text(text, encoding="utf-8")
     REPORT_PATH.write_text("\n".join(report) + "\n", encoding="utf-8")
 
-    print(f"Updated gps_coords for {updated}/{len(venues)} venues")
+    print(f"{len(manual_venues)}/{len(venues)} venues locked (manual, skipped)")
+    print(f"Updated gps_coords for {updated}/{len(osm_venues)} OSM-sourced venues")
     print(f"{flagged} flagged for manual review, {unmatched} had no OSM match")
     print(f"Report written to {REPORT_PATH}")
 

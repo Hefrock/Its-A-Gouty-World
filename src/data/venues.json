@@ -21,6 +21,7 @@
       "fructose": "Fountain sodas, lemonade, and a brownie sundae push fructose load to moderate-high.",
       "dehydration": "Hot dogs, fries, and chili are high in sodium."
     },
+    "gps_source": "osm",
     "gps_coords": { "lat": 28.417939, "lng": -81.581329 }
   },
   {
@@ -45,6 +46,7 @@
       "fructose": "Buffet dessert table (cakes, cobblers) and soda fountain contribute meaningfully.",
       "dehydration": "Varied buffet sodium; carved meats and gravies push it to moderate."
     },
+    "gps_source": "osm",
     "gps_coords": { "lat": 28.418089, "lng": -81.581989 }
   },
   {
@@ -69,6 +71,7 @@
       "fructose": "Frappuccinos, sweetened espresso drinks, and pastries carry a high sugar load.",
       "dehydration": "Cured-meat sandwiches and salty pastries add moderate sodium."
     },
+    "gps_source": "manual",
     "gps_coords": { "lat": 28.418037, "lng": -81.581125 }
   },
   {
@@ -93,6 +96,7 @@
       "fructose": "Famous for ice cream sundaes, milkshakes, and floats — high sugar load.",
       "dehydration": "Burgers, loaded fries, and the smoked turkey club are high in sodium."
     },
+    "gps_source": "osm",
     "gps_coords": { "lat": 28.417915, "lng": -81.580916 }
   },
   {
@@ -117,6 +121,7 @@
       "fructose": "Tiramisu and soda are available, but not the centerpiece of the menu.",
       "dehydration": "Tomato sauces and parmesan add moderate sodium."
     },
+    "gps_source": "osm",
     "gps_coords": { "lat": 28.416917, "lng": -81.580587 }
   },
   {
@@ -141,6 +146,7 @@
       "fructose": "Soft drinks and milkshakes available.",
       "dehydration": "Rotisserie chicken and ribs are heavily seasoned/salted."
     },
+    "gps_source": "osm",
     "gps_coords": { "lat": 28.419349, "lng": -81.579888 }
   },
   {
@@ -165,6 +171,7 @@
       "fructose": "Frozen lemonade and slushies are sugar-heavy.",
       "dehydration": "Soft pretzels with cheese sauce are very high in sodium."
     },
+    "gps_source": "osm",
     "gps_coords": { "lat": 28.418471, "lng": -81.57917 }
   },
   {
@@ -191,6 +198,7 @@
       "fructose": "Standard fountain soda menu.",
       "dehydration": "Burgers and fries are high in sodium."
     },
+    "gps_source": "osm",
     "gps_coords": { "lat": 28.417972, "lng": -81.580468 }
   },
   {
@@ -215,6 +223,7 @@
       "fructose": "Frozen slushies and the signature Cherry Cola Churro are sugar-dense; diet fountain options available.",
       "dehydration": "Popcorn adds modest sodium; otherwise low-sodium snacks and beverages."
     },
+    "gps_source": "manual",
     "gps_coords": { "lat": 28.418461, "lng": -81.578941 }
   },
   {
@@ -239,6 +248,7 @@
       "fructose": "Soft-serve sundaes and floats are high in added sugar.",
       "dehydration": "No high-sodium food items."
     },
+    "gps_source": "osm",
     "gps_coords": { "lat": 28.418775, "lng": -81.579416 }
   },
   {
@@ -263,6 +273,7 @@
       "fructose": "Signature 'The Grey Stuff' dessert and sweetened lemonade contribute to fructose load.",
       "dehydration": "Rich sauces and cured meats (croque monsieur at lunch) are high in sodium."
     },
+    "gps_source": "osm",
     "gps_coords": { "lat": 28.42146, "lng": -81.580873 }
   },
   {
@@ -287,6 +298,7 @@
       "fructose": "Standard fountain soda menu.",
       "dehydration": "Flatbreads with cured meat and cheese are high in sodium."
     },
+    "gps_source": "manual",
     "gps_coords": { "lat": 28.420795, "lng": -81.581457 }
   },
   {
@@ -311,6 +323,7 @@
       "fructose": "Mostly savory; soda is the main sugar source.",
       "dehydration": "Chili-cheese tots are extremely high in sodium."
     },
+    "gps_source": "osm",
     "gps_coords": { "lat": 28.420131, "lng": -81.580786 }
   },
   {
@@ -335,6 +348,7 @@
       "fructose": "LeFou's Brew and warm cinnamon rolls are very high in added sugar.",
       "dehydration": "Turkey legs are heavily brined and extremely high in sodium."
     },
+    "gps_source": "osm",
     "gps_coords": { "lat": 28.421355, "lng": -81.580482 }
   },
   {
@@ -359,6 +373,7 @@
       "fructose": "Churros and fruit cups carry moderate natural and added sugar.",
       "dehydration": "Soft pretzels and popcorn add moderate sodium."
     },
+    "gps_source": "manual",
     "gps_coords": { "lat": 28.421043, "lng": -81.578571 }
   },
   {
@@ -383,6 +398,7 @@
       "fructose": "Sundaes, floats, and milkshakes are high in added sugar.",
       "dehydration": "No high-sodium food items."
     },
+    "gps_source": "osm",
     "gps_coords": { "lat": 28.420185, "lng": -81.580604 }
   },
   {
@@ -407,6 +423,7 @@
       "fructose": "Seasonal pie and sweetened cranberry relish; soda available.",
       "dehydration": "Roasted meats and gravies are high in sodium."
     },
+    "gps_source": "osm",
     "gps_coords": { "lat": 28.418907, "lng": -81.582571 }
   },
   {
@@ -431,6 +448,7 @@
       "fructose": "Mostly savory; soda and sweet tea are the main sugar sources.",
       "dehydration": "Fried fish, chowder, and chips are high in sodium."
     },
+    "gps_source": "osm",
     "gps_coords": { "lat": 28.419974, "lng": -81.582322 }
   },
   {
@@ -455,6 +473,7 @@
       "fructose": "Funnel cakes and chocolate-hazelnut waffles are among the highest sugar items in the park.",
       "dehydration": "No high-sodium food items."
     },
+    "gps_source": "osm",
     "gps_coords": { "lat": 28.419262, "lng": -81.58198 }
   },
   {
@@ -479,6 +498,7 @@
       "fructose": "Mostly savory build-your-own bowls; soda is the main sugar source.",
       "dehydration": "Nacho toppings bar (cheese sauce, salsa, beans) is high in sodium."
     },
+    "gps_source": "osm",
     "gps_coords": { "lat": 28.41873, "lng": -81.584431 }
   },
   {
@@ -503,6 +523,7 @@
       "fructose": "Apple and pineapple fritters are deep-fried and sugar-glazed.",
       "dehydration": "Fried items and dipping sauces add moderate sodium."
     },
+    "gps_source": "osm",
     "gps_coords": { "lat": 28.418632, "lng": -81.58474 }
   },
   {
@@ -527,6 +548,7 @@
       "fructose": "Churros add a moderate sugar load.",
       "dehydration": "Turkey legs are heavily brined and extremely high in sodium."
     },
+    "gps_source": "osm",
     "gps_coords": { "lat": 28.418986, "lng": -81.584037 }
   },
   {
@@ -551,6 +573,7 @@
       "fructose": "Tropical cocktails and desserts (e.g., 'Tipsy Tile' chocolate cake) carry meaningful sugar.",
       "dehydration": "Marinades and sauces are high in sodium."
     },
+    "gps_source": "osm",
     "gps_coords": { "lat": 28.418612, "lng": -81.582513 }
   },
   {
@@ -577,6 +600,7 @@
       "fructose": "BBQ sauces and soda contribute moderate sugar.",
       "dehydration": "BBQ pulled pork and sauces are high in sodium."
     },
+    "gps_source": "manual",
     "gps_coords": { "lat": 28.418553, "lng": -81.583450 }
   },
   {
@@ -601,6 +625,7 @@
       "fructose": "Citrus swirl (soft serve + frozen orange juice) is high in added and natural sugar.",
       "dehydration": "No high-sodium food items."
     },
+    "gps_source": "osm",
     "gps_coords": { "lat": 28.41844, "lng": -81.582586 }
   },
   {
@@ -625,6 +650,7 @@
       "fructose": "Dole Whip floats are among the highest sugar treats in the park.",
       "dehydration": "No high-sodium food items."
     },
+    "gps_source": "osm",
     "gps_coords": { "lat": 28.41863, "lng": -81.58374 }
   },
   {
@@ -649,6 +675,7 @@
       "fructose": "Tea slushies, a sprinkle-filled cupcake, and a sweetened cold brew drink are high in added sugar.",
       "dehydration": "The Pepper Jack Pretzel is the only notably salty item."
     },
+    "gps_source": "manual",
     "gps_coords": { "lat": 28.419954, "lng": -81.579618 }
   },
   {
@@ -673,6 +700,7 @@
       "fructose": "A dessert ('The Clock Strikes Twelve' chocolate tart) is included with every meal.",
       "dehydration": "Rich sauces, glazes, and smoked-gouda grits push sodium to moderate-high."
     },
+    "gps_source": "manual",
     "gps_coords": { "lat": 28.419715, "lng": -81.57966 }
   },
   {
@@ -699,6 +727,7 @@
       "fructose": "Toffee cake and sweetened cranberry salad contribute to the fructose load.",
       "dehydration": "Roasted meats, gravies, and mac and cheese are high in sodium."
     },
+    "gps_source": "manual",
     "gps_coords": { "lat": 28.419105, "lng": -81.581818 }
   },
   {
@@ -723,6 +752,7 @@
       "fructose": "A frozen lemonade slushie is the main sugar source; most other items (fruit, pretzels, cheese) are savory or unsweetened.",
       "dehydration": "Smoked turkey legs, hot dogs, and pretzels are heavily brined and extremely high in sodium."
     },
+    "gps_source": "manual",
     "gps_coords": { "lat": 28.419713, "lng": -81.581545 }
   },
   {
@@ -747,6 +777,7 @@
       "fructose": "Sundaes, shakes, and floats are among the highest sugar items in the park.",
       "dehydration": "No high-sodium food items."
     },
+    "gps_source": "manual",
     "gps_coords": { "lat": 28.418132, "lng": -81.580749 }
   },
   {
@@ -771,6 +802,7 @@
       "fructose": "Cocktails built on guava, lime, citrus, and ube, plus a dessert-style 'Treasure Trove' drink, carry a high sugar load.",
       "dehydration": "Salty snacks (caramel popcorn, cotija cheese, dips) alongside alcohol increase dehydration risk."
     },
+    "gps_source": "manual",
     "gps_coords": { "lat": 28.418353, "lng": -81.584458 }
   }
 ]
