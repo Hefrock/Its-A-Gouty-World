@@ -12,7 +12,8 @@
     "notes": "Classic beef hot dog; moderate purine content.",
     "usda_fdc_id": "2706167",
     "usda_sodium_mg": 828,
-    "usda_protein_g": 11.7
+    "usda_protein_g": 11.7,
+    "flags": []
   },
   {
     "venue_id": "caseys-corner",
@@ -27,7 +28,8 @@
     "notes": "Beef chili and cheese add sodium and purine load.",
     "usda_fdc_id": "2706409",
     "usda_sodium_mg": 579,
-    "usda_protein_g": 10.0
+    "usda_protein_g": 10.0,
+    "flags": []
   },
   {
     "venue_id": "caseys-corner",
@@ -42,7 +44,8 @@
     "notes": "Sugar-sweetened beverage.",
     "usda_fdc_id": "2710665",
     "usda_sodium_mg": 5,
-    "usda_protein_g": 0
+    "usda_protein_g": 0,
+    "flags": []
   },
   {
     "venue_id": "caseys-corner",
@@ -54,7 +57,8 @@
     "is_ssb": false,
     "sugar_g": 45,
     "sodium_mg": 120,
-    "notes": "High sugar, low purine."
+    "notes": "High sugar, low purine.",
+    "flags": []
   },
   {
     "venue_id": "crystal-palace",
@@ -69,7 +73,8 @@
     "notes": "Buffet carving station item; moderate-high purine.",
     "usda_fdc_id": "2705847",
     "usda_sodium_mg": 372,
-    "usda_protein_g": 29.1
+    "usda_protein_g": 29.1,
+    "flags": []
   },
   {
     "venue_id": "crystal-palace",
@@ -84,7 +89,8 @@
     "notes": "Buffet staple; moderate purine.",
     "usda_fdc_id": "2708953",
     "usda_sodium_mg": 359,
-    "usda_protein_g": 7.3
+    "usda_protein_g": 7.3,
+    "flags": []
   },
   {
     "venue_id": "crystal-palace",
@@ -99,7 +105,8 @@
     "notes": "Low purine, low sugar option.",
     "usda_fdc_id": "2706846",
     "usda_sodium_mg": 266,
-    "usda_protein_g": 7.1
+    "usda_protein_g": 7.1,
+    "flags": []
   },
   {
     "venue_id": "crystal-palace",
@@ -114,7 +121,8 @@
     "notes": "High sugar dessert option.",
     "usda_fdc_id": "2708019",
     "usda_sodium_mg": 180,
-    "usda_protein_g": 2.0
+    "usda_protein_g": 2.0,
+    "flags": []
   },
   {
     "venue_id": "main-street-bakery",
@@ -129,7 +137,8 @@
     "notes": "Cured ham; moderate purine and sodium.",
     "usda_fdc_id": "173270",
     "usda_sodium_mg": 711,
-    "usda_protein_g": 12.4
+    "usda_protein_g": 12.4,
+    "flags": []
   },
   {
     "venue_id": "main-street-bakery",
@@ -144,7 +153,10 @@
     "notes": "Sugar-sweetened blended coffee beverage.",
     "usda_fdc_id": "167974",
     "usda_sodium_mg": 245,
-    "usda_protein_g": 4.6
+    "usda_protein_g": 4.6,
+    "flags": [
+      "high_fructose"
+    ]
   },
   {
     "venue_id": "main-street-bakery",
@@ -159,7 +171,8 @@
     "notes": "High sugar pastry, low purine.",
     "usda_fdc_id": "172766",
     "usda_sodium_mg": 479,
-    "usda_protein_g": 3.5
+    "usda_protein_g": 3.5,
+    "flags": []
   },
   {
     "venue_id": "plaza-restaurant",
@@ -174,7 +187,8 @@
     "notes": "Beef burger; moderate purine.",
     "usda_fdc_id": "2707481",
     "usda_sodium_mg": 534,
-    "usda_protein_g": 13.0
+    "usda_protein_g": 13.0,
+    "flags": []
   },
   {
     "venue_id": "plaza-restaurant",
@@ -189,7 +203,10 @@
     "notes": "Very high sugar dairy beverage.",
     "usda_fdc_id": "2708068",
     "usda_sodium_mg": 388,
-    "usda_protein_g": 5.4
+    "usda_protein_g": 5.4,
+    "flags": [
+      "high_fructose"
+    ]
   },
   {
     "venue_id": "plaza-restaurant",
@@ -204,7 +221,8 @@
     "notes": "High sugar, low purine.",
     "usda_fdc_id": "173302",
     "usda_sodium_mg": 94.0,
-    "usda_protein_g": 4.1
+    "usda_protein_g": 4.1,
+    "flags": []
   },
   {
     "venue_id": "plaza-restaurant",
@@ -219,7 +237,8 @@
     "notes": "Lowest-risk side option.",
     "usda_fdc_id": "172074",
     "usda_sodium_mg": 12.0,
-    "usda_protein_g": 1.0
+    "usda_protein_g": 1.0,
+    "flags": []
   },
   {
     "venue_id": "tonys-town-square",
@@ -234,7 +253,8 @@
     "notes": "Breaded poultry with marinara; moderate purine, high sodium.",
     "usda_fdc_id": "168062",
     "usda_sodium_mg": 536,
-    "usda_protein_g": 16.2
+    "usda_protein_g": 16.2,
+    "flags": []
   },
   {
     "venue_id": "tonys-town-square",
@@ -249,7 +269,8 @@
     "notes": "Beef/pork meatballs; moderate purine.",
     "usda_fdc_id": "169845",
     "usda_sodium_mg": 351,
-    "usda_protein_g": 7.8
+    "usda_protein_g": 7.8,
+    "flags": []
   },
   {
     "venue_id": "tonys-town-square",
@@ -264,7 +285,8 @@
     "notes": "Wine carries lower gout risk than beer per Choi & Curhan 2004.",
     "usda_fdc_id": "2710688",
     "usda_sodium_mg": 4,
-    "usda_protein_g": 0.1
+    "usda_protein_g": 0.1,
+    "flags": []
   },
   {
     "venue_id": "tonys-town-square",
@@ -279,7 +301,8 @@
     "notes": "Low purine starter option.",
     "usda_fdc_id": "2710195",
     "usda_sodium_mg": 810,
-    "usda_protein_g": 1.3
+    "usda_protein_g": 1.3,
+    "flags": []
   },
   {
     "venue_id": "cosmic-rays-starlight-cafe",
@@ -294,7 +317,8 @@
     "notes": "Poultry; moderate purine, very high sodium.",
     "usda_fdc_id": "2706060",
     "usda_sodium_mg": 579,
-    "usda_protein_g": 23.4
+    "usda_protein_g": 23.4,
+    "flags": []
   },
   {
     "venue_id": "cosmic-rays-starlight-cafe",
@@ -309,7 +333,8 @@
     "notes": "Beef and bacon; moderate purine.",
     "usda_fdc_id": "2706892",
     "usda_sodium_mg": 628,
-    "usda_protein_g": 13.5
+    "usda_protein_g": 13.5,
+    "flags": []
   },
   {
     "venue_id": "cosmic-rays-starlight-cafe",
@@ -324,7 +349,10 @@
     "notes": "Sugar-sweetened soft drink.",
     "usda_fdc_id": "2710655",
     "usda_sodium_mg": 16,
-    "usda_protein_g": 0
+    "usda_protein_g": 0,
+    "flags": [
+      "high_fructose"
+    ]
   },
   {
     "venue_id": "cosmic-rays-starlight-cafe",
@@ -339,7 +367,8 @@
     "notes": "Lowest-purine option on the menu.",
     "usda_fdc_id": "2705634",
     "usda_sodium_mg": 74,
-    "usda_protein_g": 4.8
+    "usda_protein_g": 4.8,
+    "flags": []
   },
   {
     "venue_id": "the-lunching-pad",
@@ -354,7 +383,10 @@
     "notes": "Smoked turkey leg; high end of poultry purine range, extremely high sodium.",
     "usda_fdc_id": "171493",
     "usda_sodium_mg": 74.0,
-    "usda_protein_g": 19.5
+    "usda_protein_g": 19.5,
+    "flags": [
+      "high_purine"
+    ]
   },
   {
     "venue_id": "the-lunching-pad",
@@ -369,7 +401,8 @@
     "notes": "Low purine but very high sodium.",
     "usda_fdc_id": "169064",
     "usda_sodium_mg": 203,
-    "usda_protein_g": 8.2
+    "usda_protein_g": 8.2,
+    "flags": []
   },
   {
     "venue_id": "the-lunching-pad",
@@ -384,7 +417,10 @@
     "notes": "Sugar-sweetened frozen beverage.",
     "usda_fdc_id": "2710572",
     "usda_sodium_mg": 7,
-    "usda_protein_g": 0.2
+    "usda_protein_g": 0.2,
+    "flags": [
+      "high_fructose"
+    ]
   },
   {
     "venue_id": "tomorrowland-terrace",
@@ -399,7 +435,8 @@
     "notes": "Beef and bacon; moderate purine.",
     "usda_fdc_id": "2706892",
     "usda_sodium_mg": 628,
-    "usda_protein_g": 13.5
+    "usda_protein_g": 13.5,
+    "flags": []
   },
   {
     "venue_id": "tomorrowland-terrace",
@@ -414,7 +451,8 @@
     "notes": "Plant-based patty; lower purine alternative.",
     "usda_fdc_id": "2707481",
     "usda_sodium_mg": 534,
-    "usda_protein_g": 13.0
+    "usda_protein_g": 13.0,
+    "flags": []
   },
   {
     "venue_id": "tomorrowland-terrace",
@@ -429,7 +467,10 @@
     "notes": "Beer carries the highest gout-risk among alcohol types per Choi & Curhan 2004.",
     "usda_fdc_id": "2710616",
     "usda_sodium_mg": 4,
-    "usda_protein_g": 0.5
+    "usda_protein_g": 0.5,
+    "flags": [
+      "alcohol_sugar_combo"
+    ]
   },
   {
     "venue_id": "tomorrowland-terrace",
@@ -444,7 +485,10 @@
     "notes": "Sugar-sweetened soft drink.",
     "usda_fdc_id": "2710655",
     "usda_sodium_mg": 16,
-    "usda_protein_g": 0
+    "usda_protein_g": 0,
+    "flags": [
+      "high_fructose"
+    ]
   },
   {
     "venue_id": "astrofizz",
@@ -456,7 +500,8 @@
     "is_ssb": false,
     "sugar_g": 35,
     "sodium_mg": 150,
-    "notes": "Signature churro rolled in cherry sugar with Coca-Cola Cherry icing and popping candy; high sugar, low purine."
+    "notes": "Signature churro rolled in cherry sugar with Coca-Cola Cherry icing and popping candy; high sugar, low purine.",
+    "flags": []
   },
   {
     "venue_id": "astrofizz",
@@ -471,7 +516,10 @@
     "notes": "High-sugar frozen soda; also available in Fanta Blue Raspberry and Fanta Orange.",
     "usda_fdc_id": "171884",
     "usda_sodium_mg": 6.0,
-    "usda_protein_g": 0.0
+    "usda_protein_g": 0.0,
+    "flags": [
+      "high_fructose"
+    ]
   },
   {
     "venue_id": "astrofizz",
@@ -483,7 +531,8 @@
     "is_ssb": false,
     "sugar_g": 0,
     "sodium_mg": 30,
-    "notes": "Diet fountain option; no fructose pathway contribution."
+    "notes": "Diet fountain option; no fructose pathway contribution.",
+    "flags": []
   },
   {
     "venue_id": "auntie-gravitys",
@@ -498,7 +547,8 @@
     "notes": "High sugar, very low purine.",
     "usda_fdc_id": "2705634",
     "usda_sodium_mg": 74,
-    "usda_protein_g": 4.8
+    "usda_protein_g": 4.8,
+    "flags": []
   },
   {
     "venue_id": "auntie-gravitys",
@@ -513,7 +563,8 @@
     "notes": "Moderate sugar, very low purine.",
     "usda_fdc_id": "2708118",
     "usda_sodium_mg": 195,
-    "usda_protein_g": 14.7
+    "usda_protein_g": 14.7,
+    "flags": []
   },
   {
     "venue_id": "auntie-gravitys",
@@ -528,7 +579,8 @@
     "notes": "Lowest-risk option on the menu.",
     "usda_fdc_id": "2709287",
     "usda_sodium_mg": 4,
-    "usda_protein_g": 0.6
+    "usda_protein_g": 0.6,
+    "flags": []
   },
   {
     "venue_id": "be-our-guest",
@@ -543,7 +595,10 @@
     "notes": "Pork shoulder; high end of red-meat purine range.",
     "usda_fdc_id": "167854",
     "usda_sodium_mg": 93.0,
-    "usda_protein_g": 29.1
+    "usda_protein_g": 29.1,
+    "flags": [
+      "high_purine"
+    ]
   },
   {
     "venue_id": "be-our-guest",
@@ -558,7 +613,10 @@
     "notes": "Beef filet; high end of red-meat purine range.",
     "usda_fdc_id": "170319",
     "usda_sodium_mg": 434,
-    "usda_protein_g": 11.3
+    "usda_protein_g": 11.3,
+    "flags": [
+      "high_purine"
+    ]
   },
   {
     "venue_id": "be-our-guest",
@@ -573,7 +631,8 @@
     "notes": "Wine carries lower gout-risk than beer.",
     "usda_fdc_id": "2710697",
     "usda_sodium_mg": 11,
-    "usda_protein_g": 0.0
+    "usda_protein_g": 0.0,
+    "flags": []
   },
   {
     "venue_id": "be-our-guest",
@@ -588,7 +647,8 @@
     "notes": "Cookies-and-cream mousse; high sugar, low purine.",
     "usda_fdc_id": "2707922",
     "usda_sodium_mg": 351,
-    "usda_protein_g": 4.3
+    "usda_protein_g": 4.3,
+    "flags": []
   },
   {
     "venue_id": "pinocchio-village-haus",
@@ -603,7 +663,8 @@
     "notes": "Beef/pork meatballs; moderate purine, high sodium.",
     "usda_fdc_id": "2708157",
     "usda_sodium_mg": 632,
-    "usda_protein_g": 9.8
+    "usda_protein_g": 9.8,
+    "flags": []
   },
   {
     "venue_id": "pinocchio-village-haus",
@@ -618,7 +679,8 @@
     "notes": "Breaded poultry; moderate purine.",
     "usda_fdc_id": "2708157",
     "usda_sodium_mg": 632,
-    "usda_protein_g": 9.8
+    "usda_protein_g": 9.8,
+    "flags": []
   },
   {
     "venue_id": "pinocchio-village-haus",
@@ -633,7 +695,8 @@
     "notes": "Lowest-risk option on the menu.",
     "usda_fdc_id": "2706846",
     "usda_sodium_mg": 266,
-    "usda_protein_g": 7.1
+    "usda_protein_g": 7.1,
+    "flags": []
   },
   {
     "venue_id": "friars-nook",
@@ -648,7 +711,8 @@
     "notes": "Beef chili topping; moderate purine, very high sodium.",
     "usda_fdc_id": "2709511",
     "usda_sodium_mg": 421,
-    "usda_protein_g": 1.9
+    "usda_protein_g": 1.9,
+    "flags": []
   },
   {
     "venue_id": "friars-nook",
@@ -663,7 +727,8 @@
     "notes": "Bacon topping; moderate purine, very high sodium.",
     "usda_fdc_id": "2709511",
     "usda_sodium_mg": 421,
-    "usda_protein_g": 1.9
+    "usda_protein_g": 1.9,
+    "flags": []
   },
   {
     "venue_id": "friars-nook",
@@ -678,7 +743,8 @@
     "notes": "Lowest-purine option, still high in sodium.",
     "usda_fdc_id": "2709511",
     "usda_sodium_mg": 421,
-    "usda_protein_g": 1.9
+    "usda_protein_g": 1.9,
+    "flags": []
   },
   {
     "venue_id": "gastons-tavern",
@@ -693,7 +759,10 @@
     "notes": "High end of poultry purine range, extremely high sodium.",
     "usda_fdc_id": "171494",
     "usda_sodium_mg": 77.0,
-    "usda_protein_g": 27.9
+    "usda_protein_g": 27.9,
+    "flags": [
+      "high_purine"
+    ]
   },
   {
     "venue_id": "gastons-tavern",
@@ -708,7 +777,10 @@
     "notes": "Frozen apple juice slush; high sugar despite 'Brew' name (non-alcoholic).",
     "usda_fdc_id": "2710375",
     "usda_sodium_mg": 2,
-    "usda_protein_g": 0.1
+    "usda_protein_g": 0.1,
+    "flags": [
+      "high_fructose"
+    ]
   },
   {
     "venue_id": "gastons-tavern",
@@ -723,7 +795,8 @@
     "notes": "Lowest purine item, but high sugar.",
     "usda_fdc_id": "2707667",
     "usda_sodium_mg": 304,
-    "usda_protein_g": 6.2
+    "usda_protein_g": 6.2,
+    "flags": []
   },
   {
     "venue_id": "prince-erics-village-market",
@@ -738,7 +811,8 @@
     "notes": "Lowest-risk item; natural sugars only.",
     "usda_fdc_id": "2705514",
     "usda_sodium_mg": 28,
-    "usda_protein_g": 2.3
+    "usda_protein_g": 2.3,
+    "flags": []
   },
   {
     "venue_id": "prince-erics-village-market",
@@ -753,7 +827,8 @@
     "notes": "Fried dough with cinnamon sugar.",
     "usda_fdc_id": "2708070",
     "usda_sodium_mg": 309,
-    "usda_protein_g": 6.0
+    "usda_protein_g": 6.0,
+    "flags": []
   },
   {
     "venue_id": "prince-erics-village-market",
@@ -768,7 +843,8 @@
     "notes": "Highest-sodium item at this cart.",
     "usda_fdc_id": "169064",
     "usda_sodium_mg": 203,
-    "usda_protein_g": 8.2
+    "usda_protein_g": 8.2,
+    "flags": []
   },
   {
     "venue_id": "storybook-treats",
@@ -783,7 +859,8 @@
     "notes": "Highest-sugar item at this stand.",
     "usda_fdc_id": "173302",
     "usda_sodium_mg": 94.0,
-    "usda_protein_g": 4.1
+    "usda_protein_g": 4.1,
+    "flags": []
   },
   {
     "venue_id": "storybook-treats",
@@ -798,7 +875,10 @@
     "notes": "SSB combined with ice cream.",
     "usda_fdc_id": "171871",
     "usda_sodium_mg": 13.0,
-    "usda_protein_g": 0.0
+    "usda_protein_g": 0.0,
+    "flags": [
+      "high_fructose"
+    ]
   },
   {
     "venue_id": "storybook-treats",
@@ -813,7 +893,8 @@
     "notes": "Lowest-sugar option at this stand.",
     "usda_fdc_id": "2705640",
     "usda_sodium_mg": 92,
-    "usda_protein_g": 4.4
+    "usda_protein_g": 4.4,
+    "flags": []
   },
   {
     "venue_id": "liberty-tree-tavern",
@@ -828,7 +909,8 @@
     "notes": "Beef pot roast; moderate-high purine.",
     "usda_fdc_id": "2705848",
     "usda_sodium_mg": 370,
-    "usda_protein_g": 28.4
+    "usda_protein_g": 28.4,
+    "flags": []
   },
   {
     "venue_id": "liberty-tree-tavern",
@@ -843,7 +925,8 @@
     "notes": "Family-style turkey; moderate-high purine.",
     "usda_fdc_id": "2706124",
     "usda_sodium_mg": 442,
-    "usda_protein_g": 26.9
+    "usda_protein_g": 26.9,
+    "flags": []
   },
   {
     "venue_id": "liberty-tree-tavern",
@@ -858,7 +941,10 @@
     "notes": "Beer carries higher gout-risk than wine.",
     "usda_fdc_id": "2710616",
     "usda_sodium_mg": 4,
-    "usda_protein_g": 0.5
+    "usda_protein_g": 0.5,
+    "flags": [
+      "alcohol_sugar_combo"
+    ]
   },
   {
     "venue_id": "liberty-tree-tavern",
@@ -870,7 +956,8 @@
     "is_ssb": false,
     "sugar_g": 34,
     "sodium_mg": 210,
-    "notes": "Lowest-purine item on the menu."
+    "notes": "Lowest-purine item on the menu.",
+    "flags": []
   },
   {
     "venue_id": "columbia-harbour-house",
@@ -882,7 +969,8 @@
     "is_ssb": false,
     "sugar_g": 3,
     "sodium_mg": 970,
-    "notes": "Shellfish; moderate-high purine."
+    "notes": "Shellfish; moderate-high purine.",
+    "flags": []
   },
   {
     "venue_id": "columbia-harbour-house",
@@ -897,7 +985,8 @@
     "notes": "Fried whitefish; moderate purine.",
     "usda_fdc_id": "174195",
     "usda_sodium_mg": 402,
-    "usda_protein_g": 11.0
+    "usda_protein_g": 11.0,
+    "flags": []
   },
   {
     "venue_id": "columbia-harbour-house",
@@ -912,7 +1001,8 @@
     "notes": "Lowest-purine entree option.",
     "usda_fdc_id": "2707411",
     "usda_sodium_mg": 316,
-    "usda_protein_g": 6.3
+    "usda_protein_g": 6.3,
+    "flags": []
   },
   {
     "venue_id": "columbia-harbour-house",
@@ -927,7 +1017,8 @@
     "notes": "Sugar-sweetened beverage.",
     "usda_fdc_id": "2710508",
     "usda_sodium_mg": 9,
-    "usda_protein_g": 0.4
+    "usda_protein_g": 0.4,
+    "flags": []
   },
   {
     "venue_id": "sleepy-hollow",
@@ -942,7 +1033,8 @@
     "notes": "Highest-sugar item at this stand.",
     "usda_fdc_id": "2707567",
     "usda_sodium_mg": 301,
-    "usda_protein_g": 9.3
+    "usda_protein_g": 9.3,
+    "flags": []
   },
   {
     "venue_id": "sleepy-hollow",
@@ -957,7 +1049,8 @@
     "notes": "Fried dough with powdered sugar.",
     "usda_fdc_id": "2708349",
     "usda_sodium_mg": 278,
-    "usda_protein_g": 7.9
+    "usda_protein_g": 7.9,
+    "flags": []
   },
   {
     "venue_id": "sleepy-hollow",
@@ -972,7 +1065,8 @@
     "notes": "Lowest-sugar option at this stand, still high.",
     "usda_fdc_id": "172226",
     "usda_sodium_mg": 129,
-    "usda_protein_g": 4.3
+    "usda_protein_g": 4.3,
+    "flags": []
   },
   {
     "venue_id": "pecos-bill",
@@ -987,7 +1081,8 @@
     "notes": "Seasoned ground beef; moderate purine.",
     "usda_fdc_id": "170736",
     "usda_sodium_mg": 363,
-    "usda_protein_g": 6.7
+    "usda_protein_g": 6.7,
+    "flags": []
   },
   {
     "venue_id": "pecos-bill",
@@ -1002,7 +1097,8 @@
     "notes": "Highest-sodium item; moderate purine.",
     "usda_fdc_id": "2708580",
     "usda_sodium_mg": 430,
-    "usda_protein_g": 11.2
+    "usda_protein_g": 11.2,
+    "flags": []
   },
   {
     "venue_id": "pecos-bill",
@@ -1017,7 +1113,10 @@
     "notes": "Sugar-sweetened soft drink.",
     "usda_fdc_id": "2710655",
     "usda_sodium_mg": 16,
-    "usda_protein_g": 0
+    "usda_protein_g": 0,
+    "flags": [
+      "high_fructose"
+    ]
   },
   {
     "venue_id": "golden-oak-outpost",
@@ -1032,7 +1131,8 @@
     "notes": "Breaded poultry; moderate purine.",
     "usda_fdc_id": "2706092",
     "usda_sodium_mg": 594,
-    "usda_protein_g": 15.9
+    "usda_protein_g": 15.9,
+    "flags": []
   },
   {
     "venue_id": "golden-oak-outpost",
@@ -1044,7 +1144,8 @@
     "is_ssb": false,
     "sugar_g": 30,
     "sodium_mg": 230,
-    "notes": "Deep-fried, sugar-glazed; lowest purine, high sugar."
+    "notes": "Deep-fried, sugar-glazed; lowest purine, high sugar.",
+    "flags": []
   },
   {
     "venue_id": "golden-oak-outpost",
@@ -1059,7 +1160,10 @@
     "notes": "Sugar-sweetened soft drink.",
     "usda_fdc_id": "2710655",
     "usda_sodium_mg": 16,
-    "usda_protein_g": 0
+    "usda_protein_g": 0,
+    "flags": [
+      "high_fructose"
+    ]
   },
   {
     "venue_id": "westward-ho",
@@ -1074,7 +1178,10 @@
     "notes": "High end of poultry purine range, extremely high sodium.",
     "usda_fdc_id": "171494",
     "usda_sodium_mg": 77.0,
-    "usda_protein_g": 27.9
+    "usda_protein_g": 27.9,
+    "flags": [
+      "high_purine"
+    ]
   },
   {
     "venue_id": "westward-ho",
@@ -1089,7 +1196,8 @@
     "notes": "Lowest-purine item available.",
     "usda_fdc_id": "2708070",
     "usda_sodium_mg": 309,
-    "usda_protein_g": 6.0
+    "usda_protein_g": 6.0,
+    "flags": []
   },
   {
     "venue_id": "westward-ho",
@@ -1104,7 +1212,8 @@
     "notes": "Lowest-risk option overall.",
     "usda_fdc_id": "2710708",
     "usda_sodium_mg": 2,
-    "usda_protein_g": 0
+    "usda_protein_g": 0,
+    "flags": []
   },
   {
     "venue_id": "skipper-canteen",
@@ -1119,7 +1228,8 @@
     "notes": "Pork ribs; moderate-high purine and sugar from glaze.",
     "usda_fdc_id": "2705894",
     "usda_sodium_mg": 678,
-    "usda_protein_g": 16.2
+    "usda_protein_g": 16.2,
+    "flags": []
   },
   {
     "venue_id": "skipper-canteen",
@@ -1134,7 +1244,8 @@
     "notes": "Shellfish; moderate-high purine.",
     "usda_fdc_id": "2709269",
     "usda_sodium_mg": 28,
-    "usda_protein_g": 2.8
+    "usda_protein_g": 2.8,
+    "flags": []
   },
   {
     "venue_id": "skipper-canteen",
@@ -1146,7 +1257,10 @@
     "is_ssb": false,
     "sugar_g": 30,
     "sodium_mg": 10,
-    "notes": "Signature rum cocktail; prominently featured on the menu."
+    "notes": "Signature rum cocktail; prominently featured on the menu.",
+    "flags": [
+      "alcohol_sugar_combo"
+    ]
   },
   {
     "venue_id": "skipper-canteen",
@@ -1161,7 +1275,8 @@
     "notes": "Lowest-purine item on the menu.",
     "usda_fdc_id": "2708708",
     "usda_sodium_mg": 368,
-    "usda_protein_g": 6.9
+    "usda_protein_g": 6.9,
+    "flags": []
   },
   {
     "venue_id": "tortuga-tavern",
@@ -1176,7 +1291,8 @@
     "notes": "Pork with BBQ sauce; moderate purine, moderate sugar.",
     "usda_fdc_id": "173344",
     "usda_sodium_mg": 666,
-    "usda_protein_g": 13.2
+    "usda_protein_g": 13.2,
+    "flags": []
   },
   {
     "venue_id": "tortuga-tavern",
@@ -1191,7 +1307,8 @@
     "notes": "Poultry with BBQ sauce; moderate purine.",
     "usda_fdc_id": "171524",
     "usda_sodium_mg": 335,
-    "usda_protein_g": 15.2
+    "usda_protein_g": 15.2,
+    "flags": []
   },
   {
     "venue_id": "tortuga-tavern",
@@ -1206,7 +1323,10 @@
     "notes": "Rum-based specialty cocktail.",
     "usda_fdc_id": "2710677",
     "usda_sodium_mg": 4,
-    "usda_protein_g": 0.2
+    "usda_protein_g": 0.2,
+    "flags": [
+      "alcohol_sugar_combo"
+    ]
   },
   {
     "venue_id": "sunshine-tree-terrace",
@@ -1221,7 +1341,8 @@
     "notes": "Soft serve with frozen orange juice; high sugar.",
     "usda_fdc_id": "174108",
     "usda_sodium_mg": 10.0,
-    "usda_protein_g": 0.0
+    "usda_protein_g": 0.0,
+    "flags": []
   },
   {
     "venue_id": "sunshine-tree-terrace",
@@ -1236,7 +1357,10 @@
     "notes": "SSB combined with soft serve.",
     "usda_fdc_id": "171136",
     "usda_sodium_mg": 113,
-    "usda_protein_g": 23.7
+    "usda_protein_g": 23.7,
+    "flags": [
+      "high_fructose"
+    ]
   },
   {
     "venue_id": "sunshine-tree-terrace",
@@ -1251,7 +1375,8 @@
     "notes": "Lowest-risk option at this stand.",
     "usda_fdc_id": "2710708",
     "usda_sodium_mg": 2,
-    "usda_protein_g": 0
+    "usda_protein_g": 0,
+    "flags": []
   },
   {
     "venue_id": "aloha-isle",
@@ -1266,7 +1391,10 @@
     "notes": "SSB combined with pineapple soft serve; highest sugar item.",
     "usda_fdc_id": "2705611",
     "usda_sodium_mg": 25,
-    "usda_protein_g": 1.2
+    "usda_protein_g": 1.2,
+    "flags": [
+      "high_fructose"
+    ]
   },
   {
     "venue_id": "aloha-isle",
@@ -1281,7 +1409,8 @@
     "notes": "Pineapple soft serve; high sugar, very low purine.",
     "usda_fdc_id": "2705611",
     "usda_sodium_mg": 25,
-    "usda_protein_g": 1.2
+    "usda_protein_g": 1.2,
+    "flags": []
   },
   {
     "venue_id": "aloha-isle",
@@ -1296,7 +1425,8 @@
     "notes": "Lowest-risk item available.",
     "usda_fdc_id": "2709260",
     "usda_sodium_mg": 0,
-    "usda_protein_g": 0.5
+    "usda_protein_g": 0.5,
+    "flags": []
   },
   {
     "venue_id": "cheshire-cafe",
@@ -1308,7 +1438,8 @@
     "is_ssb": false,
     "sugar_g": 34,
     "sodium_mg": 230,
-    "notes": "Pastry with creamy chocolate filling and colorful icing; high sugar, low purine."
+    "notes": "Pastry with creamy chocolate filling and colorful icing; high sugar, low purine.",
+    "flags": []
   },
   {
     "venue_id": "cheshire-cafe",
@@ -1320,7 +1451,8 @@
     "is_ssb": false,
     "sugar_g": 3,
     "sodium_mg": 980,
-    "notes": "Soft pretzel with pepper jack cheese; the saltiest item at this stand."
+    "notes": "Soft pretzel with pepper jack cheese; the saltiest item at this stand.",
+    "flags": []
   },
   {
     "venue_id": "cheshire-cafe",
@@ -1332,7 +1464,8 @@
     "is_ssb": false,
     "sugar_g": 42,
     "sodium_mg": 180,
-    "notes": "Sprinkle-filled birthday cake cupcake with tea-infused buttercream; high sugar."
+    "notes": "Sprinkle-filled birthday cake cupcake with tea-infused buttercream; high sugar.",
+    "flags": []
   },
   {
     "venue_id": "cheshire-cafe",
@@ -1344,7 +1477,8 @@
     "is_ssb": true,
     "sugar_g": 32,
     "sodium_mg": 60,
-    "notes": "Cold brew coffee with white chocolate sauce and raspberry cold foam; sweetened beverage."
+    "notes": "Cold brew coffee with white chocolate sauce and raspberry cold foam; sweetened beverage.",
+    "flags": []
   },
   {
     "venue_id": "cheshire-cafe",
@@ -1356,7 +1490,10 @@
     "is_ssb": true,
     "sugar_g": 46,
     "sodium_mg": 25,
-    "notes": "Frozen tea slushy with whipped cream and sprinkles; high sugar."
+    "notes": "Frozen tea slushy with whipped cream and sprinkles; high sugar.",
+    "flags": [
+      "high_fructose"
+    ]
   },
   {
     "venue_id": "cinderella-royal-table",
@@ -1368,7 +1505,8 @@
     "is_ssb": false,
     "sugar_g": 2,
     "sodium_mg": 850,
-    "notes": "Beef filet; highest-purine entree on the prix-fixe menu."
+    "notes": "Beef filet; highest-purine entree on the prix-fixe menu.",
+    "flags": []
   },
   {
     "venue_id": "cinderella-royal-table",
@@ -1380,7 +1518,8 @@
     "is_ssb": false,
     "sugar_g": 4,
     "sodium_mg": 760,
-    "notes": "Pan-seared corvina with smoked-gouda grits; moderate-purine fish."
+    "notes": "Pan-seared corvina with smoked-gouda grits; moderate-purine fish.",
+    "flags": []
   },
   {
     "venue_id": "cinderella-royal-table",
@@ -1392,7 +1531,8 @@
     "is_ssb": false,
     "sugar_g": 14,
     "sodium_mg": 920,
-    "notes": "Sweet tea-glazed pork belly; red meat with added sugar from the glaze."
+    "notes": "Sweet tea-glazed pork belly; red meat with added sugar from the glaze.",
+    "flags": []
   },
   {
     "venue_id": "cinderella-royal-table",
@@ -1404,7 +1544,8 @@
     "is_ssb": false,
     "sugar_g": 6,
     "sodium_mg": 380,
-    "notes": "Lowest-purine option on the menu; plant purines not strongly linked to gout risk."
+    "notes": "Lowest-purine option on the menu; plant purines not strongly linked to gout risk.",
+    "flags": []
   },
   {
     "venue_id": "cinderella-royal-table",
@@ -1416,7 +1557,8 @@
     "is_ssb": false,
     "sugar_g": 48,
     "sodium_mg": 150,
-    "notes": "Dark chocolate ganache tart with salted caramel-coffee mousse; included with every meal."
+    "notes": "Dark chocolate ganache tart with salted caramel-coffee mousse; included with every meal.",
+    "flags": []
   },
   {
     "venue_id": "diamond-horseshoe",
@@ -1428,7 +1570,8 @@
     "is_ssb": false,
     "sugar_g": 1,
     "sodium_mg": 780,
-    "notes": "Family-style roasted turkey; moderate purine."
+    "notes": "Family-style roasted turkey; moderate purine.",
+    "flags": []
   },
   {
     "venue_id": "diamond-horseshoe",
@@ -1440,7 +1583,8 @@
     "is_ssb": false,
     "sugar_g": 3,
     "sodium_mg": 890,
-    "notes": "Braised beef pot roast; highest-purine item on the all-you-care-to-enjoy menu."
+    "notes": "Braised beef pot roast; highest-purine item on the all-you-care-to-enjoy menu.",
+    "flags": []
   },
   {
     "venue_id": "diamond-horseshoe",
@@ -1452,7 +1596,8 @@
     "is_ssb": false,
     "sugar_g": 5,
     "sodium_mg": 850,
-    "notes": "Smoked pork loin; red meat, moderate-high purine."
+    "notes": "Smoked pork loin; red meat, moderate-high purine.",
+    "flags": []
   },
   {
     "venue_id": "diamond-horseshoe",
@@ -1464,7 +1609,8 @@
     "is_ssb": false,
     "sugar_g": 4,
     "sodium_mg": 640,
-    "notes": "Cheese-based side; low purine."
+    "notes": "Cheese-based side; low purine.",
+    "flags": []
   },
   {
     "venue_id": "diamond-horseshoe",
@@ -1476,7 +1622,8 @@
     "is_ssb": false,
     "sugar_g": 28,
     "sodium_mg": 60,
-    "notes": "Sweetened cranberry relish; contributes to fructose load, not purines."
+    "notes": "Sweetened cranberry relish; contributes to fructose load, not purines.",
+    "flags": []
   },
   {
     "venue_id": "diamond-horseshoe",
@@ -1488,7 +1635,8 @@
     "is_ssb": false,
     "sugar_g": 44,
     "sodium_mg": 180,
-    "notes": "Included dessert; high sugar, low purine."
+    "notes": "Included dessert; high sugar, low purine.",
+    "flags": []
   },
   {
     "venue_id": "liberty-square-market",
@@ -1500,7 +1648,10 @@
     "is_ssb": false,
     "sugar_g": 1,
     "sodium_mg": 2300,
-    "notes": "Large smoked turkey leg; high end of poultry purine range, extremely high sodium."
+    "notes": "Large smoked turkey leg; high end of poultry purine range, extremely high sodium.",
+    "flags": [
+      "high_purine"
+    ]
   },
   {
     "venue_id": "liberty-square-market",
@@ -1512,7 +1663,8 @@
     "is_ssb": false,
     "sugar_g": 4,
     "sodium_mg": 720,
-    "notes": "Classic beef hot dog; moderate purine."
+    "notes": "Classic beef hot dog; moderate purine.",
+    "flags": []
   },
   {
     "venue_id": "liberty-square-market",
@@ -1524,7 +1676,8 @@
     "is_ssb": false,
     "sugar_g": 3,
     "sodium_mg": 840,
-    "notes": "Soft pretzel; low purine, high sodium."
+    "notes": "Soft pretzel; low purine, high sodium.",
+    "flags": []
   },
   {
     "venue_id": "liberty-square-market",
@@ -1536,7 +1689,10 @@
     "is_ssb": true,
     "sugar_g": 42,
     "sodium_mg": 20,
-    "notes": "Frozen sugar-sweetened beverage."
+    "notes": "Frozen sugar-sweetened beverage.",
+    "flags": [
+      "high_fructose"
+    ]
   },
   {
     "venue_id": "plaza-ice-cream-parlor",
@@ -1548,7 +1704,8 @@
     "is_ssb": false,
     "sugar_g": 56,
     "sodium_mg": 160,
-    "notes": "Hot fudge sundae in a waffle bowl with two scoops; among the highest-sugar items in the park."
+    "notes": "Hot fudge sundae in a waffle bowl with two scoops; among the highest-sugar items in the park.",
+    "flags": []
   },
   {
     "venue_id": "plaza-ice-cream-parlor",
@@ -1560,7 +1717,8 @@
     "is_ssb": false,
     "sugar_g": 50,
     "sodium_mg": 140,
-    "notes": "Vanilla and chocolate ice cream with hot fudge and peanut butter drizzle; high sugar, low purine."
+    "notes": "Vanilla and chocolate ice cream with hot fudge and peanut butter drizzle; high sugar, low purine.",
+    "flags": []
   },
   {
     "venue_id": "plaza-ice-cream-parlor",
@@ -1572,7 +1730,10 @@
     "is_ssb": true,
     "sugar_g": 64,
     "sodium_mg": 200,
-    "notes": "Chocolate ice cream blended with marshmallows; highest-sugar item at this stand."
+    "notes": "Chocolate ice cream blended with marshmallows; highest-sugar item at this stand.",
+    "flags": [
+      "high_fructose"
+    ]
   },
   {
     "venue_id": "plaza-ice-cream-parlor",
@@ -1584,7 +1745,10 @@
     "is_ssb": true,
     "sugar_g": 48,
     "sodium_mg": 60,
-    "notes": "SSB combined with hand-scooped ice cream."
+    "notes": "SSB combined with hand-scooped ice cream.",
+    "flags": [
+      "high_fructose"
+    ]
   },
   {
     "venue_id": "plaza-ice-cream-parlor",
@@ -1596,7 +1760,8 @@
     "is_ssb": false,
     "sugar_g": 34,
     "sodium_mg": 90,
-    "notes": "Lowest-sugar option at this stand, still high."
+    "notes": "Lowest-sugar option at this stand, still high.",
+    "flags": []
   },
   {
     "venue_id": "beak-and-barrel",
@@ -1608,7 +1773,10 @@
     "is_ssb": false,
     "sugar_g": 18,
     "sodium_mg": 120,
-    "notes": "Ube, Lalo Blanco tequila, Cointreau, and lime; signature cocktail."
+    "notes": "Ube, Lalo Blanco tequila, Cointreau, and lime; signature cocktail.",
+    "flags": [
+      "alcohol_sugar_combo"
+    ]
   },
   {
     "venue_id": "beak-and-barrel",
@@ -1620,7 +1788,10 @@
     "is_ssb": false,
     "sugar_g": 24,
     "sodium_mg": 30,
-    "notes": "Puerto Rican rum with spiced guava, lime juice, and vanilla foam."
+    "notes": "Puerto Rican rum with spiced guava, lime juice, and vanilla foam.",
+    "flags": [
+      "alcohol_sugar_combo"
+    ]
   },
   {
     "venue_id": "beak-and-barrel",
@@ -1632,7 +1803,8 @@
     "is_ssb": false,
     "sugar_g": 2,
     "sodium_mg": 15,
-    "notes": "Draft blonde ale; beer carries the highest gout-risk among alcohol types."
+    "notes": "Draft blonde ale; beer carries the highest gout-risk among alcohol types.",
+    "flags": []
   },
   {
     "venue_id": "beak-and-barrel",
@@ -1644,7 +1816,8 @@
     "is_ssb": true,
     "sugar_g": 38,
     "sodium_mg": 280,
-    "notes": "Non-alcoholic ube-lemon-coconut drink served with a vanilla cake plank, chocolate cannonball, and caramel popcorn."
+    "notes": "Non-alcoholic ube-lemon-coconut drink served with a vanilla cake plank, chocolate cannonball, and caramel popcorn.",
+    "flags": []
   },
   {
     "venue_id": "beak-and-barrel",
@@ -1656,7 +1829,8 @@
     "is_ssb": false,
     "sugar_g": 4,
     "sodium_mg": 680,
-    "notes": "Warm corn cake stuffed with cheese, lime sour cream, and chili peppers, topped with cotija."
+    "notes": "Warm corn cake stuffed with cheese, lime sour cream, and chili peppers, topped with cotija.",
+    "flags": []
   },
   {
     "venue_id": "beak-and-barrel",
@@ -1668,7 +1842,8 @@
     "is_ssb": false,
     "sugar_g": 3,
     "sodium_mg": 760,
-    "notes": "Shareable plantain chips, blue corn tortillas, and toasted flatbread with savory dips."
+    "notes": "Shareable plantain chips, blue corn tortillas, and toasted flatbread with savory dips.",
+    "flags": []
   },
   {
     "venue_id": "crystal-palace",
@@ -1680,7 +1855,10 @@
     "is_ssb": false,
     "sugar_g": 0,
     "sodium_mg": 700,
-    "notes": "Carving station prime rib; high end of red-meat purine range."
+    "notes": "Carving station prime rib; high end of red-meat purine range.",
+    "flags": [
+      "high_purine"
+    ]
   },
   {
     "venue_id": "crystal-palace",
@@ -1692,7 +1870,8 @@
     "is_ssb": false,
     "sugar_g": 4,
     "sodium_mg": 920,
-    "notes": "Buffet shellfish dish; moderate-high purine."
+    "notes": "Buffet shellfish dish; moderate-high purine.",
+    "flags": []
   },
   {
     "venue_id": "crystal-palace",
@@ -1704,7 +1883,8 @@
     "is_ssb": false,
     "sugar_g": 3,
     "sodium_mg": 540,
-    "notes": "Cheese-filled pasta; low purine."
+    "notes": "Cheese-filled pasta; low purine.",
+    "flags": []
   },
   {
     "venue_id": "crystal-palace",
@@ -1716,7 +1896,8 @@
     "is_ssb": false,
     "sugar_g": 4,
     "sodium_mg": 760,
-    "notes": "Buffet soup option; low purine, high sodium."
+    "notes": "Buffet soup option; low purine, high sodium.",
+    "flags": []
   },
   {
     "venue_id": "crystal-palace",
@@ -1728,7 +1909,8 @@
     "is_ssb": false,
     "sugar_g": 38,
     "sodium_mg": 120,
-    "notes": "Buffet dessert table item; high sugar contributes to fructose load."
+    "notes": "Buffet dessert table item; high sugar contributes to fructose load.",
+    "flags": []
   },
   {
     "venue_id": "crystal-palace",
@@ -1740,7 +1922,10 @@
     "is_ssb": false,
     "sugar_g": 14,
     "sodium_mg": 5,
-    "notes": "Specialty cocktail (whiskey, sparkling wine, orange juice); part of the assorted beer/wine/cocktail selection."
+    "notes": "Specialty cocktail (whiskey, sparkling wine, orange juice); part of the assorted beer/wine/cocktail selection.",
+    "flags": [
+      "alcohol_sugar_combo"
+    ]
   },
   {
     "venue_id": "plaza-restaurant",
@@ -1752,7 +1937,8 @@
     "is_ssb": false,
     "sugar_g": 1,
     "sodium_mg": 980,
-    "notes": "Fries topped with cheddar and bacon; moderate purine from bacon."
+    "notes": "Fries topped with cheddar and bacon; moderate purine from bacon.",
+    "flags": []
   },
   {
     "venue_id": "plaza-restaurant",
@@ -1764,7 +1950,8 @@
     "is_ssb": false,
     "sugar_g": 4,
     "sodium_mg": 1450,
-    "notes": "Smoked turkey with candied bacon on sourdough; moderate purine, very high sodium."
+    "notes": "Smoked turkey with candied bacon on sourdough; moderate purine, very high sodium.",
+    "flags": []
   },
   {
     "venue_id": "plaza-restaurant",
@@ -1776,7 +1963,8 @@
     "is_ssb": false,
     "sugar_g": 1,
     "sodium_mg": 10,
-    "notes": "Draft beer; beer carries higher gout-risk than wine per Choi & Curhan 2004."
+    "notes": "Draft beer; beer carries higher gout-risk than wine per Choi & Curhan 2004.",
+    "flags": []
   },
   {
     "venue_id": "plaza-restaurant",
@@ -1788,7 +1976,10 @@
     "is_ssb": false,
     "sugar_g": 12,
     "sodium_mg": 5,
-    "notes": "Tequila-based specialty cocktail with orange liqueur."
+    "notes": "Tequila-based specialty cocktail with orange liqueur.",
+    "flags": [
+      "alcohol_sugar_combo"
+    ]
   },
   {
     "venue_id": "tonys-town-square",
@@ -1800,7 +1991,8 @@
     "is_ssb": false,
     "sugar_g": 3,
     "sodium_mg": 680,
-    "notes": "Breaded fried cheese starter; low purine."
+    "notes": "Breaded fried cheese starter; low purine.",
+    "flags": []
   },
   {
     "venue_id": "tonys-town-square",
@@ -1812,7 +2004,8 @@
     "is_ssb": false,
     "sugar_g": 2,
     "sodium_mg": 980,
-    "notes": "Shrimp in garlic butter and white wine; moderate-high purine."
+    "notes": "Shrimp in garlic butter and white wine; moderate-high purine.",
+    "flags": []
   },
   {
     "venue_id": "tonys-town-square",
@@ -1824,7 +2017,8 @@
     "is_ssb": false,
     "sugar_g": 3,
     "sodium_mg": 1050,
-    "notes": "Braised beef with crispy potatoes; red meat, moderate-high purine."
+    "notes": "Braised beef with crispy potatoes; red meat, moderate-high purine.",
+    "flags": []
   },
   {
     "venue_id": "tonys-town-square",
@@ -1836,7 +2030,8 @@
     "is_ssb": false,
     "sugar_g": 1,
     "sodium_mg": 890,
-    "notes": "Pan-seared salmon with lemon-caper butter sauce; moderate purine."
+    "notes": "Pan-seared salmon with lemon-caper butter sauce; moderate purine.",
+    "flags": []
   },
   {
     "venue_id": "tonys-town-square",
@@ -1848,7 +2043,8 @@
     "is_ssb": false,
     "sugar_g": 22,
     "sodium_mg": 95,
-    "notes": "Ricotta-filled pastry; low purine, moderate sugar."
+    "notes": "Ricotta-filled pastry; low purine, moderate sugar.",
+    "flags": []
   },
   {
     "venue_id": "tonys-town-square",
@@ -1860,7 +2056,8 @@
     "is_ssb": false,
     "sugar_g": 8,
     "sodium_mg": 980,
-    "notes": "Plant-based meatball alternative; lowest-purine entree option."
+    "notes": "Plant-based meatball alternative; lowest-purine entree option.",
+    "flags": []
   },
   {
     "venue_id": "be-our-guest",
@@ -1872,7 +2069,8 @@
     "is_ssb": false,
     "sugar_g": 7,
     "sodium_mg": 1100,
-    "notes": "Gruyere-topped soup; low purine, high sodium."
+    "notes": "Gruyere-topped soup; low purine, high sodium.",
+    "flags": []
   },
   {
     "venue_id": "be-our-guest",
@@ -1884,7 +2082,10 @@
     "is_ssb": false,
     "sugar_g": 2,
     "sodium_mg": 720,
-    "notes": "Pate-style terrine; organ-meat-adjacent, highest-purine item on the menu."
+    "notes": "Pate-style terrine; organ-meat-adjacent, highest-purine item on the menu.",
+    "flags": [
+      "high_purine"
+    ]
   },
   {
     "venue_id": "be-our-guest",
@@ -1896,7 +2097,8 @@
     "is_ssb": false,
     "sugar_g": 1,
     "sodium_mg": 760,
-    "notes": "Trout with crab and smoked almonds; moderate purine."
+    "notes": "Trout with crab and smoked almonds; moderate purine.",
+    "flags": []
   },
   {
     "venue_id": "be-our-guest",
@@ -1908,7 +2110,8 @@
     "is_ssb": false,
     "sugar_g": 2,
     "sodium_mg": 820,
-    "notes": "Roasted chicken with celery root puree; moderate purine."
+    "notes": "Roasted chicken with celery root puree; moderate purine.",
+    "flags": []
   },
   {
     "venue_id": "be-our-guest",
@@ -1920,7 +2123,8 @@
     "is_ssb": false,
     "sugar_g": 5,
     "sodium_mg": 640,
-    "notes": "Plant-based entree; lowest-purine option on the prix-fixe menu."
+    "notes": "Plant-based entree; lowest-purine option on the prix-fixe menu.",
+    "flags": []
   },
   {
     "venue_id": "liberty-tree-tavern",
@@ -1932,7 +2136,8 @@
     "is_ssb": false,
     "sugar_g": 4,
     "sodium_mg": 850,
-    "notes": "Family-style smoked pork; red meat, moderate-high purine."
+    "notes": "Family-style smoked pork; red meat, moderate-high purine.",
+    "flags": []
   },
   {
     "venue_id": "liberty-tree-tavern",
@@ -1944,7 +2149,8 @@
     "is_ssb": false,
     "sugar_g": 9,
     "sodium_mg": 220,
-    "notes": "Mixed greens with apples, cranberries, and cheese; low purine."
+    "notes": "Mixed greens with apples, cranberries, and cheese; low purine.",
+    "flags": []
   },
   {
     "venue_id": "liberty-tree-tavern",
@@ -1956,7 +2162,8 @@
     "is_ssb": false,
     "sugar_g": 5,
     "sodium_mg": 780,
-    "notes": "Plant-based entree alternative; lowest-purine option on the family-style menu."
+    "notes": "Plant-based entree alternative; lowest-purine option on the family-style menu.",
+    "flags": []
   },
   {
     "venue_id": "liberty-tree-tavern",
@@ -1968,7 +2175,8 @@
     "is_ssb": false,
     "sugar_g": 4,
     "sodium_mg": 640,
-    "notes": "Cheese-based side; low purine."
+    "notes": "Cheese-based side; low purine.",
+    "flags": []
   },
   {
     "venue_id": "skipper-canteen",
@@ -1980,7 +2188,8 @@
     "is_ssb": false,
     "sugar_g": 2,
     "sodium_mg": 480,
-    "notes": "Togarashi-spiced raw tuna starter; moderate purine."
+    "notes": "Togarashi-spiced raw tuna starter; moderate purine.",
+    "flags": []
   },
   {
     "venue_id": "skipper-canteen",
@@ -1992,7 +2201,8 @@
     "is_ssb": false,
     "sugar_g": 3,
     "sodium_mg": 690,
-    "notes": "Plant-based chickpea entree; lowest-purine option on the menu."
+    "notes": "Plant-based chickpea entree; lowest-purine option on the menu.",
+    "flags": []
   },
   {
     "venue_id": "skipper-canteen",
@@ -2004,7 +2214,8 @@
     "is_ssb": false,
     "sugar_g": 9,
     "sodium_mg": 1150,
-    "notes": "Crispy fried chicken with chili-soy glaze; moderate purine, high sodium."
+    "notes": "Crispy fried chicken with chili-soy glaze; moderate purine, high sodium.",
+    "flags": []
   },
   {
     "venue_id": "skipper-canteen",
@@ -2016,7 +2227,8 @@
     "is_ssb": false,
     "sugar_g": 3,
     "sodium_mg": 870,
-    "notes": "Fish in ginger-lemongrass broth; moderate purine."
+    "notes": "Fish in ginger-lemongrass broth; moderate purine.",
+    "flags": []
   },
   {
     "venue_id": "skipper-canteen",
@@ -2028,7 +2240,8 @@
     "is_ssb": false,
     "sugar_g": 6,
     "sodium_mg": 1080,
-    "notes": "Stir-fried shrimp with rice noodles; moderate-high purine."
+    "notes": "Stir-fried shrimp with rice noodles; moderate-high purine.",
+    "flags": []
   },
   {
     "venue_id": "cinderella-royal-table",
@@ -2040,7 +2253,8 @@
     "is_ssb": false,
     "sugar_g": 10,
     "sodium_mg": 320,
-    "notes": "Greens with fruit, blue cheese, and candied pecans; low purine."
+    "notes": "Greens with fruit, blue cheese, and candied pecans; low purine.",
+    "flags": []
   },
   {
     "venue_id": "cinderella-royal-table",
@@ -2052,7 +2266,8 @@
     "is_ssb": false,
     "sugar_g": 3,
     "sodium_mg": 540,
-    "notes": "Shrimp cocktail starter; moderate-high purine."
+    "notes": "Shrimp cocktail starter; moderate-high purine.",
+    "flags": []
   },
   {
     "venue_id": "cinderella-royal-table",
@@ -2064,7 +2279,8 @@
     "is_ssb": false,
     "sugar_g": 6,
     "sodium_mg": 780,
-    "notes": "Lamb with honey-balsamic glaze; red meat, moderate-high purine."
+    "notes": "Lamb with honey-balsamic glaze; red meat, moderate-high purine.",
+    "flags": []
   },
   {
     "venue_id": "cinderella-royal-table",
@@ -2076,7 +2292,8 @@
     "is_ssb": false,
     "sugar_g": 2,
     "sodium_mg": 820,
-    "notes": "Grilled chicken with parmesan risotto; moderate purine."
+    "notes": "Grilled chicken with parmesan risotto; moderate purine.",
+    "flags": []
   },
   {
     "venue_id": "diamond-horseshoe",
@@ -2088,7 +2305,8 @@
     "is_ssb": false,
     "sugar_g": 2,
     "sodium_mg": 560,
-    "notes": "Bread-based stuffing; low purine."
+    "notes": "Bread-based stuffing; low purine.",
+    "flags": []
   },
   {
     "venue_id": "diamond-horseshoe",
@@ -2100,6 +2318,7 @@
     "is_ssb": false,
     "sugar_g": 9,
     "sodium_mg": 220,
-    "notes": "Mixed greens with apples, cranberries, and cheese; low purine."
+    "notes": "Mixed greens with apples, cranberries, and cheese; low purine.",
+    "flags": []
   }
 ]

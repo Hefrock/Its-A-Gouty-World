@@ -16,6 +16,13 @@ const OPERATING_STATUS_LABELS = {
   limited_service: '⚠️ Limited Service',
 };
 
+// Per-item risk flags surfaced alongside Higher/Lower-Risk menu items.
+const ITEM_FLAG_LABELS = {
+  high_purine: { icon: '🥩', title: 'High purine (organ meat or score ≥ 8)' },
+  alcohol_sugar_combo: { icon: '🍹', title: 'Alcohol + significant sugar (cocktail/sweetened drink)' },
+  high_fructose: { icon: '🥤', title: 'Sugar-sweetened beverage with high sugar load' },
+};
+
 // Rough relative-risk score for ranking individual menu items (not part of
 // the venue composite score, which is computed from venue.scores only).
 function itemRisk(item) {
@@ -105,6 +112,11 @@ export default function VenueCard({ venue, menuItems, activeToggles, strictnessM
                   {highest.map((item) => (
                     <li key={item.item_name} className="text-red-700">
                       &bull; {item.item_name}
+                      {(item.flags ?? []).map((flag) => (
+                        <span key={flag} title={ITEM_FLAG_LABELS[flag]?.title} className="ml-1" aria-hidden="true">
+                          {ITEM_FLAG_LABELS[flag]?.icon}
+                        </span>
+                      ))}
                     </li>
                   ))}
                 </ul>
@@ -117,6 +129,11 @@ export default function VenueCard({ venue, menuItems, activeToggles, strictnessM
                   {lowest.map((item) => (
                     <li key={item.item_name} className="text-green-700">
                       &bull; {item.item_name}
+                      {(item.flags ?? []).map((flag) => (
+                        <span key={flag} title={ITEM_FLAG_LABELS[flag]?.title} className="ml-1" aria-hidden="true">
+                          {ITEM_FLAG_LABELS[flag]?.icon}
+                        </span>
+                      ))}
                     </li>
                   ))}
                 </ul>
