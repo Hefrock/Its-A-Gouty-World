@@ -1,6 +1,7 @@
 import { useMemo, useState } from 'react';
 import { computeVenueScore, getExtremeFactors } from '../scoring/engine.js';
 import { LANDS } from '../utils/mapCoords.js';
+import { OPERATING_STATUS_SHORT } from '../utils/operatingStatus.js';
 
 const SERVICE_TYPE_LABELS = {
   quick_service: 'Quick Service',
@@ -133,6 +134,22 @@ export default function ListView({ venues, activeToggles, strictnessMode, onSele
                     return (
                       <td key={col.key} className="py-2 px-2 font-semibold">
                         {row.composite}
+                      </td>
+                    );
+                  }
+                  if (col.key === 'name') {
+                    return (
+                      <td key={col.key} className="py-2 px-2 whitespace-nowrap">
+                        {row.name}
+                        {row.venue.operating_status && row.venue.operating_status !== 'open' && (
+                          <span
+                            className="ml-1 text-amber-600"
+                            title={OPERATING_STATUS_SHORT[row.venue.operating_status]}
+                          >
+                            <span aria-hidden="true">⚠️</span>
+                            <span className="sr-only">{OPERATING_STATUS_SHORT[row.venue.operating_status]}</span>
+                          </span>
+                        )}
                       </td>
                     );
                   }

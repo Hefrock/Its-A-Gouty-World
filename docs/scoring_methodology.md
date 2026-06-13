@@ -54,6 +54,43 @@ the most direct and well-established mechanistic link to serum urate.
 Alcohol and fructose are down-weighted in "Moderate" and "Flexible" modes for
 patients whose gout is well-controlled and who want more dining flexibility.
 
+### Extreme-axis indicator (⚡)
+
+Because the composite score is an average, a venue can have one severely
+risky factor "averaged down" by the other two. For example, The Beak and
+Barrel has `alcohol_score: 9` (alcohol is the centerpiece of its menu) but a
+composite of 6.0 in Strict mode — landing in the yellow "Moderate Risk" tier
+even though alcohol alone is in the red range.
+
+To prevent this from being hidden, any **active** factor scoring 8 or higher
+on its own is surfaced independently via a ⚡ "High {Factor}: X/10" indicator,
+shown as:
+
+- A badge on the `VenueCard` detail panel
+- A dashed red ring around the venue's marker on `MapView` and `GPSMapView`
+- A small ⚡ icon next to the Risk Tier badge in `ListView`
+
+This does not change the composite score or tier — it is purely an
+informational layer so a patient whose gout is triggered primarily by one
+factor (e.g., alcohol) isn't misled by an average that looks moderate.
+
+### Item flags vs. relative item ranking
+
+`VenueCard` shows "Higher-Risk" and "Lower-Risk" menu items for each venue,
+ranked *relative to that venue's own menu* (see `itemRisk()` in
+`VenueCard.jsx`). Separately, individual menu items in `menu_items.json` can
+carry **flags** (🥩 high purine, 🍹 alcohol+sugar combo, 🥤 high fructose/SSB,
+🧂 high sodium) based on **fixed clinical thresholds** that are independent of
+the venue.
+
+These two signals can disagree: an item can be the *lowest-risk item at a
+particularly high-risk venue* while still crossing an absolute threshold
+(e.g., ≥1000mg sodium). When this happens, `VenueCard` shows an explanatory
+note rather than changing either ranking — collapsing the two signals into
+one would lose information (the relative ranking helps choose *within* a
+venue; the flag tells you about that item *in absolute terms*, useful when
+comparing across venues or against general dietary guidance).
+
 ---
 
 ## Purine Scoring Rationale
@@ -202,3 +239,9 @@ scored independently rather than combined into a single "junk food" score.
 - **This tool does not replace clinical dietary counseling.** Patients
   should discuss any recurring dietary triggers with their physician or a
   registered dietitian.
+- **Some venues are not currently operating as scored.** A venue's score
+  reflects its normal menu; if `operating_status` is `temporarily_closed`,
+  `seasonal_pause`, or `limited_service` (flagged with a ⚠️ icon on the map
+  and list views and detailed in `VenueCard`), the scored menu may not be
+  fully available — check `status_note` and the official Disney page before
+  planning around that venue.

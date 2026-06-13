@@ -1,7 +1,8 @@
 import { useEffect, useRef } from 'react';
 import { MapContainer, TileLayer, CircleMarker, Tooltip } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
-import { computeVenueScore } from '../scoring/engine.js';
+import { computeVenueScore, getExtremeFactors } from '../scoring/engine.js';
+import { OPERATING_STATUS_SHORT } from '../utils/operatingStatus.js';
 
 // Approximate center of Magic Kingdom (Cinderella Castle).
 const PARK_CENTER = [28.4194, -81.5812];
@@ -10,10 +11,15 @@ const DEFAULT_ZOOM = 17;
 // Wraps a CircleMarker so it behaves like a focusable, keyboard-activatable
 // button (matching the SVG MapView markers), since Leaflet's vector layers
 // don't expose this by default.
-function VenueMarker({ venue, result, onSelectVenue }) {
+function VenueMarker({ venue, result, extremeFactors, onSelectVenue }) {
   const layerRef = useRef(null);
   const { lat, lng } = venue.gps_coords;
-  const ariaLabel = `${venue.name}: ${result.label}, score ${result.score} of 10`;
+  const isNonOpen = venue.operating_status && venue.operating_status !== 'open';
+  const extremeLabel = extremeFactors.length > 0
+    ? ` — high ${extremeFactors.map((f) => `${f.label} (${f.score}/10)`).join(', ')}`
+    : '';
+  const statusLabel = isNonOpen ? ` — ${OPERATING_STATUS_SHORT[venue.operating_status]}` : '';
+  const ariaLabel = `${venue.name}: ${result.label}, score ${result.score} of 10${extremeLabel}${statusLabel}`;
 
   useEffect(() => {
     const el = layerRef.current?._path;
@@ -33,19 +39,43 @@ function VenueMarker({ venue, result, onSelectVenue }) {
   });
 
   return (
-    <CircleMarker
-      ref={layerRef}
-      center={[lat, lng]}
-      radius={10}
-      pathOptions={{ color: '#1f2937', weight: 1.5, fillColor: result.color, fillOpacity: 0.9 }}
-      eventHandlers={{ click: () => onSelectVenue(venue) }}
-    >
-      <Tooltip direction="top" offset={[0, -8]}>
-        <span className="font-semibold">{venue.name}</span>
-        <br />
-        {result.icon} {result.label} &mdash; {result.score}/10
-      </Tooltip>
-    </CircleMarker>
+    <>
+      {extremeFactors.length > 0 && (
+        <CircleMarker
+          center={[lat, lng]}
+          radius={15}
+          pathOptions={{ color: '#dc2626', weight: 2, fill: false, dashArray: '3,2' }}
+          interactive={false}
+        />
+      )}
+      <CircleMarker
+        ref={layerRef}
+        center={[lat, lng]}
+        radius={10}
+        pathOptions={{ color: '#1f2937', weight: 1.5, fillColor: result.color, fillOpacity: isNonOpen ? 0.4 : 0.9 }}
+        eventHandlers={{ click: () => onSelectVenue(venue) }}
+      >
+        <Tooltip direction="top" offset={[0, -8]}>
+          <span className="font-semibold">{venue.name}</span>
+          <br />
+          {result.icon} {result.label} &mdash; {result.score}/10
+          {extremeFactors.length > 0 && (
+            <>
+              <br />
+              <span className="text-red-600">
+                ⚡ High {extremeFactors.map((f) => `${f.label} (${f.score}/10)`).join(', ')}
+              </span>
+            </>
+          )}
+          {isNonOpen && (
+            <>
+              <br />
+              <span className="text-amber-600">⚠️ {OPERATING_STATUS_SHORT[venue.operating_status]}</span>
+            </>
+          )}
+        </Tooltip>
+      </CircleMarker>
+    </>
   );
 }
 
@@ -60,8 +90,15 @@ export default function GPSMapView({ venues, activeToggles, strictnessMode, onSe
           />
           {venues.map((venue) => {
             const result = computeVenueScore(venue, activeToggles, strictnessMode);
+            const extremeFactors = getExtremeFactors(venue, activeToggles);
             return (
-              <VenueMarker key={venue.id} venue={venue} result={result} onSelectVenue={onSelectVenue} />
+              <VenueMarker
+                key={venue.id}
+                venue={venue}
+                result={result}
+                extremeFactors={extremeFactors}
+                onSelectVenue={onSelectVenue}
+              />
             );
           })}
         </MapContainer>

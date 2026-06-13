@@ -21,6 +21,13 @@ export default function Legend() {
             Shown when a single active factor (purines, alcohol, or fructose/SSBs) scores 8+ on its own — averaging can pull the overall score into a lower tier even when one factor is severe.
           </span>
         </li>
+        <li className="flex items-start gap-2">
+          <span aria-hidden="true">⚠️</span>
+          <span>
+            <span className="font-semibold">Closed / limited / seasonal:</span>{' '}
+            Shown for venues that are temporarily closed, on a seasonal pause, or offering limited service — check the venue details for the current status before planning your visit.
+          </span>
+        </li>
       </ul>
       <p className="text-xs text-gray-500 mt-3 border-t border-gray-200 pt-2">
         This tool is for informational purposes. Consult your physician or dietitian for personalized guidance.

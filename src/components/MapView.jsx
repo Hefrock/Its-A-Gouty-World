@@ -1,6 +1,7 @@
 import { useRef, useState } from 'react';
 import { computeVenueScore, getExtremeFactors } from '../scoring/engine.js';
 import { MAP_VIEWBOX, HUB, LANDS, getLandWedgePath, getLandLabelPos, getVenueCoords } from '../utils/mapCoords.js';
+import { OPERATING_STATUS_SHORT } from '../utils/operatingStatus.js';
 
 export default function MapView({ venues, activeToggles, strictnessMode, onSelectVenue }) {
   const containerRef = useRef(null);
@@ -57,9 +58,11 @@ export default function MapView({ venues, activeToggles, strictnessMode, onSelec
             const result = computeVenueScore(venue, activeToggles, strictnessMode);
             const extremeFactors = getExtremeFactors(venue, activeToggles);
             const { x, y } = getVenueCoords(venue);
+            const isNonOpen = venue.operating_status && venue.operating_status !== 'open';
             const extremeLabel = extremeFactors.length > 0
               ? ` — high ${extremeFactors.map((f) => f.label).join(', ')} (${extremeFactors.map((f) => f.score).join(', ')}/10)`
               : '';
+            const statusLabel = isNonOpen ? ` — ${OPERATING_STATUS_SHORT[venue.operating_status]}` : '';
             return (
               <g key={venue.id}>
                 {extremeFactors.length > 0 && (
@@ -79,11 +82,12 @@ export default function MapView({ venues, activeToggles, strictnessMode, onSelec
                   cy={y}
                   r={14}
                   fill={result.color}
+                  fillOpacity={isNonOpen ? 0.4 : 1}
                   stroke="#1f2937"
                   strokeWidth={1.5}
                   tabIndex={0}
                   role="button"
-                  aria-label={`${venue.name}: ${result.label}, score ${result.score} of 10${extremeLabel}`}
+                  aria-label={`${venue.name}: ${result.label}, score ${result.score} of 10${extremeLabel}${statusLabel}`}
                   onMouseEnter={(e) => handleEnter(e, venue, result, extremeFactors)}
                   onMouseLeave={() => setHovered(null)}
                   onFocus={(e) => handleEnter(e, venue, result, extremeFactors)}
@@ -94,8 +98,20 @@ export default function MapView({ venues, activeToggles, strictnessMode, onSelec
                   }}
                   style={{ cursor: 'pointer' }}
                 >
-                  <title>{venue.name}: {result.label} ({result.score}/10){extremeLabel}</title>
+                  <title>{venue.name}: {result.label} ({result.score}/10){extremeLabel}{statusLabel}</title>
                 </circle>
+                {isNonOpen && (
+                  <text
+                    x={x + 10}
+                    y={y - 10}
+                    fontSize="12"
+                    textAnchor="middle"
+                    dominantBaseline="middle"
+                    aria-hidden="true"
+                  >
+                    ⚠️
+                  </text>
+                )}
               </g>
             );
           })}
@@ -111,6 +127,11 @@ export default function MapView({ venues, activeToggles, strictnessMode, onSelec
             {hovered.extremeFactors?.length > 0 && (
               <p className="text-red-300">
                 ⚡ High {hovered.extremeFactors.map((f) => `${f.label} (${f.score}/10)`).join(', ')}
+              </p>
+            )}
+            {hovered.venue.operating_status && hovered.venue.operating_status !== 'open' && (
+              <p className="text-amber-300">
+                ⚠️ {OPERATING_STATUS_SHORT[hovered.venue.operating_status]}
               </p>
             )}
           </div>

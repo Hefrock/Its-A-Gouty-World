@@ -2,18 +2,13 @@ import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Cell, ResponsiveContainer }
 import { computeVenueScore, getScoreBreakdown, getExtremeFactors } from '../scoring/engine.js';
 import { scoreToTier } from '../scoring/thresholds.js';
 import { LANDS } from '../utils/mapCoords.js';
+import { OPERATING_STATUS_LABELS } from '../utils/operatingStatus.js';
 
 const SERVICE_TYPE_LABELS = {
   quick_service: 'Quick Service',
   table_service: 'Table Service',
   snack_cart: 'Snack Cart',
   kiosk: 'Kiosk',
-};
-
-const OPERATING_STATUS_LABELS = {
-  temporarily_closed: '⚠️ Currently Closed',
-  seasonal_pause: '⚠️ Seasonal Closure',
-  limited_service: '⚠️ Limited Service',
 };
 
 // Per-item risk flags surfaced alongside Higher/Lower-Risk menu items.
