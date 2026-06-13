@@ -673,7 +673,7 @@
       "fructose": "A dessert ('The Clock Strikes Twelve' chocolate tart) is included with every meal.",
       "dehydration": "Rich sauces, glazes, and smoked-gouda grits push sodium to moderate-high."
     },
-    "gps_coords": { "lat": 28.4194, "lng": -81.5811 }
+    "gps_coords": { "lat": 28.419554, "lng": -81.581138 }
   },
   {
     "id": "diamond-horseshoe",
@@ -699,7 +699,7 @@
       "fructose": "Toffee cake and sweetened cranberry salad contribute to the fructose load.",
       "dehydration": "Roasted meats, gravies, and mac and cheese are high in sodium."
     },
-    "gps_coords": { "lat": 28.4185, "lng": -81.5829 }
+    "gps_coords": { "lat": 28.418882, "lng": -81.58282 }
   },
   {
     "id": "liberty-square-market",
@@ -723,7 +723,7 @@
       "fructose": "A frozen lemonade slushie is the main sugar source; most other items (fruit, pretzels, cheese) are savory or unsweetened.",
       "dehydration": "Smoked turkey legs, hot dogs, and pretzels are heavily brined and extremely high in sodium."
     },
-    "gps_coords": { "lat": 28.4193, "lng": -81.5829 }
+    "gps_coords": { "lat": 28.418907, "lng": -81.582571 }
   },
   {
     "id": "plaza-ice-cream-parlor",
@@ -747,7 +747,7 @@
       "fructose": "Sundaes, shakes, and floats are among the highest sugar items in the park.",
       "dehydration": "No high-sodium food items."
     },
-    "gps_coords": { "lat": 28.41785, "lng": -81.58075 }
+    "gps_coords": { "lat": 28.417915, "lng": -81.581045 }
   },
   {
     "id": "beak-and-barrel",

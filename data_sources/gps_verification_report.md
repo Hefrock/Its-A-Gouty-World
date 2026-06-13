@@ -30,5 +30,11 @@ A venue's `gps_coords` were updated only when the closest OSM match had name sim
 - ⚠️ **Tortuga Tavern**: closest OSM match "Gaston's Tavern" (similarity 0.64, 426m away) did not meet the confidence threshold — placeholder kept, needs manual review
 - ✅ **Sunshine Tree Terrace** matched OSM "Sunshine Tree Terrace" (similarity 1.00, 0m from placeholder) — gps_coords updated
 - ✅ **Aloha Isle** matched OSM "Aloha Isle Refreshments" (similarity 0.61, 0m from placeholder) — gps_coords updated
+- ⚠️ **Cheshire Café**: closest OSM match "Sunshine Tree Terrace" (similarity 0.42, 364m away) did not meet the confidence threshold — placeholder kept, needs manual review
+- ✅ **Cinderella's Royal Table** matched OSM "Cinderella's Royal Table" (similarity 1.00, 18m from placeholder) — gps_coords updated
+- ✅ **The Diamond Horseshoe** matched OSM "The Diamond Horseshoe" (similarity 1.00, 43m from placeholder) — gps_coords updated
+- ✅ **Liberty Square Market** matched OSM "Liberty Tree Tavern" (similarity 0.65, 54m from placeholder) — gps_coords updated
+- ✅ **Plaza Ice Cream Parlor** matched OSM "Plaza Ice Cream Parlor" (similarity 1.00, 30m from placeholder) — gps_coords updated
+- ⚠️ **The Beak and Barrel**: closest OSM match "Columbia Harbor House" (similarity 0.39, 296m away) did not meet the confidence threshold — placeholder kept, needs manual review
 
-**Summary:** 21 updated, 5 flagged for manual review, 0 unmatched, out of 26 venues.
+**Summary:** 25 updated, 7 flagged for manual review, 0 unmatched, out of 32 venues.
