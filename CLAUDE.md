@@ -8,6 +8,55 @@ Build an interactive React web app that visualizes all Magic Kingdom eateries on
 
 ---
 
+## Current Implementation Status (Read First)
+
+The sections below this point are the **original handoff spec** and remain
+useful for understanding intent, clinical rationale, and build order. The
+app has since evolved beyond that spec in the following ways — where the
+spec below conflicts with this section, **this section is authoritative**:
+
+- **Stack versions:** React 19 (not 18) and Tailwind CSS v4 (via
+  `@tailwindcss/vite`) are in use. Vitest is used for unit tests
+  (`src/scoring/engine.test.js`, `src/scoring/thresholds.test.js`).
+- **A second map view was added** — `src/components/GPSMapView.jsx`, built
+  with `react-leaflet` + OpenStreetMap tiles (real lat/lng in
+  `venue.gps_coords`). This is an intentional, deliberate addition to the
+  "No external map library" constraint below: the original SVG `MapView`
+  remains the primary/default view (no Disney artwork, original geometry),
+  and the GPS Map is an opt-in secondary tab clearly labeled as using
+  unverified placeholder coordinates. `scripts/verify_gps_coords.py` and
+  `data_sources/gps_verification_report.md` track verification status, and
+  `.github/workflows/data-refresh.yml` periodically refreshes coordinates
+  and USDA enrichment data.
+- **`src/scoring/thresholds.js`** defines the full score→tier mapping
+  (`scoreToTier`), including `color`, `bgClass`, `textClass`, `borderClass`,
+  `icon`, and `label` per tier — not just the `tier`/`label` strings shown in
+  the original `computeVenueScore` snippet below.
+- **`src/scoring/engine.js`** also exports `getScoreBreakdown(venue)` (used
+  by `VenueCard`'s bar chart) and `getExtremeFactors(venue, activeToggles,
+  threshold)` — see "Extreme-axis indicator" below.
+- **`dehydration_score`** is collected in `venues.json` but intentionally
+  **excluded** from the composite score (documented in
+  `docs/scoring_methodology.md`); it's retained for possible future use.
+- **Venue data additions:** `venues.json` entries may include
+  `operating_status` (`temporarily_closed` | `seasonal_pause` |
+  `limited_service`) and `status_note`. Non-`open` venues get a ⚠️ icon on
+  `MapView`, `GPSMapView`, and `ListView`, plus full detail in `VenueCard`
+  (see `src/utils/operatingStatus.js`).
+- **Menu item additions:** `menu_items.json` entries include a `flags` array
+  (`high_purine`, `alcohol_sugar_combo`, `high_fructose`, `high_sodium`)
+  based on fixed clinical thresholds, rendered as icons in `VenueCard`'s
+  Higher/Lower-Risk lists. These can disagree with the per-venue relative
+  ranking (`itemRisk()`); `VenueCard` shows explainer copy rather than
+  reconciling the two.
+- **Extreme-axis indicator (⚡):** Because the composite is a weighted
+  average, a single active factor scoring ≥8 can be "averaged down" into a
+  lower tier. `getExtremeFactors()` surfaces this independently as a ⚡ badge
+  in `VenueCard`, a dashed red ring on map markers, and a ⚡ icon in
+  `ListView`'s Risk Tier column, with an explanatory entry in `Legend.jsx`.
+
+---
+
 ## Repo Structure
 
 ```

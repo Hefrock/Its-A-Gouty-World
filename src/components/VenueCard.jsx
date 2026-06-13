@@ -1,19 +1,14 @@
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Cell, ResponsiveContainer } from 'recharts';
-import { computeVenueScore, getScoreBreakdown } from '../scoring/engine.js';
+import { computeVenueScore, getScoreBreakdown, getExtremeFactors } from '../scoring/engine.js';
 import { scoreToTier } from '../scoring/thresholds.js';
 import { LANDS } from '../utils/mapCoords.js';
+import { OPERATING_STATUS_LABELS } from '../utils/operatingStatus.js';
 
 const SERVICE_TYPE_LABELS = {
   quick_service: 'Quick Service',
   table_service: 'Table Service',
   snack_cart: 'Snack Cart',
   kiosk: 'Kiosk',
-};
-
-const OPERATING_STATUS_LABELS = {
-  temporarily_closed: '⚠️ Currently Closed',
-  seasonal_pause: '⚠️ Seasonal Closure',
-  limited_service: '⚠️ Limited Service',
 };
 
 // Per-item risk flags surfaced alongside Higher/Lower-Risk menu items.
@@ -40,6 +35,7 @@ export default function VenueCard({ venue, menuItems, activeToggles, strictnessM
     ...row,
     fill: scoreToTier(row.score).color,
   }));
+  const extremeFactors = getExtremeFactors(venue, activeToggles);
 
   const items = menuItems.filter((item) => item.venue_id === venue.id);
   const sorted = [...items].sort((a, b) => itemRisk(b) - itemRisk(a));
@@ -81,10 +77,25 @@ export default function VenueCard({ venue, menuItems, activeToggles, strictnessM
           </div>
         )}
 
-        <div className={`inline-flex items-center gap-2 px-3 py-1 rounded-full border ${result.bgClass} ${result.textClass} ${result.borderClass} text-sm font-semibold mb-4`}>
+        <div className={`inline-flex items-center gap-2 px-3 py-1 rounded-full border ${result.bgClass} ${result.textClass} ${result.borderClass} text-sm font-semibold ${extremeFactors.length > 0 ? 'mb-2' : 'mb-4'}`}>
           <span aria-hidden="true">{result.icon}</span>
           {result.label} &mdash; {result.score} / 10
         </div>
+
+        {extremeFactors.length > 0 && (
+          <div className="mb-4 flex flex-wrap gap-2">
+            {extremeFactors.map((f) => (
+              <span
+                key={f.toggle}
+                title={`${f.label} scores ${f.score}/10 on its own. A single high factor can be averaged down in the composite score above, so this badge calls it out separately.`}
+                className="inline-flex items-center gap-1 px-2 py-1 rounded-full border border-red-300 bg-red-50 text-red-700 text-xs font-semibold"
+              >
+                <span aria-hidden="true">⚡</span>
+                High {f.label}: {f.score}/10
+              </span>
+            ))}
+          </div>
+        )}
 
         <div className="mb-4">
           <h3 className="text-sm font-semibold text-gray-700 mb-2">Score Breakdown</h3>
@@ -141,6 +152,12 @@ export default function VenueCard({ venue, menuItems, activeToggles, strictnessM
               </div>
             )}
           </div>
+        )}
+
+        {[...highest, ...lowest].some((item) => (item.flags ?? []).length > 0) && (
+          <p className="mb-4 text-xs text-gray-500 italic">
+            Flag icons (🥩🍹🥤🧂) mark items that cross a fixed clinical threshold (e.g., ≥ 1000mg sodium, ≥ 40g sugar in a sweetened drink), independent of how that item ranks at this venue. An item can carry a flag while still being the lower-risk choice here.
+          </p>
         )}
 
         <div className="mb-4 space-y-2 text-sm text-gray-600">

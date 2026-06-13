@@ -56,3 +56,24 @@ export function getScoreBreakdown(venue) {
     { factor: 'Fructose / SSBs', key: 'fructose_score', score: venue.scores.fructose_score },
   ];
 }
+
+const EXTREME_THRESHOLD = 8;
+
+const FACTOR_META = {
+  purines: { key: 'purine_score', label: 'Purines' },
+  alcohol: { key: 'alcohol_score', label: 'Alcohol' },
+  fructose: { key: 'fructose_score', label: 'Fructose / SSBs' },
+};
+
+/**
+ * A composite average can mask a factor that is extreme on its own (e.g. a
+ * venue where alcohol is the centerpiece of the menu but the other factors
+ * pull the overall score down to yellow). Returns any *active* factors at or
+ * above the threshold so the UI can surface them independently of the
+ * composite tier.
+ */
+export function getExtremeFactors(venue, activeToggles, threshold = EXTREME_THRESHOLD) {
+  return Object.entries(FACTOR_META)
+    .filter(([toggle, { key }]) => activeToggles[toggle] && venue.scores[key] >= threshold)
+    .map(([toggle, { key, label }]) => ({ toggle, label, score: venue.scores[key] }));
+}
