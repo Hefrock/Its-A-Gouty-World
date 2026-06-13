@@ -74,7 +74,9 @@
     "usda_fdc_id": "2705847",
     "usda_sodium_mg": 372,
     "usda_protein_g": 29.1,
-    "flags": []
+    "flags": [
+      "high_purine"
+    ]
   },
   {
     "venue_id": "crystal-palace",
@@ -254,7 +256,9 @@
     "usda_fdc_id": "168062",
     "usda_sodium_mg": 536,
     "usda_protein_g": 16.2,
-    "flags": []
+    "flags": [
+      "high_sodium"
+    ]
   },
   {
     "venue_id": "tonys-town-square",
@@ -270,7 +274,9 @@
     "usda_fdc_id": "169845",
     "usda_sodium_mg": 351,
     "usda_protein_g": 7.8,
-    "flags": []
+    "flags": [
+      "high_sodium"
+    ]
   },
   {
     "venue_id": "tonys-town-square",
@@ -318,7 +324,9 @@
     "usda_fdc_id": "2706060",
     "usda_sodium_mg": 579,
     "usda_protein_g": 23.4,
-    "flags": []
+    "flags": [
+      "high_sodium"
+    ]
   },
   {
     "venue_id": "cosmic-rays-starlight-cafe",
@@ -334,7 +342,9 @@
     "usda_fdc_id": "2706892",
     "usda_sodium_mg": 628,
     "usda_protein_g": 13.5,
-    "flags": []
+    "flags": [
+      "high_sodium"
+    ]
   },
   {
     "venue_id": "cosmic-rays-starlight-cafe",
@@ -385,7 +395,8 @@
     "usda_sodium_mg": 74.0,
     "usda_protein_g": 19.5,
     "flags": [
-      "high_purine"
+      "high_purine",
+      "high_sodium"
     ]
   },
   {
@@ -436,7 +447,9 @@
     "usda_fdc_id": "2706892",
     "usda_sodium_mg": 628,
     "usda_protein_g": 13.5,
-    "flags": []
+    "flags": [
+      "high_sodium"
+    ]
   },
   {
     "venue_id": "tomorrowland-terrace",
@@ -597,7 +610,8 @@
     "usda_sodium_mg": 93.0,
     "usda_protein_g": 29.1,
     "flags": [
-      "high_purine"
+      "high_purine",
+      "high_sodium"
     ]
   },
   {
@@ -664,7 +678,9 @@
     "usda_fdc_id": "2708157",
     "usda_sodium_mg": 632,
     "usda_protein_g": 9.8,
-    "flags": []
+    "flags": [
+      "high_sodium"
+    ]
   },
   {
     "venue_id": "pinocchio-village-haus",
@@ -680,7 +696,9 @@
     "usda_fdc_id": "2708157",
     "usda_sodium_mg": 632,
     "usda_protein_g": 9.8,
-    "flags": []
+    "flags": [
+      "high_sodium"
+    ]
   },
   {
     "venue_id": "pinocchio-village-haus",
@@ -712,7 +730,9 @@
     "usda_fdc_id": "2709511",
     "usda_sodium_mg": 421,
     "usda_protein_g": 1.9,
-    "flags": []
+    "flags": [
+      "high_sodium"
+    ]
   },
   {
     "venue_id": "friars-nook",
@@ -728,7 +748,9 @@
     "usda_fdc_id": "2709511",
     "usda_sodium_mg": 421,
     "usda_protein_g": 1.9,
-    "flags": []
+    "flags": [
+      "high_sodium"
+    ]
   },
   {
     "venue_id": "friars-nook",
@@ -761,7 +783,8 @@
     "usda_sodium_mg": 77.0,
     "usda_protein_g": 27.9,
     "flags": [
-      "high_purine"
+      "high_purine",
+      "high_sodium"
     ]
   },
   {
@@ -910,7 +933,10 @@
     "usda_fdc_id": "2705848",
     "usda_sodium_mg": 370,
     "usda_protein_g": 28.4,
-    "flags": []
+    "flags": [
+      "high_purine",
+      "high_sodium"
+    ]
   },
   {
     "venue_id": "liberty-tree-tavern",
@@ -926,7 +952,9 @@
     "usda_fdc_id": "2706124",
     "usda_sodium_mg": 442,
     "usda_protein_g": 26.9,
-    "flags": []
+    "flags": [
+      "high_purine"
+    ]
   },
   {
     "venue_id": "liberty-tree-tavern",
@@ -970,7 +998,9 @@
     "sugar_g": 3,
     "sodium_mg": 970,
     "notes": "Shellfish; moderate-high purine.",
-    "flags": []
+    "flags": [
+      "high_purine"
+    ]
   },
   {
     "venue_id": "columbia-harbour-house",
@@ -986,7 +1016,9 @@
     "usda_fdc_id": "174195",
     "usda_sodium_mg": 402,
     "usda_protein_g": 11.0,
-    "flags": []
+    "flags": [
+      "high_sodium"
+    ]
   },
   {
     "venue_id": "columbia-harbour-house",
@@ -1082,7 +1114,9 @@
     "usda_fdc_id": "170736",
     "usda_sodium_mg": 363,
     "usda_protein_g": 6.7,
-    "flags": []
+    "flags": [
+      "high_sodium"
+    ]
   },
   {
     "venue_id": "pecos-bill",
@@ -1098,7 +1132,9 @@
     "usda_fdc_id": "2708580",
     "usda_sodium_mg": 430,
     "usda_protein_g": 11.2,
-    "flags": []
+    "flags": [
+      "high_sodium"
+    ]
   },
   {
     "venue_id": "pecos-bill",
@@ -1180,7 +1216,8 @@
     "usda_sodium_mg": 77.0,
     "usda_protein_g": 27.9,
     "flags": [
-      "high_purine"
+      "high_purine",
+      "high_sodium"
     ]
   },
   {
@@ -1229,7 +1266,10 @@
     "usda_fdc_id": "2705894",
     "usda_sodium_mg": 678,
     "usda_protein_g": 16.2,
-    "flags": []
+    "flags": [
+      "high_purine",
+      "high_sodium"
+    ]
   },
   {
     "venue_id": "skipper-canteen",
@@ -1245,7 +1285,10 @@
     "usda_fdc_id": "2709269",
     "usda_sodium_mg": 28,
     "usda_protein_g": 2.8,
-    "flags": []
+    "flags": [
+      "high_purine",
+      "high_sodium"
+    ]
   },
   {
     "venue_id": "skipper-canteen",
@@ -1292,7 +1335,9 @@
     "usda_fdc_id": "173344",
     "usda_sodium_mg": 666,
     "usda_protein_g": 13.2,
-    "flags": []
+    "flags": [
+      "high_sodium"
+    ]
   },
   {
     "venue_id": "tortuga-tavern",
@@ -1308,7 +1353,9 @@
     "usda_fdc_id": "171524",
     "usda_sodium_mg": 335,
     "usda_protein_g": 15.2,
-    "flags": []
+    "flags": [
+      "high_sodium"
+    ]
   },
   {
     "venue_id": "tortuga-tavern",
@@ -1506,7 +1553,9 @@
     "sugar_g": 2,
     "sodium_mg": 850,
     "notes": "Beef filet; highest-purine entree on the prix-fixe menu.",
-    "flags": []
+    "flags": [
+      "high_purine"
+    ]
   },
   {
     "venue_id": "cinderella-royal-table",
@@ -1584,7 +1633,9 @@
     "sugar_g": 3,
     "sodium_mg": 890,
     "notes": "Braised beef pot roast; highest-purine item on the all-you-care-to-enjoy menu.",
-    "flags": []
+    "flags": [
+      "high_purine"
+    ]
   },
   {
     "venue_id": "diamond-horseshoe",
@@ -1650,7 +1701,8 @@
     "sodium_mg": 2300,
     "notes": "Large smoked turkey leg; high end of poultry purine range, extremely high sodium.",
     "flags": [
-      "high_purine"
+      "high_purine",
+      "high_sodium"
     ]
   },
   {
@@ -1871,7 +1923,9 @@
     "sugar_g": 4,
     "sodium_mg": 920,
     "notes": "Buffet shellfish dish; moderate-high purine.",
-    "flags": []
+    "flags": [
+      "high_purine"
+    ]
   },
   {
     "venue_id": "crystal-palace",
@@ -1951,7 +2005,9 @@
     "sugar_g": 4,
     "sodium_mg": 1450,
     "notes": "Smoked turkey with candied bacon on sourdough; moderate purine, very high sodium.",
-    "flags": []
+    "flags": [
+      "high_sodium"
+    ]
   },
   {
     "venue_id": "plaza-restaurant",
@@ -2005,7 +2061,9 @@
     "sugar_g": 2,
     "sodium_mg": 980,
     "notes": "Shrimp in garlic butter and white wine; moderate-high purine.",
-    "flags": []
+    "flags": [
+      "high_purine"
+    ]
   },
   {
     "venue_id": "tonys-town-square",
@@ -2018,7 +2076,10 @@
     "sugar_g": 3,
     "sodium_mg": 1050,
     "notes": "Braised beef with crispy potatoes; red meat, moderate-high purine.",
-    "flags": []
+    "flags": [
+      "high_purine",
+      "high_sodium"
+    ]
   },
   {
     "venue_id": "tonys-town-square",
@@ -2070,7 +2131,9 @@
     "sugar_g": 7,
     "sodium_mg": 1100,
     "notes": "Gruyere-topped soup; low purine, high sodium.",
-    "flags": []
+    "flags": [
+      "high_sodium"
+    ]
   },
   {
     "venue_id": "be-our-guest",
@@ -2215,7 +2278,9 @@
     "sugar_g": 9,
     "sodium_mg": 1150,
     "notes": "Crispy fried chicken with chili-soy glaze; moderate purine, high sodium.",
-    "flags": []
+    "flags": [
+      "high_sodium"
+    ]
   },
   {
     "venue_id": "skipper-canteen",
@@ -2241,7 +2306,10 @@
     "sugar_g": 6,
     "sodium_mg": 1080,
     "notes": "Stir-fried shrimp with rice noodles; moderate-high purine.",
-    "flags": []
+    "flags": [
+      "high_purine",
+      "high_sodium"
+    ]
   },
   {
     "venue_id": "cinderella-royal-table",
@@ -2280,7 +2348,9 @@
     "sugar_g": 6,
     "sodium_mg": 780,
     "notes": "Lamb with honey-balsamic glaze; red meat, moderate-high purine.",
-    "flags": []
+    "flags": [
+      "high_purine"
+    ]
   },
   {
     "venue_id": "cinderella-royal-table",
