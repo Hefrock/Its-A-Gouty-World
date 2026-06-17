@@ -40,6 +40,10 @@ dietary triggers.
    on a real OpenStreetMap base layer.
 4. **Tap a venue** for a score breakdown, higher/lower-risk menu
    highlights, and a link to the official Disney menu page.
+5. **Check the Menu tab** for the 10 highest- and 10 lowest-risk individual
+   menu items across the entire park, each with its venue/land and a score
+   — useful for spotting an extreme order regardless of which venue you're
+   visiting.
 
 Two extra indicators appear across the map and list views:
 
