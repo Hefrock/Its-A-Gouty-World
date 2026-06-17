@@ -1,8 +1,10 @@
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Cell, ResponsiveContainer } from 'recharts';
 import { computeVenueScore, getScoreBreakdown, getExtremeFactors } from '../scoring/engine.js';
 import { scoreToTier } from '../scoring/thresholds.js';
+import { itemRisk } from '../scoring/itemRisk.js';
 import { LANDS } from '../utils/mapCoords.js';
 import { OPERATING_STATUS_LABELS } from '../utils/operatingStatus.js';
+import { ITEM_FLAG_LABELS } from '../utils/menuItemFlags.js';
 
 const SERVICE_TYPE_LABELS = {
   quick_service: 'Quick Service',
@@ -10,24 +12,6 @@ const SERVICE_TYPE_LABELS = {
   snack_cart: 'Snack Cart',
   kiosk: 'Kiosk',
 };
-
-// Per-item risk flags surfaced alongside Higher/Lower-Risk menu items.
-const ITEM_FLAG_LABELS = {
-  high_purine: { icon: '🥩', title: 'High purine (organ meat or item score ≥ 7)' },
-  alcohol_sugar_combo: { icon: '🍹', title: 'Alcohol + significant sugar (cocktail/sweetened drink)' },
-  high_fructose: { icon: '🥤', title: 'Sugar-sweetened beverage with high sugar load' },
-  high_sodium: { icon: '🧂', title: 'High sodium (≥ 1000mg) — dehydration risk; informational only, not part of the venue score' },
-};
-
-// Rough relative-risk score for ranking individual menu items (not part of
-// the venue composite score, which is computed from venue.scores only).
-function itemRisk(item) {
-  let risk = item.purine_score_item ?? 0;
-  if (item.alcohol) risk += 3;
-  if (item.is_ssb) risk += 2;
-  risk += (item.sugar_g ?? 0) / 15;
-  return risk;
-}
 
 export default function VenueCard({ venue, menuItems, activeToggles, strictnessMode, onClose }) {
   const result = computeVenueScore(venue, activeToggles, strictnessMode);
