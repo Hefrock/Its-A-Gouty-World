@@ -59,9 +59,11 @@ spec below conflicts with this section, **this section is authoritative**:
 - **`src/components/MenuView.jsx`** is a 4th tab (alongside Map/List/GPS
   Map) listing the 10 highest- and 10 lowest-risk individual menu items
   across all venues, ranked by the same toggle-agnostic `itemRisk()` used
-  in `VenueCard`, not the toggle-aware venue composite score. Each entry
-  shows the item name, flags, venue + land, and score; tapping one opens
-  that venue's `VenueCard`.
+  in `VenueCard`, not the toggle-aware venue composite score. Items sharing
+  the same `item_name` across multiple venues (e.g. "Fountain Soda" or
+  "Roasted Turkey Leg") are merged into a single row — their risk scores
+  averaged, flags unioned — with one clickable venue link per venue that
+  serves it, rather than appearing as separate, repetitive rows.
 - **Extreme-axis indicator (⚡):** Because the composite is a weighted
   average, a single active factor whose own tier is Higher Risk (score ≥7)
   can be "averaged down" into a lower composite tier.
