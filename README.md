@@ -105,7 +105,7 @@ npm run preview
 
 ### Regenerating the dataset
 
-The `scripts/` directory contains a (not yet run) data pipeline:
+The `scripts/` directory contains the data pipeline:
 
 ```bash
 pip install -r scripts/requirements.txt
@@ -114,8 +114,14 @@ python3 scripts/enrich_usda.py           # enrich with USDA FoodData Central
 python3 scripts/build_dataset.py         # rebuild venues.json / menu_items.json
 ```
 
-If Disney's site blocks scraping, fall back to manually updating
-`src/data/venues.json` and `src/data/menu_items.json`.
+`scripts/enrich_usda.py` has been run via the periodic
+`.github/workflows/data-refresh.yml` job — `usda_fdc_id`, `usda_sodium_mg`,
+and `usda_protein_g` in `src/data/menu_items.json` come from that USDA
+FoodData Central enrichment (181/200 items). `scrape_disney_menus.py` and
+`build_dataset.py` have **not** been run against live Disney pages;
+`venues.json` and `menu_items.json` are otherwise manually estimated, as
+noted in [`docs/scoring_methodology.md`](docs/scoring_methodology.md). If
+Disney's site blocks scraping, fall back to manually updating those files.
 
 ---
 
