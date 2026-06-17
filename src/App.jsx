@@ -3,6 +3,7 @@ import TogglePanel from './components/TogglePanel.jsx';
 import Legend from './components/Legend.jsx';
 import ListView from './components/ListView.jsx';
 import MapView from './components/MapView.jsx';
+import MenuView from './components/MenuView.jsx';
 import venues from './data/venues.json';
 import menuItems from './data/menu_items.json';
 
@@ -75,6 +76,17 @@ function App() {
           >
             GPS Map
           </button>
+          <button
+            type="button"
+            role="tab"
+            aria-selected={view === 'menu'}
+            onClick={() => setView('menu')}
+            className={`px-4 py-2 rounded-lg text-sm font-semibold ${
+              view === 'menu' ? 'bg-indigo-600 text-white' : 'bg-white text-gray-600 border border-gray-300'
+            }`}
+          >
+            Menu
+          </button>
         </div>
 
         {view === 'map' && (
@@ -102,6 +114,13 @@ function App() {
               onSelectVenue={setSelectedVenue}
             />
           </Suspense>
+        )}
+        {view === 'menu' && (
+          <MenuView
+            venues={venues}
+            menuItems={menuItems}
+            onSelectVenue={setSelectedVenue}
+          />
         )}
 
         <Legend />

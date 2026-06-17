@@ -17,7 +17,8 @@ spec below conflicts with this section, **this section is authoritative**:
 
 - **Stack versions:** React 19 (not 18) and Tailwind CSS v4 (via
   `@tailwindcss/vite`) are in use. Vitest is used for unit tests
-  (`src/scoring/engine.test.js`, `src/scoring/thresholds.test.js`).
+  (`src/scoring/engine.test.js`, `src/scoring/thresholds.test.js`,
+  `src/scoring/itemRisk.test.js`).
 - **A second map view was added** — `src/components/GPSMapView.jsx`, built
   with `react-leaflet` + OpenStreetMap tiles (real lat/lng in
   `venue.gps_coords`). This is an intentional, deliberate addition to the
@@ -50,10 +51,17 @@ spec below conflicts with this section, **this section is authoritative**:
   (see `src/utils/operatingStatus.js`).
 - **Menu item additions:** `menu_items.json` entries include a `flags` array
   (`high_purine`, `alcohol_sugar_combo`, `high_fructose`, `high_sodium`)
-  based on fixed clinical thresholds, rendered as icons in `VenueCard`'s
-  Higher/Lower-Risk lists. These can disagree with the per-venue relative
-  ranking (`itemRisk()`); `VenueCard` shows explainer copy rather than
-  reconciling the two.
+  based on fixed clinical thresholds, rendered as icons (via
+  `src/utils/menuItemFlags.js`) in `VenueCard`'s Higher/Lower-Risk lists and
+  in `MenuView`. These can disagree with the per-venue relative ranking
+  (`itemRisk()`, in `src/scoring/itemRisk.js`); `VenueCard` shows explainer
+  copy rather than reconciling the two.
+- **`src/components/MenuView.jsx`** is a 4th tab (alongside Map/List/GPS
+  Map) listing the 10 highest- and 10 lowest-risk individual menu items
+  across all venues, ranked by the same toggle-agnostic `itemRisk()` used
+  in `VenueCard`, not the toggle-aware venue composite score. Each entry
+  shows the item name, flags, venue + land, and score; tapping one opens
+  that venue's `VenueCard`.
 - **Extreme-axis indicator (⚡):** Because the composite is a weighted
   average, a single active factor whose own tier is Higher Risk (score ≥7)
   can be "averaged down" into a lower composite tier.
