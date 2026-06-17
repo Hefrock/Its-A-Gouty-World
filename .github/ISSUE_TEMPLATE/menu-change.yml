@@ -1,0 +1,27 @@
+name: Menu or venue change
+description: Report an outdated, changed, or missing Magic Kingdom venue or menu item
+title: "[Menu update]: "
+body:
+  - type: input
+    id: venue
+    attributes:
+      label: Venue name and id
+      description: The venue's name and its `id` from `src/data/venues.json`
+      placeholder: "e.g. Be Our Guest Restaurant (be-our-guest)"
+    validations:
+      required: true
+  - type: textarea
+    id: change
+    attributes:
+      label: What changed
+      description: New/removed item, alcohol availability, operating status, etc.
+    validations:
+      required: true
+  - type: input
+    id: menu-link
+    attributes:
+      label: Official Disney menu link
+      description: Link to the current official menu page, if available
+      placeholder: "https://disneyworld.disney.go.com/dining/..."
+    validations:
+      required: false

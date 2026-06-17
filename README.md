@@ -133,7 +133,7 @@ Disney's site blocks scraping, fall back to manually updating those files.
 
 Disney's menus change seasonally. If you spot an outdated `last_verified`
 date, a discontinued item, or a venue that's missing, please
-[open an issue](../../issues/new) with:
+[open an issue](../../issues/new?template=menu-change.yml) with:
 
 - The venue name and `id` from `src/data/venues.json`
 - What changed (new/removed item, alcohol availability, etc.)
